@@ -11,11 +11,11 @@ const docs = [
     path: "docs/docs",
     routeBasePath: "/docs",
   },
-  {
-    id: "changelog",
-    path: "docs/changelog",
-    routeBasePath: "/changelog",
-  },
+  // {
+  //   id: "changelog",
+  //   path: "docs/changelog",
+  //   routeBasePath: "/changelog",
+  // },
 ];
 
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
@@ -84,7 +84,11 @@ const config = {
           routeBasePath: "/guides",
           ...defaultSettings,
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          path: "docs/changelog",
+          routeBasePath: "/changelog",
+        },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
