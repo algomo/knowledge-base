@@ -83,3 +83,7 @@ article a,
 .sidebarItemLinkActive_node_modules-\@docusaurus-theme-classic-lib-theme-BlogSidebar-Desktop-styles-module {
   font-weight: bold !important;
 }
+
+.DocSearch-Hit[aria-selected="true"] a {
+  background-color: #39475e !important;
+}
