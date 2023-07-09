@@ -124,11 +124,11 @@ const config = {
     ({
       // Replace with your project's social card
       image: "img/favicon.png",
-      docs: {
-        sidebar: {
-          hideable: true,
-        },
-      },
+      // docs: {
+      //   sidebar: {
+      //     hideable: true,
+      //   },
+      // },
       navbar: {
         title: "",
         logo: {
