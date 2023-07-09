@@ -1,6 +1,5 @@
 ---
 sidebar_position: 1
-slug: /
 ---
 
 An `Algomo` chatbot contains the necessary information to allow our AI to engage in a natural conversation with a user. Our chatbots are **NATIVELY MULTILINGUAL**, i.e. you can provide information in any language, and they can respond back to any language.
@@ -9,6 +8,6 @@ The most important feature of `Algomo` is that you do not need to create a separ
 
 A chatbot is defined by the following
 
-- [**Data Sources**](/chatbots/Data%20Sources)
-- [**Websites**](/chatbots/Websites)
-- [**Intents**](/)
+- [**Data Sources**](/docs/chatbots/Data%20Sources)
+- [**Websites**](/docs/chatbots/Websites)
+- [**Intents**](/docs/chatbots/Intents)

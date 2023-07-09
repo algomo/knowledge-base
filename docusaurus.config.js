@@ -6,35 +6,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/plugin-content-docs').Options[]} */
 const docs = [
-  // {
-  //   id: "getting-started",
-  //   path: "docs/getting-started",
-  //   routeBasePath: "/getting-started",
-  // },
   {
-    id: "widgets",
-    path: "docs/widgets",
-    routeBasePath: "/widgets",
+    id: "docs",
+    path: "docs/docs",
+    routeBasePath: "/docs",
   },
   {
-    id: "chatbots",
-    path: "docs/chatbots",
-    routeBasePath: "/chatbots",
-  },
-  {
-    id: "data-sources",
-    path: "docs/data-sources",
-    routeBasePath: "/data-sources",
-  },
-  {
-    id: "tools",
-    path: "docs/tools",
-    routeBasePath: "/tools",
-  },
-  {
-    id: "inbox",
-    path: "docs/inbox",
-    routeBasePath: "/inbox",
+    id: "changelog",
+    path: "docs/changelog",
+    routeBasePath: "/changelog",
   },
 ];
 
@@ -99,9 +79,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          path: "docs/getting-started",
-          id: "getting-started",
-          routeBasePath: "/getting-started",
+          path: "docs/guides",
+          id: "guides",
+          routeBasePath: "/guides",
           ...defaultSettings,
         },
         blog: false,
@@ -138,34 +118,19 @@ const config = {
         },
         items: [
           {
-            to: "getting-started/",
+            to: "guides/",
             position: "left",
-            label: "Getting Started",
+            label: "Guides",
           },
           {
-            to: "widgets/",
+            to: "docs/",
             position: "left",
-            label: "Widgets",
+            label: "Documentation",
           },
           {
-            to: "chatbots/",
+            to: "changelog/",
             position: "left",
-            label: "Chatbots",
-          },
-          {
-            to: "data-sources/",
-            position: "left",
-            label: "Data Sources",
-          },
-          {
-            to: "tools/",
-            position: "left",
-            label: "Tools",
-          },
-          {
-            to: "inbox/",
-            position: "left",
-            label: "Inbox",
+            label: "Changelog",
           },
         ],
       },
@@ -176,28 +141,16 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Getting Started",
-                to: "/getting-started",
+                label: "Guides",
+                to: "/guides",
               },
               {
-                label: "Widgets",
-                to: "/widgets",
+                label: "Documentation",
+                to: "/docs",
               },
               {
-                label: "Chatbots",
-                to: "/chatbots",
-              },
-              {
-                label: "Data Sources",
-                to: "/data-sources",
-              },
-              {
-                label: "Tools",
-                to: "/tools",
-              },
-              {
-                label: "Inbox",
-                to: "/inbox",
+                label: "Changelog",
+                to: "/changelog",
               },
             ],
           },

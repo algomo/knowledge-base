@@ -1,0 +1,8 @@
+{
+  "label": "Data Sources",
+  "position": 4,
+  "collapsible": true,
+  "link": {
+    "type": "generated-index"
+  }
+}

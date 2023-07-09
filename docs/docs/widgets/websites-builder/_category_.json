@@ -1,0 +1,8 @@
+{
+  "label": "Website Builders",
+  "position": 5,
+  "collapsible": true,
+  "link": {
+    "type": "generated-index"
+  }
+}
