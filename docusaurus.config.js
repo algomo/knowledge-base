@@ -113,6 +113,13 @@ const config = {
       //     hideable: true,
       //   },
       // },
+      algolia: {
+        appId: "E70L5PUFYT",
+        apiKey: "f27eb312aa7906e875559a1c1b2126cd",
+        indexName: "first_index",
+        contextualSearch: true,
+        searchParameters: {},
+      },
       navbar: {
         title: "",
         logo: {
@@ -135,6 +142,10 @@ const config = {
             to: "changelog/",
             position: "left",
             label: "Changelog",
+          },
+          {
+            type: "search",
+            position: "right",
           },
         ],
       },
