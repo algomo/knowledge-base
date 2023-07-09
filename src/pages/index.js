@@ -44,7 +44,7 @@ export default function Home() {
       title={`${siteConfig.title}`}
       description="Learning resources to help you get started on Algomo.">
       <HomepageHeader />
-      <main>
+      <main className={styles.main}>
         <HomepageFeatures />
       </main>
     </Layout>

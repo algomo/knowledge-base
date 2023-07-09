@@ -44,3 +44,27 @@
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
 }
+.card__link {
+  border: 1px solid #5a5f71a3;
+  border-radius: 12px;
+  padding: 16px 0;
+  width: 100% !important;
+  flex: none !important;
+}
+.row {
+  display: grid;
+  width: 100%;
+  grid-gap: 12px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card__link:hover {
+  border: 1px solid #000;
+}
+[data-theme="dark"] .card__link:hover {
+  border: 1px solid #fff;
+}
+@media screen and (max-width: 960px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

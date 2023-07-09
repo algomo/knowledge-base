@@ -15,6 +15,10 @@
     padding: 2rem;
   }
 }
+.custom__bg h1,
+.custom__bg p {
+  color: #0e1a2f !important;
+}
 
 .arrow_button_wrap {
   color: #fff;
@@ -51,17 +55,21 @@
 }
 
 .custom__bg {
-  background: radial-gradient(circle, #feeaea 0%, #92befc 100%);
+  background: url(../../static/img/gradient.png) no-repeat center center;
   padding: 4rem 0;
   text-align: center;
+  background-color: #fff !important;
 }
-
-[data-theme="dark"] .custom__bg {
-  background: radial-gradient(circle, #0e1a2f 0%, #8ab8f9 100%);
-}
+/* [data-theme="dark"] .custom__bg {
+  background-color: #0e1a2f !important;
+} */
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+[data-theme="dark"] .main {
+  background-color: #0e1a2f !important;
 }

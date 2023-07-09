@@ -75,7 +75,7 @@ const plugins = [...docs_plugins];
 const meta = {
   title: "Knowledge Base",
   tagline: "",
-  favicon: "img/favicon.png",
+  favicon: "img/favicon-32x32.png",
   url: "https://algomo.com",
   baseUrl: "/",
   i18n: {

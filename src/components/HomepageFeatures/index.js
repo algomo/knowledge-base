@@ -49,7 +49,7 @@ function Feature({ img, title, description, link }) {
         textDecoration: "none",
         color: "inherit",
       }}
-      className={clsx("col col--4")}>
+      className={clsx(styles.card__link)}>
       <div className="text--center">
         <img className={styles.featureSvg} src={img} alt={title} />
       </div>
@@ -72,7 +72,7 @@ export default function HomepageFeatures() {
           }}>
           Features!
         </h1>
-        <div className="row">
+        <div className={styles.row}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
