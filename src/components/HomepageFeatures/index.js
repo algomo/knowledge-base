@@ -13,6 +13,15 @@ const FeatureList = [
     description: <>A guide to help you get started with algomo.</>,
   },
   {
+    title: "Quick Start",
+    link: "/changelog/2023/07/09/second-blog-post",
+    img: "img/changelog-white.png",
+    imgBlack: "img/changelog-black.png",
+    description: (
+      <>A changelog of all the updates and changes made to algomo.</>
+    ),
+  },
+  {
     title: "Documentation",
     img: "img/docs-white.png",
     imgBlack: "img/docs-black.png",
