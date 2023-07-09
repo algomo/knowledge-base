@@ -1,18 +1,21 @@
 import React from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
+import ThemedImage from "@theme/ThemedImage";
 import styles from "./styles.module.css";
 
 const FeatureList = [
   {
     title: "Guides",
-    img: "img/guide-book.png",
+    img: "img/guide-book-white.png",
+    imgBlack: "img/guide-book-black.png",
     link: "/guides",
     description: <>A guide to help you get started with algomo.</>,
   },
   {
     title: "Documentation",
-    img: "img/business-paperwork.png",
+    img: "img/docs-white.png",
+    imgBlack: "img/docs-black.png",
     link: "/docs",
     description: (
       <>
@@ -24,14 +27,15 @@ const FeatureList = [
   {
     title: "Changelog",
     link: "/changelog",
-    img: "img/notes.png",
+    img: "img/changelog-white.png",
+    imgBlack: "img/changelog-black.png",
     description: (
       <>A changelog of all the updates and changes made to algomo.</>
     ),
   },
 ];
 
-function Feature({ img, title, description, link }) {
+function Feature({ img, imgBlack, title, description, link }) {
   return (
     <Link
       to={link}
@@ -41,7 +45,14 @@ function Feature({ img, title, description, link }) {
       }}
       className={clsx(styles.card__link)}>
       <div className="text--center">
-        <img className={styles.featureSvg} src={img} alt={title} />
+        <ThemedImage
+          className={styles.featureSvg}
+          sources={{
+            light: imgBlack,
+            dark: img,
+          }}
+          alt={title}
+        />
       </div>
       <div className={styles.content}>
         <h2>{title}</h2>
