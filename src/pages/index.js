@@ -18,7 +18,7 @@ function HomepageHeader() {
           Automate and optimize your customer and employee support in 100+
           languages, in less than 3 minutes.
         </p>
-        <div className={styles.buttons}>
+        {/* <div className={styles.buttons}>
           <Link className={styles.arrow_button_wrap} to="/getting-started">
             <div class={styles.flexed_button_content}>
               <div>Get Started</div>
@@ -31,7 +31,7 @@ function HomepageHeader() {
               />
             </div>
           </Link>
-        </div>
+        </div> */}
       </div>
     </header>
   );

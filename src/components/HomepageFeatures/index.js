@@ -5,41 +5,43 @@ import ThemedImage from "@theme/ThemedImage";
 import styles from "./styles.module.css";
 
 const FeatureList = [
-  {
-    title: "Guides",
-    img: "img/guide-book-white.png",
-    imgBlack: "img/guide-book-black.png",
-    link: "/guides",
-    description: <>A guide to help you get started with algomo.</>,
-  },
+
   {
     title: "Quick Start",
-    link: "/changelog/2023/07/09/second-blog-post",
-    img: "img/changelog-white.png",
-    imgBlack: "img/changelog-black.png",
+    link: "/quick_start",
+    img: "img/quickstart_white.svg",
+    imgBlack: "img/quickstart_blue.svg",
     description: (
-      <>A changelog of all the updates and changes made to algomo.</>
+      <>New to Algomo? Click here to get started!</>
     ),
   },
+
+  {
+    title: "Guides",
+    img: "img/guide_white.svg",
+    imgBlack: "img/guide_blue.svg",
+    link: "/guides",
+    description: <>Learn how to make the most of Algomo.</>,
+  },
+
   {
     title: "Documentation",
-    img: "img/docs-white.png",
-    imgBlack: "img/docs-black.png",
+    img: "img/docs_white.svg",
+    imgBlack: "img/docs_blue.svg",
     link: "/docs",
     description: (
       <>
-        A complete documentation of algomo, including all the features and how
-        to use them.
+        A comprehensive documentation of Algomo
       </>
     ),
   },
   {
     title: "Changelog",
     link: "/changelog",
-    img: "img/changelog-white.png",
-    imgBlack: "img/changelog-black.png",
+    img: "img/changelog_white.svg",
+    imgBlack: "img/changelog_blue.svg",
     description: (
-      <>A changelog of all the updates and changes made to algomo.</>
+      <>Our product updates and journal.</>
     ),
   },
 ];
@@ -88,14 +90,14 @@ export default function HomepageFeatures() {
               textAlign: "center",
               marginBottom: "2rem",
             }}>
-            Quick Check!
+            {/* Quick Check! */}
           </h1>
           <div className={styles.row}>
             {FeatureList.map((props, idx) => (
               <Feature key={idx} {...props} />
             ))}
           </div>
-          <div
+          {/* <div
             style={{
               display: "flex",
               flexDirection: "column",
@@ -115,7 +117,7 @@ export default function HomepageFeatures() {
                 />
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
