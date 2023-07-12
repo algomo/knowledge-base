@@ -9,7 +9,7 @@
   height: 45px;
   width: 45px;
   object-fit: contain;
-  margin-right: 16px;
+  margin-right: 24px;
 }
 
 .arrow_button_wrap {
@@ -49,7 +49,7 @@
 .card__link {
   border: 1px solid #5a5f71a3;
   border-radius: 12px;
-  padding: 16px;
+  padding: 24px;
   width: 100% !important;
   flex: none !important;
   display: flex;
@@ -62,7 +62,7 @@
   width: 100%;
   grid-gap: 40px;
   grid-template-columns: 1fr 1fr;
-  padding: 0 64px;
+  padding: 0 74px;
 }
 .card__link:hover {
   border: 1px solid #000;
@@ -78,5 +78,13 @@
 
 .content {
   text-align: left;
-  width: 80%;
+  width: 90%;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content p {
+  padding: 0;
+  margin: 0;
 }
