@@ -63,6 +63,7 @@ article a,
 }
 
 [data-theme="dark"] .footer__link-item:hover,
+.footer__link-item:hover,
 [data-theme="dark"] article a,
 [data-theme="dark"] .table-of-contents__link--active {
   color: #ffffff !important;
