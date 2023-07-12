@@ -44,7 +44,6 @@ function Feature({ img, imgBlack, title, description, link }) {
       style={{
         textDecoration: "none",
         color: "inherit",
-        background: "rgba(0,0,0,.15)",
       }}
       className={clsx(styles.card__link)}>
       <div className="text--center">
