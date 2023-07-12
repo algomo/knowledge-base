@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 Welcome to the Zapier Integration Documentation! This guide will walk you through the process of integrating Zapier with your application, allowing you to automate tasks and connect various web applications with Algomo.
 
 ## What is Zapier?
@@ -21,5 +25,3 @@ To help you navigate through the documentation, here is a brief overview of the 
 Before diving into the specifics, it's recommended to have a basic understanding zapier. If you're new to these concepts, don't worry! We'll provide explanations and examples along the way.
 
 Let's begin by creating your first Zapier 'Zap' and exploring the possibilities of automation with Algomo and Zapier!
-
-[Continue to Getting Started ->](https://www.zapier.com)
