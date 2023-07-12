@@ -20,7 +20,7 @@ const docs = [
 
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
 const defaultSettings = {
-  breadcrumbs: false,
+  // breadcrumbs: false,
   showLastUpdateTime: true,
   // remarkPlugins: [
   //   [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
@@ -69,7 +69,7 @@ const config = {
   ...meta,
   plugins,
 
-  trailingSlash: false,
+  // trailingSlash: false,
   themes: ["@docusaurus/theme-live-codeblock"],
   onBrokenLinks: "ignore",
 
