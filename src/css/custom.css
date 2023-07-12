@@ -88,3 +88,7 @@ article a,
 .DocSearch-Hit[aria-selected="true"] a {
   background-color: #39475e !important;
 }
+
+footer.row.docusaurus-mt-lg {
+  margin-top: 0 !important;
+}
