@@ -5,15 +5,12 @@ import ThemedImage from "@theme/ThemedImage";
 import styles from "./styles.module.css";
 
 const FeatureList = [
-
   {
     title: "Quick Start",
     link: "/quick_start",
     img: "img/quickstart_white.svg",
     imgBlack: "img/quickstart_blue.svg",
-    description: (
-      <>New to Algomo? Click here to get started!</>
-    ),
+    description: <>New to Algomo? Click here to get started!</>,
   },
 
   {
@@ -29,20 +26,14 @@ const FeatureList = [
     img: "img/docs_white.svg",
     imgBlack: "img/docs_blue.svg",
     link: "/docs",
-    description: (
-      <>
-        A comprehensive documentation of Algomo
-      </>
-    ),
+    description: <>A comprehensive documentation of Algomo</>,
   },
   {
     title: "Changelog",
     link: "/changelog",
     img: "img/changelog_white.svg",
     imgBlack: "img/changelog_blue.svg",
-    description: (
-      <>Our product updates and journal.</>
-    ),
+    description: <>Our product updates and journal.</>,
   },
 ];
 
@@ -53,6 +44,7 @@ function Feature({ img, imgBlack, title, description, link }) {
       style={{
         textDecoration: "none",
         color: "inherit",
+        background: "rgba(0,0,0,.15)",
       }}
       className={clsx(styles.card__link)}>
       <div className="text--center">
