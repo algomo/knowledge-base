@@ -11,6 +11,11 @@ const docs = [
     path: "docs/docs",
     routeBasePath: "/docs",
   },
+  {
+    id: "quick_start",
+    path: "docs/quick_start",
+    routeBasePath: "/quick_start",
+  },
   // {
   //   id: "changelog",
   //   path: "docs/changelog",
