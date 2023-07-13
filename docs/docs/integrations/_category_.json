@@ -1,6 +1,6 @@
 {
 	"label": "Integrations",
-	"position": 5,
+	"position": 4,
 	"collapsible": true,
 	"link": {
 		"type": "generated-index"
