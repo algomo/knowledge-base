@@ -16,7 +16,8 @@ To help you navigate through the documentation, here is a brief overview of the 
 ## Table of Contents
 
 1. **Getting Started:** Learn the basics of Zapier, understand key concepts, and create your Zapier account.
-2. **Creating Your First Zap:** Step-by-step instructions to build your first Zap, including selecting triggers and actions, configuring settings, and testing.
+2. **Connecting Your Algomo Account:** Step-by-step instructions to connect your Algomo account to Zapier.
+3. **Creating Your First Zap:** Step-by-step instructions to build your first Zap, including selecting triggers and actions, configuring settings, and testing.
 
 ## Let's Get Started!
 
