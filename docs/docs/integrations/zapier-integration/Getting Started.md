@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-### Step 1: Familiarize Yourself with Zapier Terminology
+### Step 1: Familiarise Yourself with Zapier Terminology
 
 Before diving into creating Zaps, it's essential to understand the key concepts and terminology used in Zapier:
 
