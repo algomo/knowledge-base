@@ -246,6 +246,14 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  scripts: [
+    {
+      src: "https://app.algomo.com/algomo.min.js",
+      async: true,
+      widget: "64b26869eccc94a185db7f18",
+      defer: true,
+    },
+  ],
 };
 
 module.exports = config;
