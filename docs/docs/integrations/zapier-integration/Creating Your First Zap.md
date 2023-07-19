@@ -33,6 +33,6 @@ Customize your action by filling in the required fields. (For example, **"Channe
 
 Click on the **"Test"** button to test your action. This will send a message to the channel you specified in the previous step. Review the message and change it if necessary. Then click on the **"Restest action"** until you're happy. Then press the **"Publish"** button to finish.
 
-![test_action](./images/test_action.jpeg)
+---
 
-Congratulations, you've just created your first Zap! Now you can create more Zaps to automate tasks and connect Algomo with other applications.
+**Congratulations!** You've just created your first Zap! Now you can create more Zaps to automate tasks and connect Algomo with other applications.

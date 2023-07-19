@@ -2,15 +2,11 @@
 sidebar_position: 3
 ---
 
-## Connecting Algomo to Zapier
-
 Now that you have a Zapier account, you can connect your Algomo account to Zapier and start building Zaps.
 
 ### Step 1: Navigate to the Integrations Tab
 
 Go to [Algomo](https://app.algomo.com) > [Integrations](https://app.algomo.com/integrations) > [Zapier Integration](https://app.algomo.com/integrations/zapier)
-
-<!-- ![Algomo-integration](./images/integration_tab.png) -->
 
 ### Step 2: Start the Integration
 
@@ -28,7 +24,7 @@ On the new [Zapier](https://zapier.com/) tab go to [Dashboard](https://zapier.co
 
 In the **"Choose a Trigger App"** search box, type "Algomo" and select the latest Algomo app from the search results.
 
-![choose_algomo](./images/choose_algomo.png)
+![choose_app](./images/choose_algomo.png)
 
 ### Step 5: Choose a Trigger Event
 
@@ -52,4 +48,6 @@ Copy the Access token and paste it in the Zapier window. Then click on the "Yes,
 
 ![zapier_access](./images/zapier_access.png)
 
-**Congratulations, now you have access to all of your Algomo data and can start building Zaps to automate tasks and connect Algomo with other applications.**
+---
+
+**Congratulations!** Now you have access to all of your Algomo data and can start building Zaps to automate tasks and connect Algomo with other applications.
