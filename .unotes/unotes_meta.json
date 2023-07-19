@@ -1,0 +1,113 @@
+{
+  "name": "",
+  "isOrdered": true,
+  "folders": {
+    "docs": {
+      "name": "docs",
+      "isOrdered": true,
+      "folders": {
+        "changelog": {
+          "name": "changelog",
+          "isOrdered": true,
+          "folders": {
+            "assets": {
+              "name": "assets",
+              "isOrdered": true,
+              "folders": {
+                "images": {
+                  "name": "images",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                },
+                "videos": {
+                  "name": "videos",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                }
+              },
+              "files": {}
+            }
+          },
+          "files": {
+            "Our-first-Integrations": 0
+          }
+        },
+        "docs": {
+          "name": "docs",
+          "isOrdered": true,
+          "folders": {
+            "chatbots": {
+              "name": "chatbots",
+              "isOrdered": true,
+              "folders": {
+                "images": {
+                  "name": "images",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                }
+              },
+              "files": {
+                "Intents": 0,
+                "Data Sources": 1,
+                "Overview": 2,
+                "Websites": 3
+              }
+            },
+            "data-sources": {
+              "name": "data-sources",
+              "isOrdered": true,
+              "folders": {},
+              "files": {}
+            },
+            "images": {
+              "name": "images",
+              "isOrdered": true,
+              "folders": {},
+              "files": {}
+            },
+            "widgets": {
+              "name": "widgets",
+              "isOrdered": true,
+              "folders": {},
+              "files": {}
+            }
+          },
+          "files": {
+            "About Algomo": 0
+          }
+        },
+        "guides": {
+          "name": "guides",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        },
+        "quick_start": {
+          "name": "quick_start",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        }
+      },
+      "files": {}
+    },
+    "src": {
+      "name": "src",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "static": {
+      "name": "static",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    }
+  },
+  "files": {
+    "README": 0
+  }
+}

@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Intents
 
-An **intent** represents a high-level goal that a user has in mind when interacting with a conversational AI system. Intents represent the underlying intention behind a user's input. Or in other words, you can think of them as collections of similar phrases that represent the same goal
+Never miss a lead again! Connect Algomo to your HubSpot account and automatically save contact details received during conversations.An **intent** represents a high-level goal that a user has in mind when interacting with a conversational AI system. Intents represent the underlying intention behind a user's input. Or in other words, you can think of them as collections of similar phrases that represent the same goal
 
 Intent can be an inquiry about store hours, product availability, as well as frequently asked questions, guidelines, procedures, and actions.
 
@@ -25,22 +25,22 @@ If you have completed your onboarding, you will see that you already have two in
 
 An intent has 4 main fields
 
-| Field Name                               | Description                                                                                                      | Example             | Mandatory |
-| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------- | --------- |
-| Intent                                   | This is the name of the intent                                                                                   | ‘Pricing’           | Yes       |
-| Question                                 | This is a visitor-friendly way for the intent. This is very useful if we want to display this intent in a button | ‘What is the price’ | Yes       |
-| Alternative phrases                      | - These are in fact training data that help the bot map similar questions to the same intent.                    |
-| - Each entry is independent of the other | - ‘how expensive is the bot’                                                                                     |
+| Field Name | Description | Example | Mandatory |
+| ---------- | ----------- | ------- | --------- |
+| Intent | This is the name of the intent | ‘Pricing’ | Yes |
+| Question | This is a visitor-friendly way for the intent. This is very useful if we want to display this intent in a button | ‘What is the price’ | Yes |
+| Alternative phrases | \- These are in fact training data that help the bot map similar questions to the same intent\. |
+| \- Each entry is independent of the other | \- ‘how expensive is the bot’ |
 
-- ‘is algomo expensive’,
-- ‘do you cost a lot’ | No |
-  | Responses | Each response is a separate chat ‘bubble’ so everything you type in the responses section will be displayed sequentially. You can format the responses in markdown, and they will be rendered respectively. | Algomo is free for the first 20 monthly active users per month, and the first 2000 recorded sessions.
-  ——
-  That should be enough for most early-stage startups and small teams. If you need more, it will be $0.25 per monthly active user and 0.005 per recording.
-  ——
-  You can read more on our pricing page:
-  https://www.algomo.com/pricing
-  —— | Yes |
+* ‘is algomo expensive’,
+* ‘do you cost a lot’ \| No \|
+    \| Responses \| Each response is a separate chat ‘bubble’ so everything you type in the responses section will be displayed sequentially\. You can format the responses in markdown\, and they will be rendered respectively\. \| Algomo is free for the first 20 monthly active users per month\, and the first 2000 recorded sessions\.
+    ——
+    That should be enough for most early-stage startups and small teams. If you need more, it will be $0.25 per monthly active user and 0.005 per recording.
+    ——
+    You can read more on our pricing page:
+    https://www.algomo.com/pricing
+    —— \| Yes \|
 
 When you ‘save’ the changes of the intent, these are stored in the database. However, if you want these changes to be live, you need to enable the ‘live’ button
 

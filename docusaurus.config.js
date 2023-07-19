@@ -11,6 +11,11 @@ const docs = [
     path: "docs/docs",
     routeBasePath: "/docs",
   },
+  {
+    id: "quick_start",
+    path: "docs/quick_start",
+    routeBasePath: "/quick_start",
+  },
   // {
   //   id: "changelog",
   //   path: "docs/changelog",
@@ -20,7 +25,7 @@ const docs = [
 
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
 const defaultSettings = {
-  breadcrumbs: false,
+  // breadcrumbs: false,
   showLastUpdateTime: true,
   // remarkPlugins: [
   //   [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
@@ -69,7 +74,7 @@ const config = {
   ...meta,
   plugins,
 
-  trailingSlash: false,
+  // trailingSlash: false,
   themes: ["@docusaurus/theme-live-codeblock"],
   onBrokenLinks: "ignore",
 
@@ -241,6 +246,14 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  scripts: [
+    {
+      src: "https://app.algomo.com/algomo.min.js",
+      async: true,
+      widget: "64b26869eccc94a185db7f18",
+      defer: true,
+    },
+  ],
 };
 
 module.exports = config;
