@@ -9,7 +9,6 @@ Welcome to the Zapier Integration Documentation! This guide will walk you throug
 [Zapier](https://www.zapier.com) is a web automation tool that enables you to create automated workflows, known as "Zaps," which connect different apps and services. By integrating Zapier into your application, you can streamline your processes, save time, and increase productivity.
 
 This documentation will provide you with step-by-step instructions, examples to help you get started with Zapier integration. Whether you're a developer or a non-technical user, this guide will assist you in setting up Zaps, configuring triggers and actions, and troubleshooting common issues.
-Table of Contents
 
 To help you navigate through the documentation, here is a brief overview of the sections covered.
 
