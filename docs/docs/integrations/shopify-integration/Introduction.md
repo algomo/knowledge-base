@@ -46,7 +46,7 @@ To help you navigate through this documentation, here's an overview of the cover
 ## Table of Contents
 
 1. [**Connect your store:**](Connect%20your%20store.md) Learn how to connect your Shopify store to Algomo.
-2.
+2. [**Install Widget:**](Install%20Widget.md) Learn how to install Algomo's chat widget on your Shopify store.
 
 ## Let's Get Started!
 

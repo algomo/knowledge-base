@@ -19,8 +19,8 @@ Ensure you have a Shopify account. If you don't already, you can create one [her
 4. You will be redirected to shopify. Make sure you are logged in to your shopify account.
 5. Finish the shopify steps to install Algomo to your store.
 6. Once you’re done, you will be redirected back to Algomo. You should see your store listed in the **"Shopify Integration"** section.
-
-![connected_stores](./images/add_widget.png)
+7. Select the widget you want to install.
+   ![connected_stores](./images/add_widget.png)
 
 ### Install widget to your store
 
