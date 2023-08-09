@@ -4,13 +4,7 @@ Let's get you setup with Shopify!
 
 Ensure you have a Shopify account. If you don't already, you can create one [here](https://www.shopify.com/).
 
-### If you’re a new Algomo customer
-
-1. Navigate to [Algomo](https://app.algomo.com/) > [Sign Up](https://app.algomo.com/signup).
-2. Finish the onboarding.
-3. Continue with the steps below.
-
-### If you’re an existing Algomo customer
+### Connect your store to Algomo
 
 1. Sign in to your account.
 2. Navigate to [Algomo](https://app.algomo.com/) > [Integrations](https://app.algomo.com/integrations) > [Shopify](https://app.algomo.com/integrations/shopify).

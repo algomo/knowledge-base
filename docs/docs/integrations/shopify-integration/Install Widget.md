@@ -14,8 +14,3 @@ You can install a widget to your Shopify store in the widget installation settin
 
 You will need to add the widget to your store theme to see it in action. You can do this by navigating to the **"Theme"** tab and pressing the **"Add to theme"** button. Or simply press the **"Take me to Shopify"** button and we will handle it for you.
 ![installed_widgets](./images/shopify_storefront.png)
-
-### Remove widget from your store
-
-- You can remove a widget from your Shopify store in the widget installation settings. You can also quickly jump to installation settings for a widget and press uninstall.
-  ![remove_widget](./images/remove_shopify.png)
