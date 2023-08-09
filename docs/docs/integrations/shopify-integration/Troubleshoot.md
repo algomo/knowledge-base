@@ -1,7 +1,8 @@
 ### Remove widget from your store
 
-- You can remove a widget from your Shopify store in the widget installation settings. You can also quickly jump to installation settings for a widget and press uninstall.
-  ![remove_widget](./images/remove_shopify.png)
+You can remove a widget from your Shopify store in the widget installation settings. You can also quickly jump to installation settings for a widget and press uninstall.
+
+![remove_widget](./images/remove_shopify.png)
 
 ### Installation unsuccessful/incomplete
 
