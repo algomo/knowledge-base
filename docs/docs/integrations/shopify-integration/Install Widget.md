@@ -6,7 +6,6 @@ You can install a widget to your Shopify store in the widget installation settin
 2. Select the widget you want to install.
 3. Navigate to the **"Installation"** tab of your widget.
    ![installation](./images/installation.png)
-
 4. If you have a Shopify store connected to Algomo, you will see a **"Shopify"** pop-up.
    ![shopify_section](./images/install_shopify.png)
 5. Press the install button and viola! Your widget is now installed to your store.

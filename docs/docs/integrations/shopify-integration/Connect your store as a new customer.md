@@ -17,6 +17,4 @@ Ensure you have a Shopify account. If you don't already, you can create one [her
 7. We will take it from there and enable the Algomo widget on your store.
    ![shopify_store](./images/shopify_storefront.png)
 
-### Congratulations!
-
 Congratulations! You've just connected your store to Algomo and installed the widget. Now you can start using Algomo to increase your sales.
