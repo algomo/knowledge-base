@@ -9,4 +9,9 @@ A data source is any collection of ‘static’ information which might be in th
 
 ## Types of Data sources
 
-There are three main types of data sources
+There are three main types of data sources:
+ - Intents
+ - Websites
+ - Documents
+
+Each one of these data sources has a different lifecycle

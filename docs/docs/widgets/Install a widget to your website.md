@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: "How to install a widget on your website"
 ---
 
 ## Step 1: Get your widget Embed Script code
