@@ -58,10 +58,10 @@ const plugins = [...docs_plugins];
 
 /** @type {import('@docusaurus/types').Config} */
 const meta = {
-  title: "Knowledge Base",
+  title: "Algomo documentation",
   tagline: "",
   favicon: "img/favicon-32x32.png",
-  url: "https://algomo.com",
+  url: "https://help.algomo.com",
   baseUrl: "/",
   i18n: {
     defaultLocale: "en",
@@ -110,7 +110,7 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    {
       // Replace with your project's social card
       image: "img/favicon.png",
       // docs: {
@@ -125,6 +125,12 @@ const config = {
         contextualSearch: true,
         searchParameters: {},
       },
+
+      metadata: [
+        {name: 'keywords', content: 'Algomo, Algomo documentation'},
+        {property: 'og:url', content: 'https://help.algomo.com/'}
+      ],
+
       navbar: {
         title: "",
         logo: {
@@ -245,7 +251,7 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-    }),
+    },
   scripts: [
     {
       src: "https://app.algomo.com/algomo.min.js",
