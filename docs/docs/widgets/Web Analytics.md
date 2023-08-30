@@ -1,4 +1,4 @@
-Trackin enables you something.
+Widget analytics capabilites let you track how your visitors interact with the chat widget
 
 ## Events
 
