@@ -19,11 +19,11 @@ Currently, there's no way to track custom events. If you need to track custom ev
 
 ## Google Tag Manager
 
+### Prerequisites
+
+In order to use Google Tag Manager tracking, **you need to fist have Google Tag Manager installed on your website.** If you don't have Google Tag Manager installed, you can refer to [this guide](https://support.google.com/tagmanager/answer/6103696?hl=en) to get started.
+
 ### Installation
-
-In order to use Google Tag Manager tracking, **you need to fist have Google Tag Manager installed on your website.**
-
-If you don't have Google Tag Manager installed, you can refer to [this guide](https://support.google.com/tagmanager/answer/6103696?hl=en) to get started.
 
 To enable Google Tag Manager tracking:
 
@@ -61,7 +61,7 @@ You can now use the variable in your tags (i.e. to send the widget ID to Google 
 
 In order to test Google Tag Manager tracking, you first need to install the widget on your website. Refer to [this guide](./Install%20a%20widget%20to%20your%20website.md) to learn how to do it.
 
-1. Make sure to enabled the Google Tag Manager tracking option in the widget settings.
+1. Make sure to enable the Google Tag Manager tracking option in the widget settings.
 2. Enter [Preview mode](https://support.google.com/tagmanager/answer/6103696?hl=en) in Google Tag Manager and put a link to a page with your widget installed.
 3. Once the page and widget have loaded, trigger an event, i.e. by sending a message. Refer to the table in the [Events](#events) section to see how to trigger each event.
 4. In Google Tag Manager, you should see a new event ending with "(Algomo Widget)" in the "Summary" tab.
@@ -74,11 +74,13 @@ Make sure you've enabled the Google Tag Manager tracking option in the widget se
 
 ## Google Analytics
 
-### Installation
+### Prerequisites
 
 In order to use Google Analytics tracking, **you need to first have Google Analytics installed on your website.**
 
 If you don't have Google Analytics installed, you can refer to [this guide](https://support.google.com/analytics/answer/9304153?hl=en) to get started.
+
+### Installation
 
 To enable Google Analytics tracking:
 
