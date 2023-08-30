@@ -2,7 +2,7 @@ Trackin enables you something.
 
 ## Events
 
-We track the following events:
+We track the following chat widget events:
 
 | Event                                     | Event specific parameters           | Description                                                                             |
 | ----------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------- |
@@ -25,21 +25,13 @@ To enable Google Tag Manager tracking:
 
 1. Navigate to the [Widgets page](https://app.algomo.com/widgets).
 2. Pick a widget you want to edit.
-3. Click on the "Web Analytics" tab
+3. Click on the "Web Analytics" tab.
 4. Enable the Google Tag Manager tracking option.
 5. Save the widget.
 
 There's no additional configuration required, **but you need to have Google Tag Manager installed on your website.**
 
 If you don't have Google Tag Manager installed, you can refer to [this guide](https://support.google.com/tagmanager/answer/6103696?hl=en) to get started.
-
-### Testing
-
-1. Install widget on your site. Refer to docs...
-2. Make sure to enabled the Google Tag Manager tracking option in the widget settings.
-3. Enter [Preview mode](https://support.google.com/tagmanager/answer/6103696?hl=en) in Google Tag Manager and put a link to a page with your widget installed.
-4. Once the page and widget have loaded, trigger an event, i.e. by sending a message. Refer to the table in the [Events](#events) section to see how to trigger each event.
-5. In Google Tag Manager, you should see a new event ending with "(Algomo Widget)" in the "Summary" tab.
 
 ### Usage
 
@@ -65,8 +57,58 @@ You can use event parameters as variables in Google Tag Manager:
 
 You can now use the variable in your tags (i.e. to send the widget ID to Google Analytics) and triggers (i.e. to trigger a tag when a specific widget is used).
 
+### Testing
+
+In order to test Google Tag Manager tracking, you first need to install the widget on your website. Refer to [this guide](./Install%20a%20widget%20to%20your%20website.md) to learn how to do it.
+
+1. Make sure to enabled the Google Tag Manager tracking option in the widget settings.
+2. Enter [Preview mode](https://support.google.com/tagmanager/answer/6103696?hl=en) in Google Tag Manager and put a link to a page with your widget installed.
+3. Once the page and widget have loaded, trigger an event, i.e. by sending a message. Refer to the table in the [Events](#events) section to see how to trigger each event.
+4. In Google Tag Manager, you should see a new event ending with "(Algomo Widget)" in the "Summary" tab.
+
 ### Troubleshooting
 
 #### I don't see any events in Google Tag Manager
 
 Make sure you've enabled the Google Tag Manager tracking option in the widget settings.
+
+## Google Analytics
+
+### Installation
+
+To enable Google Analytics tracking:
+
+1. Navigate to the [Widgets page](https://app.algomo.com/widgets).
+2. Pick a widget you want to edit.
+3. Click on the "Web Analytics" tab.
+4. Enable the Google Analytics tracking option.
+5. Save the widget.
+
+There's no additional configuration required, **but you need to have Google Analytics installed on your website.**
+
+If you don't have Google Analytics installed, you can refer to [this guide](https://support.google.com/analytics/answer/9304153?hl=en) to get started.
+
+### Usage
+
+Once you've enabled Google Analytics tracking, you will start receiving events in your Google Analytics account.
+
+### Testing
+
+In order to test Google Analytics tracking, you first need to install the widget on your website. Refer to [this guide](./Install%20a%20widget%20to%20your%20website.md) to learn how to do it.
+
+1. Make sure to enabled the Google Analytics tracking option in the widget settings.
+2. Enter [Realtime mode](https://support.google.com/analytics/answer/1638635?hl=en) in Google Analytics.
+3. Open your website with your widget installed and trigger an event, i.e. by sending a message. Refer to the table in the [Events](#events) section to see how to trigger each event.
+4. In Google Analytics tab, you should see a new event ending with "(Algomo Widget)".
+
+Keep in mind that it can take up to 24 hours for events to appear in Google Analytics.
+
+An alternative way to test Google Analytics tracking is to use the [Debug view](https://support.google.com/analytics/answer/7201382?hl=en).
+
+### Troubleshoting
+
+#### I don't see any events in Google Analytics
+
+Make sure you've enabled the Google Analytics tracking option in the widget settings.
+
+Keep in mind that it can take up to 24 hours for events to appear in Google Analytics.
