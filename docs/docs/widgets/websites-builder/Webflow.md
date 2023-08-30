@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: ""
 ---
 
 Embedding a chat widget for Webflow is a simple process that can be completed in a few easy steps. There are two ways to do it:
