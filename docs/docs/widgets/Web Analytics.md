@@ -4,14 +4,14 @@ Trackin enables you something.
 
 We track the following chat widget events:
 
-| Event name                                | Event specific parameters                        | Description                                                                             |
-| ----------------------------------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------- |
-| Message sent (Algomo Widget)              | `messageId`, `messageLanguage`, `conversationId` | When a user sends a message in the Algomo widget.                                       |
-| Conversation started (Algomo Widget)      | `conversationId`, `conversationLanguage`         | When a user starts a conversation in the Algomo widget.                                 |
-| Contact details submitted (Algomo Widget) | -                                                | When a user submits their contact details in the Algomo widget.                         |
-| Link clicked (Algomo Widget)              | `href`, `label`                                  | When a user clicks a link in the Algomo widget, either in a message or message sources. |
+| Event name                                | Event specific parameters                        | Description                                                                                                                                                                           |
+| ----------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Message sent (Algomo Widget)              | `messageId`, `messageLanguage`, `conversationId` | When a user sends a message in the Algomo widget.                                                                                                                                     |
+| Conversation started (Algomo Widget)      | `conversationId`, `conversationLanguage`         | When a user starts a conversation in the Algomo widget.                                                                                                                               |
+| Contact details submitted (Algomo Widget) | -                                                | When a user submits their contact details in the Algomo widget. Keep in mind that this event might get triggered multiple times by a single user, i.e. when they update their details |
+| Link clicked (Algomo Widget)              | `href`, `label`                                  | When a user clicks a link in the Algomo widget, either in a message or message sources.                                                                                               |
 
-All events have the following standard parameters: `widgetId`, `userName`, `userEmail`, `userPhone`, `userCompanyName`, `userBrowser`, `userMainLanguage`, `userLanguages`, `userPlatform`, `userTimeZone`
+All events also have the following parameters: `widgetId`, `userName`, `userEmail`, `userPhone`, `userCompanyName`, `userBrowser`, `userMainLanguage`, `userLanguages`, `userPlatform`, `userTimeZone`. Some of them might be empty.
 
 ### Custom events
 
@@ -21,17 +21,17 @@ Currently, there's no way to track custom events. If you need to track custom ev
 
 ### Installation
 
+In order to use Google Tag Manager tracking, **you need to fist have Google Tag Manager installed on your website.**
+
+If you don't have Google Tag Manager installed, you can refer to [this guide](https://support.google.com/tagmanager/answer/6103696?hl=en) to get started.
+
 To enable Google Tag Manager tracking:
 
 1. Navigate to the [Widgets page](https://app.algomo.com/widgets).
-2. Pick a widget you want to edit.
+2. Pick a widget you want to add Google Tag Manager tracking to.
 3. Click on the "Web Analytics" tab.
 4. Enable the Google Tag Manager tracking option.
 5. Save the widget.
-
-There's no additional configuration required, **but you need to have Google Tag Manager installed on your website.**
-
-If you don't have Google Tag Manager installed, you can refer to [this guide](https://support.google.com/tagmanager/answer/6103696?hl=en) to get started.
 
 ### Usage
 
@@ -76,17 +76,17 @@ Make sure you've enabled the Google Tag Manager tracking option in the widget se
 
 ### Installation
 
+In order to use Google Analytics tracking, **you need to first have Google Analytics installed on your website.**
+
+If you don't have Google Analytics installed, you can refer to [this guide](https://support.google.com/analytics/answer/9304153?hl=en) to get started.
+
 To enable Google Analytics tracking:
 
 1. Navigate to the [Widgets page](https://app.algomo.com/widgets).
-2. Pick a widget you want to edit.
+2. Pick a widget you want to add Google Analytics tracking to.
 3. Click on the "Web Analytics" tab.
 4. Enable the Google Analytics tracking option.
 5. Save the widget.
-
-There's no additional configuration required, **but you need to have Google Analytics installed on your website.**
-
-If you don't have Google Analytics installed, you can refer to [this guide](https://support.google.com/analytics/answer/9304153?hl=en) to get started.
 
 ### Usage
 
