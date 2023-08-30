@@ -4,12 +4,12 @@ Trackin enables you something.
 
 We track the following chat widget events:
 
-| Event                                     | Event specific parameters           | Description                                                                             |
-| ----------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------- |
-| Message sent (Algomo Widget)              | `conversationId`, `messageLanguage` | When a user sends a message in the Algomo widget.                                       |
-| Conversation started (Algomo Widget)      | `conversationLanguage`              | When a user starts a conversation in the Algomo widget.                                 |
-| Contact details submitted (Algomo Widget) | -                                   | When a user submits their contact details in the Algomo widget.                         |
-| Link clicked (Algomo Widget)              | `href`, `label`                     | When a user clicks a link in the Algomo widget, either in a message or message sources. |
+| Event name                                | Event specific parameters                        | Description                                                                             |
+| ----------------------------------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| Message sent (Algomo Widget)              | `messageId`, `messageLanguage`, `conversationId` | When a user sends a message in the Algomo widget.                                       |
+| Conversation started (Algomo Widget)      | `conversationId`, `conversationLanguage`         | When a user starts a conversation in the Algomo widget.                                 |
+| Contact details submitted (Algomo Widget) | -                                                | When a user submits their contact details in the Algomo widget.                         |
+| Link clicked (Algomo Widget)              | `href`, `label`                                  | When a user clicks a link in the Algomo widget, either in a message or message sources. |
 
 All events have the following standard parameters: `widgetId`, `userName`, `userEmail`, `userPhone`, `userCompanyName`, `userBrowser`, `userMainLanguage`, `userLanguages`, `userPlatform`, `userTimeZone`
 
