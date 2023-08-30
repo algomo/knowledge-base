@@ -96,6 +96,8 @@ To enable Google Analytics tracking:
 
 Once you've enabled Google Analytics tracking, you will start receiving events in your Google Analytics account.
 
+Make sure to have the Algomo widget installed on your website. Refer to [this guide](./Install%20a%20widget%20to%20your%20website.md) to learn how to do it.
+
 ### Testing
 
 In order to test Google Analytics tracking, you first need to install the widget on your website. Refer to [this guide](./Install%20a%20widget%20to%20your%20website.md) to learn how to do it.
