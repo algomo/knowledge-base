@@ -23,6 +23,8 @@ Currently, there's no way to track custom events. If you need to track custom ev
 
 In order to use Google Tag Manager tracking, **you need to fist have Google Tag Manager installed on your website.** If you don't have Google Tag Manager installed, you can refer to [this guide](https://support.google.com/tagmanager/answer/6103696?hl=en) to get started.
 
+Make sure to also install the Algomo widget on your website. Refer to [this guide](./Install%20a%20widget%20to%20your%20website.md) to learn how to do it.
+
 ### Installation
 
 To enable Google Tag Manager tracking:
@@ -70,15 +72,15 @@ In order to test Google Tag Manager tracking, you first need to install the widg
 
 #### I don't see any events in Google Tag Manager
 
-Make sure you've enabled the Google Tag Manager tracking option in the widget settings.
+Make sure you've enabled the Google Tag Manager tracking option in the widget settings and the Algomo widget installed on your website.
 
 ## Google Analytics
 
 ### Prerequisites
 
-In order to use Google Analytics tracking, **you need to first have Google Analytics installed on your website.**
+In order to use Google Analytics tracking, **you need to first have Google Analytics installed on your website.** If you don't have Google Analytics installed, you can refer to [this guide](https://support.google.com/analytics/answer/9304153?hl=en) to get started.
 
-If you don't have Google Analytics installed, you can refer to [this guide](https://support.google.com/analytics/answer/9304153?hl=en) to get started.
+Make sure to also install the Algomo widget on your website. Refer to [this guide](./Install%20a%20widget%20to%20your%20website.md) to learn how to do it.
 
 ### Installation
 
@@ -111,6 +113,6 @@ An alternative way to test Google Analytics tracking is to use the [Debug view](
 
 #### I don't see any events in Google Analytics
 
-Make sure you've enabled the Google Analytics tracking option in the widget settings.
+Make sure you've enabled the Google Analytics tracking option in the widget settings and the Algomo widget installed on your website.
 
 Keep in mind that it can take up to 24 hours for events to appear in Google Analytics.
