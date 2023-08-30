@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: Learn how to enable Google Analytics tracking for your widget.
 ---
 
 ## Prerequisites

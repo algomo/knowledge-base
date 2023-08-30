@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+description: Learn what events we track and how to use them in your web analytics tools.
 ---
 
-Widget analytics capabilites let you track how your visitors interact with the chat widget.
+Widget analytics capabilites let you track how your visitors interact with the chat widget
 
 ## Events
 

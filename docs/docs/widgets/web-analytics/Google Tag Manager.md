@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: Learn how to enable Google Tag Manager tracking for your widget.
 ---
 
 ## Prerequisites
