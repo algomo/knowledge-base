@@ -19,4 +19,4 @@ All events also have the following parameters: `widgetId`, `userName`, `userEmai
 
 ### Custom events
 
-Currently, there's no way to track custom events. If you need to track custom events, please contact us. You can use our widget in the bottom right corner.
+Tracking custom events is not supported currently. If you'd like to track custom events, please get in touch via [email](mailto:support@algomo.com) or chat with us directly through the widget in the bottom corner.
