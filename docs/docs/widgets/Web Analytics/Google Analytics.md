@@ -30,7 +30,7 @@ In order to test Google Analytics tracking, you first need to install the widget
 
 1. Make sure to enabled the Google Analytics tracking option in the widget settings.
 2. Enter [Realtime mode](https://support.google.com/analytics/answer/1638635?hl=en) in Google Analytics.
-3. Open your website with your widget installed and trigger an event, i.e. by sending a message. Refer to the events table in the [Overview](./Overview) page to see how to trigger each event.
+3. Open your website with your widget installed and trigger an event, e.g. by sending a message. Refer to the events table in the [Overview](./Overview) page to see how to trigger each event.
 4. In Google Analytics tab, you should see a new event ending with "(Algomo Widget)".
 
 Keep in mind that it can take up to 24 hours for events to appear in Google Analytics.
