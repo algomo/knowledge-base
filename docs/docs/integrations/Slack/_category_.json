@@ -1,6 +1,6 @@
 {
-	"label": "Zapier",
-	"position": 1,
+	"label": "Slack",
+	"position": 2,
 	"collapsible": true,
 	"link": {
 		"type": "generated-index"
