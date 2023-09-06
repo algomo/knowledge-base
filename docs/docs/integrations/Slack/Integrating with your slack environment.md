@@ -22,4 +22,8 @@ By integrating Algomo with Slack, you can streamline your workflow, improve comm
 
 Go to [Algomo](https://app.algomo.com) > [Integrations](https://app.algomo.com/integrations) > [Slack Integration](https://app.algomo.com/integrations/slack) to connect your slack account to Algomo.
 
+**Note:** You need to be an admin of the slack workspace to authorise Algomo.
+
+You will be redirected to slack to authorise Algomo to access your slack workspace with the permissions. Click on **Allow** to authorise Algomo.
+
 Once this has been completed you will be get a slack channel setup for you to receive notifications from Algomo. All new conversations will be sent to this channel. You can change the name of the channel in slack and it will be reflected in Algomo.
