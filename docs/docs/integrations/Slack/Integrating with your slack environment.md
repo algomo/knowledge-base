@@ -20,10 +20,12 @@ By integrating Algomo with Slack, you can streamline your workflow, improve comm
 
 ### Integration setup
 
-Go to [Algomo](https://app.algomo.com) > [Integrations](https://app.algomo.com/integrations) > [Slack Integration](https://app.algomo.com/integrations/slack) to connect your slack account to Algomo.
-
 **Note:** You need to be an admin of the slack workspace to authorise Algomo.
 **Note:** In slack workplace settings, you need to ensure **Everyone, except guest** option in **Who can send these invitations** under **Slack Connect Channels** is selected to authorise Algomo.
+
+#### Prerequisites
+
+Go to [Algomo](https://app.algomo.com) > [Integrations](https://app.algomo.com/integrations) > [Slack Integration](https://app.algomo.com/integrations/slack) to connect your slack account to Algomo.
 
 You will be redirected to slack to authorise Algomo to access your slack workspace with the permissions. Click on **Allow** to authorise Algomo.
 
