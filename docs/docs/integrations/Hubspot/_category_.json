@@ -1,0 +1,8 @@
+{
+	"label": "Hubspot",
+	"position": 3,
+	"collapsible": true,
+	"link": {
+		"type": "generated-index"
+	}
+}
