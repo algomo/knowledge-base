@@ -20,7 +20,7 @@ Each of these data source types follows a distinct lifecycle and serves a unique
 
 ## Intents: Training Your Bot
 
-Intents are among the most commonly used data sources. They serve as the foundation for training your bot to respond to queries. Users can create intents, and these can be assigned to specific bots. A bot can be associated with multiple intents, allowing for versatile conversational abilities.
+Intents are question and answer pairs that are used to train your bot. They are a simple and effective way to teach your bot how to answer questions. Users can create intents, and these can be assigned to specific bots. A bot can be associated with multiple intents, allowing for versatile conversational abilities.
 
 ### Understanding Intent Creation
 
