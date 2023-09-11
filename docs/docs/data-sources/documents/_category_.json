@@ -1,8 +1,0 @@
-{
-	"label": "Documents",
-	"position": 1,
-	"collapsible": true,
-	"link": {
-		"type": "generated-index"
-	}
-}
