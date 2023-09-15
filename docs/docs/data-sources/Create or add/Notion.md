@@ -14,3 +14,7 @@ Notion data-sources can be added within Algomo by navigating to [**Algomo**](htt
 5. You will be redirected to Algomo.
 6. We will fetch the data from your Notion pages and display, this may take a few minutes depending on the size of your documents.
 7. Once the data has been fetched, you can add the data source to your bot.
+
+---
+
+Your Notion data source is now ready to be used by your bot. See [Using Data Sources](../Using%20Data%20Sources.md) for more information on how to use your data sources.
