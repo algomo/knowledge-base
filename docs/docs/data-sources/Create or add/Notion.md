@@ -8,9 +8,9 @@ Notion data-sources can be added within Algomo by navigating to [**Algomo**](htt
 ### Adding Notion Data Sources
 
 1. Navigate to [**Algomo**](https://app.algomo.com/) > [**Data Sources**](https:app.algomo.com/data-sources) > [Create](https://app.algomo.com/data-sources/create/integations).
-2. Find the Notion integration and press the **"Add Source"** button. This will open a new window where you can add your Notion document.
+2. Find the Notion integration and press the **Add Source** button. This will open a new window where you can add your Notion document.
 3. Choose you account and select the pages you want to add.
-4. Press the **"Allow access"** button to grant Algomo access to your selected Notion pages.
+4. Press the **Allow access** button to grant Algomo access to your selected Notion pages.
 5. You will be redirected to Algomo.
 6. We will fetch the data from your Notion pages and display, this may take a few minutes depending on the size of your documents.
 7. Once the data has been fetched, you can add the data source to your bot.
