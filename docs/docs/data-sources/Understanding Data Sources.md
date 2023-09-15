@@ -15,16 +15,17 @@ There are three primary types of data sources within the system:
 - **Intents**
 - **Websites**
 - **Documents**
+- **Notion**
 
 Each of these data source types follows a distinct lifecycle and serves a unique purpose in the system. Let's explore each of them in greater detail.
 
-## Intents: Training Your Bot
+## Intents:
 
 Intents are question and answer pairs that are used to train your bot. They are a simple and effective way to teach your bot how to answer questions. Users can create intents, and these can be assigned to specific bots. A bot can be associated with multiple intents, allowing for versatile conversational abilities.
 
 ### Understanding Intent Creation
 
-Intents are crafted within Algomo by navigating to [**Algomo**](https://app.algomo.com/) > [**Data Sources**](https:app.algomo.com/data-sources) > [Create](https://app.algomo.com/data-sources/create/intent-group). Here you can create a new intent group and add intents to it.
+Intents are made within Algomo by navigating to [**Algomo**](https://app.algomo.com/) > [**Data Sources**](https:app.algomo.com/data-sources) > [Create](https://app.algomo.com/data-sources/create/intent-group). Here you can create a new intent group and add intents to it.
 
 Intents are comprised of two primary components: Questions and Answers
 ![Intent Structure](./images/intents.png)
@@ -43,7 +44,7 @@ Intents are comprised of two primary components: Questions and Answers
 
 Adding these intents to your bot will allow it to answer questions about algorithms. You can also add more complex answers, such as links to websites or PDF documents.
 
-## Websites: Providing Context
+## Websites:
 
 Websites serve as another valuable data source category. They enrich your bot's responses by connecting to available online information. If your website contains relevant content, you can utilise it to enhance your bot's answers. With Algomo, you have the capability to gather data from websites that can be searched using Bing, and then scrape this data. This collected information can be used to address inquiries and provide direct links to it.
 
@@ -53,7 +54,7 @@ Additionally, Algomo provides the option to prevent specific webpages from being
 
 This data source is versatile and allows you to re-scrape the website whenever necessary to keep your data up to date.
 
-## Documents: More Than Just PDFs
+## Documents:
 
 Documents are another valuable data source category. They allow you to upload files which can be used to answer questions or provide additional context for your bot's responses.
 Algomo currently supports the following document types:
@@ -61,5 +62,6 @@ Algomo currently supports the following document types:
 - PDF
 - Text
 - Markdown
+- **_Notion_** - For more information on how to integrate Notion with Algomo, please refer to the [Notion](./Documents/Notion) documentation.
 
 These can be uploaded directly to the system and then used to answer questions or provide additional context for your bot's responses.
