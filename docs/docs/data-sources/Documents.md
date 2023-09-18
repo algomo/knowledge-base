@@ -20,4 +20,4 @@ These can be uploaded directly within algomo and attached to your bot.
 
 ---
 
-Your data source is now ready to be used by your bot. See [Usage](../Overview#usage.md) for more information on how to use your data sources.
+Your data source is now ready to be used by your bot. See [Usage](./Overview#usage.md) for more information on how to use your data sources.

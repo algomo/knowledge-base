@@ -3,7 +3,7 @@ Intents are question and answer pairs that are used to train your bot. They are 
 ### Intent structure
 
 Intents are comprised of two primary components: Questions and Answers
-![Intent Structure](../images/intents.png)
+![Intent Structure](./images/intents.png)
 
 **Questions** are the queries that users will ask your bot. They can be phrased in a variety of ways, and the system will attempt to match them to the appropriate intent. For example, if you were creating an intent for a bot that answers questions about algorithms, you might include questions such as:
 
@@ -46,4 +46,4 @@ An intent has 4 main fields
 
 ---
 
-Your data source is now ready to be used by your bot. See [Usage](../Overview#usage.md) for more information on how to use your data sources.
+Your data source is now ready to be used by your bot. See [Usage](./Overview#usage.md) for more information on how to use your data sources.
