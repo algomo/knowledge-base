@@ -1,6 +1,6 @@
 Intents are question and answer pairs that are used to train your bot. They are a simple and effective way to teach your bot how to answer questions. Users can create intents, and these can be assigned to specific bots. A bot can be associated with multiple intents, allowing for versatile conversational abilities.
 
-### Intent Structure
+### Intent structure
 
 Intents are comprised of two primary components: Questions and Answers
 ![Intent Structure](../images/intents.png)
@@ -19,7 +19,18 @@ Intents are comprised of two primary components: Questions and Answers
 
 Adding these intents to your bot will allow it to answer questions about algorithms. You can also add more complex answers, such as links to websites or PDF documents.
 
-### Intent Creation
+### Intent fields
+
+An intent has 4 main fields
+
+| Field Name          | Description                                                                                                      | Example                                                                                                                                                                                       | Mandatory |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| Name                | This is the name of the intent                                                                                   | _Pricing_                                                                                                                                                                                     | Yes       |
+| Question            | This is a visitor-friendly way for the intent. This is very useful if we want to display this intent in a button | _What is the price_                                                                                                                                                                           | Yes       |
+| Alternative phrases | \- These are in fact training data that help the bot map similar questions to the same intent\.                  | _Is Algomo expensive?_                                                                                                                                                                        | No        |
+| Responses           | This is the response that the bot will give when the intent is triggered.                                        | _Algomo is FREE forever for up to 20 conversations per month. After that, our plans start from as low as $9 per month. You can read more on our pricing page: https://www.algomo.com/pricing_ | Yes       |
+
+### Intent creation
 
 1. Once you have created your intent group, you can add intents to it.
 2. Navigate to [**Algomo**](https://app.algomo.com/) > [**Data Sources**](https:app.algomo.com/data-sources)
