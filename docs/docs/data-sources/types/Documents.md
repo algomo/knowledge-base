@@ -1,8 +1,11 @@
-For document data sources, you can upload files in the following formats:
+Documents are uploaded files with content used to answer questions or provide additional context for your bot's responses.
+Algomo currently supports the following document types:
 
 - PDF
-- Markdown
 - Text
+- Markdown
+
+These can be uploaded directly within algomo and attached to your bot.
 
 ### Prerequisites
 
@@ -17,4 +20,4 @@ For document data sources, you can upload files in the following formats:
 
 ---
 
-Your file will now be uploaded to Algomo and you can add it to your bot. See [Using Data Sources](../Using%20Data%20Sources.md) for more information on how to use your data sources.
+Your data source is now ready to be used by your bot. See [Usage](../Overview#usage.md) for more information on how to use your data sources.
