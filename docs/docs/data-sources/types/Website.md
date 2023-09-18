@@ -1,9 +1,6 @@
 Website data sources enrich your bot's responses by connecting to available online information. If your website contains relevant content, you can utilise it to enhance your bot's answers. We have have the capability to gather data from websites that can be searched using Bing, and then scrape this data. This collected information can be used to address inquiries and provide direct links to it.
 
 Algomo has the capacity to extract data from hundreds of pages on a website, ensuring you have access to the information you require.
-
-Additionally, Algomo provides the option to prevent specific webpages from being scraped. This feature is particularly useful when you have webpages containing sensitive information or when you prefer not to include certain pages in the indexing process.
-
 This data source is versatile and allows you to re-scrape the website whenever necessary to keep your data up to date.
 
 Website data sources can be created in two ways:
