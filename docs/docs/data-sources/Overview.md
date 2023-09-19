@@ -10,14 +10,14 @@ Understanding how data sources work is fundamental to configuring your bot effec
 
 ## Types of Data Sources
 
-There are three primary types of data sources within the system:
+There are four primary types of data sources within the system:
 
 - [**Intents**](./Types/Intents.md)
 - [**Documents**](./Types/Documents.md)
 - [**Website**](./Types/Website.md)
 - [**Notion**](./Types/Notion.md)
 
-Each of these data source types follows a distinct lifecycle and serves a unique purpose in the system. Let's explore each of them in greater detail.
+Let's explore each of them in greater detail. to Click on the links above to explore how to create your data sources.
 
 ## Usage
 
