@@ -29,7 +29,7 @@ There are two modes to website data sources:
 
 ### Caveats
 
-- If you are protected by CloudFlare, we may not be able to scrape your website information. In this case, downloading your website content and uploading as a file might work better.
+- If you are protected by CloudFlare, we may not be able to scrape your website information. In this case, downloading your website content and uploading as a file may work better.
 - Scrape only downloads textual information, Algomo currently does not save images. However, links to images embedded within chunks of text will be saved.
 
 ---
