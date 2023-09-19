@@ -4,7 +4,7 @@ sidebar_position: 1
 
 ## Introduction to Data Sources
 
-In this section, we'll explore the concept of data sources within ALGOMO. Data sources play a crucial role in providing information for bots to answer questions. Think of them as the building blocks of knowledge that make up your bot. These sources can take various forms, such as PDF documents, structured Question and Answers (intents), website searches (via Bing or index versions), and more.
+In this section, we'll explore the concept of data sources within Algomo. Data sources play a crucial role in providing information for bots to answer questions. Think of them as the building blocks of knowledge that make up your bot. These sources can take various forms, such as PDF documents, structured Question and Answers (intents), website searches (via Bing or scraped version), and more.
 
 Understanding how data sources work is fundamental to configuring your bot effectively. In the following sections, we will delve into the different types of data sources and how they are integrated into the system's workflow.
 
