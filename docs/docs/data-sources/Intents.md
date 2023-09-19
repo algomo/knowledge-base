@@ -32,10 +32,22 @@ An intent has 4 main fields
 
 ### Intent creation
 
+Intents are created within intent groups. An intent group is a collection of intents that are related to each other. For example, if you were creating an intent group for a bot that answers questions about algorithms, you might want all of the intents in that group to be related to algorithms. You can create as many intent groups as you like, and each intent group can contain as many intents as you like.
+
+#### Creating an intent group
+
+1. Navigate to [**Algomo**](https://app.algomo.com/) > [**Data Sources**](https:app.algomo.com/data-sources)
+2. Click on the **Create new datasource** button.
+3. Navigate to the [**Intents**](httos://app.algomo.com/data-sources/create/intent-group) tab.
+4. Enter a name for your intent group.
+5. Click on the **Create intent group button** button.
+
+#### Adding intents to an intent group
+
 1. Once you have created your intent group, you can add intents to it.
 2. Navigate to [**Algomo**](https://app.algomo.com/) > [**Data Sources**](https:app.algomo.com/data-sources)
 3. Select the intent group you want to add intents to.
-4. Click on the **"Create Intent"** button and name your intent.
+4. Click on the **Create Intent** button and name your intent.
 5. Open your intent
 6. In the **Question** field, enter the question you want your bot to answer.
 7. Optionally add an **Alternative Phrase(s)** to your intent. This will allow your bot to answer similar questions.

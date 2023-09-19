@@ -11,7 +11,7 @@ These can be uploaded directly within algomo and attached to your bot.
 
 - Files have to be less than 26MB in size.
 
-### Adding Document Data Sources
+### Create new data source
 
 1. Navigate to [**Algomo**](https://app.algomo.com/) > [**Data Sources**](https:app.algomo.com/data-sources) > [**Upload File**](https://app.algomo.com/data-sources/create/upload-file).
 2. Click on **Browse files** and select the file you want to upload.
