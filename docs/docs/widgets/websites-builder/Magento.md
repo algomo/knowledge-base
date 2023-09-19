@@ -27,4 +27,4 @@ Click the **Footer** option on the default store view page.
 
 ![Magento](../images/magento/Untitled%203.png)
 
-Open your Magento website, and the Algomo chat widget will be loaded along with your Magento bot.
+Open your Magento website, and the Algomo chat widget will be loaded along with your Magento chatbot.

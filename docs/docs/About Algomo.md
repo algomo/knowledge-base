@@ -12,10 +12,10 @@ Our technology can use your existing knowledge base, and APIs to engage in meani
 The end-to-end flow of Algomo is the following:
 
 1. The **user** sends a message to Algomo using any **conversation** **channels** you connect to. Conversations can be initiated through Algomo’s Chat Widget, Facebook Messenger, Viber, and many more channels.
-2. All conversations from a channel are forwarded to an **inbox**, where they are assigned to a **human agent**, or by a **bot.**
-3. A bot can reply to every message based on information found in **data** **sources**, and live information that can be found in **tools**
+2. All conversations from a channel are forwarded to an **inbox**, where they are assigned to a **human agent**, or by a **chatbot.**
+3. A chatbot can reply to every message based on information found in **data** **sources**, and live information that can be found in **tools**
 4. A **data source** can be the content of a public website, notion pages (like this one!), docx files, **intents,** pdfs, and many other documents
-5. **A tool** is a programmatic way for the bot to interact with a company’s or external systems, for example, ordering a pizza.
+5. **A tool** is a programmatic way for the chatbot to interact with a company’s or external systems, for example, ordering a pizza.
 
 ![Architecture](./images/algomo-architecture.png)
 

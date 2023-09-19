@@ -1,4 +1,4 @@
-Website data sources enrich your bot's responses by connecting to available online information. If your website contains relevant content, you can utilise it to enhance your bot's answers. We have the capability to gather data from websites that can be searched using Bing or scrape this data. This collected information can be used to address inquiries and provide direct links to it.
+Website data sources enrich your chatbot's responses by connecting to available online information. If your website contains relevant content, you can utilise it to enhance your chatbot's answers. We have the capability to gather data from websites that can be searched using Bing or scrape this data. This collected information can be used to address inquiries and provide direct links to it.
 
 Algomo has the capacity to extract data from thousands of pages on a website, ensuring your visitors have access to the information they require.
 This data source allows you to re-scrape the website whenever necessary to keep your data up to date.
@@ -34,4 +34,4 @@ There are two modes to website data sources:
 
 ---
 
-Your data source is now ready to be used by your bot. See [Usage](./Overview#usage.md) for more information on how to use your data sources.
+Your data source is now ready to be used by your chatbot. See [Usage](./Overview#usage.md) for more information on how to use your data sources.

@@ -1,11 +1,11 @@
-Documents are uploaded files with content used to answer questions or provide additional context for your bot's responses.
+Documents are uploaded files with content used to answer questions or provide additional context for your chatbot's responses.
 Algomo currently supports the following document types:
 
 - PDF
 - Text
 - Markdown
 
-These can be uploaded directly within Algomo and attached to your bot.
+These can be uploaded directly within Algomo and attached to your chatbot.
 
 ### Prerequisites
 
@@ -20,4 +20,4 @@ These can be uploaded directly within Algomo and attached to your bot.
 
 ---
 
-Your data source is now ready to be used by your bot. See [Usage](./Overview.md#usage) for more information on how to use your data sources.
+Your data source is now ready to be used by your chatbot. See [Usage](./Overview.md#usage) for more information on how to use your data sources.
