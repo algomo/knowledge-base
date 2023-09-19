@@ -1,4 +1,4 @@
-Intents are question and answer pairs that are used to train your bot. They are a simple and effective way to teach your bot how to answer questions. Users can create intents, and these can be assigned to specific bots. A bot can be associated with multiple intents, allowing for versatile conversational abilities.
+Intents are question and answer pairs that are used to train your bot. They are a simple and effective way to teach your bot how to answer questions.
 
 ### Intent structure
 
@@ -54,7 +54,6 @@ Intents are created within intent groups. An intent group is a collection of int
 8. In the **Responses** field, enter the response(s) you want your bot to give.
 9. On the **Not Live** toggle, turn on the toggle to make your intent live.
 10. Save your intent.
-11. Repeat steps 4-10 for each intent you want to add to your intent group.
 
 ---
 

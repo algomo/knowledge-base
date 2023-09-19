@@ -5,7 +5,7 @@ Algomo currently supports the following document types:
 - Text
 - Markdown
 
-These can be uploaded directly within algomo and attached to your bot.
+These can be uploaded directly within Algomo and attached to your bot.
 
 ### Prerequisites
 
@@ -20,4 +20,4 @@ These can be uploaded directly within algomo and attached to your bot.
 
 ---
 
-Your data source is now ready to be used by your bot. See [Usage](./Overview#usage.md) for more information on how to use your data sources.
+Your data source is now ready to be used by your bot. See [Usage](./Overview.md#usage) for more information on how to use your data sources.
