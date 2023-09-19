@@ -1,4 +1,4 @@
-Notion data-sources can be added within Algomo by navigating to [**Algomo**](https://app.algomo.com/) > [**Data Sources**](https:app.algomo.com/data-sources) > [Create](https://app.algomo.com/data-sources/create/integations). Here you can add your notion document and then use it to answer questions or provide additional context for your bot's responses.
+Allow your bot to access data from your Notion documentation with Notion data sources. This will create a snapshot of your Notion pages and save them within Algomo.
 
 ### Prerequisites
 
@@ -14,6 +14,8 @@ Notion data-sources can be added within Algomo by navigating to [**Algomo**](htt
 5. You will be redirected to Algomo.
 6. We will fetch the data from your Notion pages and display, this may take a few minutes depending on the size of your documents.
 7. Once the data has been fetched, you can add the data source to your bot.
+
+**Note:** At the moment, Algomo does not sync your Notion Data Sources automatically. To update your bot's knowledge base with the latest content on Notion, create a new snapshot using the steps above, and assign it to your bot. Don't forget to remove outdated content!
 
 ---
 
