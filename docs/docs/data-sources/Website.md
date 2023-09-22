@@ -11,7 +11,7 @@ There are two modes to website data sources:
 
 - **Scrape** - This option allows you to save the information on your website pages within Algomo.
   - Requires manual updating by clicking **Refresh** on the data source.
-  - Limited to 200 pages (optional upgrade available)
+  - Limited to 200 pages (optional upgrade available, contact us)
 - **Search** - This option allows you to search the website and return results.
   - Instant setup
   - Updates automatically
