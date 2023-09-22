@@ -15,7 +15,7 @@ Intents are comprised of two primary components: Questions and Answers
 - What is a sorting algorithm?
 - What is a binary search algorithm?
 
-**Answers** are the responses that your chatbot will provide when a user asks a question. They can be simple text responses or more complex, such as a link to a website or a PDF document. For example, if you were creating an intent for a chatbot that answers questions about the weather, you might include answers such as:
+**Answers** are the responses that your chatbot will provide when a user asks a question. They can be simple text responses or more complex, such as a link to a website or a PDF document. For example, if you were creating an intent for a chatbot that answers questions about algorithms, you might include answers such as:
 
 - An algorithm is a set of instructions for solving a problem or performing a task.
 - A sorting algorithm is an algorithm that puts elements of a list in a certain order.
