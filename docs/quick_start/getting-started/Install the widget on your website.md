@@ -14,4 +14,4 @@ Then navigate to the **installation tab and copy the snippet**.
 
 In order to install this on your website, you just need to add this code inside the head tag of your website. For more detailed instructions, check here
 
-That’s it! With this, you’ve got a fully functional bot, working on your website data, in under 3 minutes!
+That’s it! With this, you’ve got a fully functional chatbot, working on your website data, in under 3 minutes!
