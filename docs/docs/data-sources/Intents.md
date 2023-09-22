@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 Intents are question and answer pairs that are used to train your chatbot. They are a simple and effective way to teach your chatbot how to answer questions.
 
 ### Intent structure

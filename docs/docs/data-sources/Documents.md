@@ -1,4 +1,7 @@
-Documents are uploaded files with content used to answer questions or provide additional context for your chatbot's responses.
+---
+sidebar_position: 3
+---
+
 Algomo currently supports the following document types:
 
 - PDF

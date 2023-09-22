@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 Allow your chatbot to access data from your Notion documentation with Notion data sources. This will create a snapshot of your Notion pages and save them within Algomo.
 
 ### Prerequisites
