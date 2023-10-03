@@ -127,8 +127,8 @@ const config = {
       },
 
       metadata: [
-        {name: 'keywords', content: 'Algomo, Algomo documentation'},
-        {property: 'og:url', content: 'https://help.algomo.com/'}
+        { name: "keywords", content: "Algomo, Algomo documentation" },
+        { property: "og:url", content: "https://help.algomo.com/" },
       ],
 
       navbar: {
@@ -258,6 +258,10 @@ const config = {
       async: true,
       widget: "64b26869eccc94a185db7f18",
       defer: true,
+    },
+    {
+      src: "/js/amplitude.js",
+      async: false,
     },
   ],
 };
