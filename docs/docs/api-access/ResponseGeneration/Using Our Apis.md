@@ -89,7 +89,7 @@ You can infer the chatbot ID from the URL when browsing a bot by copying it from
 ```typescript
 {
   // Generated response
-  message: "The sky is blue";
+  message: "Algomo is a customer service company.";
 
   metadata: {
     // The conversationId the response was generated for, if none was provided this will be generated for you
@@ -97,15 +97,17 @@ You can infer the chatbot ID from the URL when browsing a bot by copying it from
 
     // The queries that we're generated based on the message your requested a response to
     generatedQueries: [
-      "What colour is the sky?"
+      "What is Algomo?",
+      "What services does Algomo offer?",
+      "What does Algomo do?"
     ];
 
     // The infromation chunks that were used to inform the bot response
     responseContext: [
       {
-        id: "google.com/weather",
+        id: "algomo.com/about",
         type: "website",
-        text: "The colour of the sky today was reported to be blue"
+        text: "We're unlocking access to digital knowledge. Our mission is to democratise access to digital information across every channel, language and geography. Our simple yet powerful platform empowers customers and employees instantly resolve any query, with the least amount of human effort."
       }
     ];
   }
