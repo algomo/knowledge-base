@@ -95,7 +95,7 @@ You can infer the chatbot ID from the URL when browsing a bot by copying it from
     // The conversationId the response was generated for, if none was provided this will be generated for you
     conversationId: "custom-conversation-id";
 
-    // The queries that we're generated based on the message your requested a response to
+    // The queries that were generated based on the message your requested a response to
     generatedQueries: [
       "What is Algomo?",
       "What services does Algomo offer?",
