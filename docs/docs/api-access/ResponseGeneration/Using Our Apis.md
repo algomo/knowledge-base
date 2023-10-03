@@ -13,7 +13,8 @@ Before diving into API calls, please make sure the below is completed:
 3. **You have assigned the datasources to your bot**: Head to [the chatbots page](https://app.algomo.com/bots).
 3. **You have generated a token**: Head to [the organisation settings](https://app.algomo.com/settings/general).
 
-It is recommended that you test your chatbot responses and add/tweak data sources as needed until your satisfied with the responses
+It is recommended that you test your chatbot responses and add/tweak data sources as needed until your satisfied with the responses.
+This can be done by assigning your chatbot to a widget and entering test mode.
 
 
 ## API Endpoint Details
