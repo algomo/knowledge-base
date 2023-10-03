@@ -74,6 +74,7 @@ This can be done by assigning your chatbot to a widget and entering test mode.
 - **401 Unauthorized**: Access unauthorized due to invalid token.
 - **404 Not Found**: Specified bot ID not found.
 - **400 Validation Error**: Data validation failure.
+- **429 Validation Error**: Rate limiting.
 - **500 Internal Server Error**: Unspecified server error, contact support.
 
 
