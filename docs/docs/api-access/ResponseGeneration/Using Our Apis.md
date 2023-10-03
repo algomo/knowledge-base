@@ -79,7 +79,7 @@ You can infer the chatbot ID from the URL when browsing a bot by copying it from
 - **401 Unauthorized**: Access unauthorized due to invalid token.
 - **404 Not Found**: Specified bot ID not found.
 - **400 Validation Error**: Data validation failure.
-- **429 Validation Error**: Rate limiting.
+- **429 Too Many Requests Error**: Rate limiting.
 - **500 Internal Server Error**: Unspecified server error, contact support.
 
 
