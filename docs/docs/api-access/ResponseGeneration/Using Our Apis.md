@@ -21,6 +21,7 @@ This can be done by assigning your chatbot to a widget and entering test mode.
 ### Things to be aware of
 - **Rate limits**: There are rate limits of 5 messages per minute
 - **Token validity**: Only one token can be valid at once, generating a new one will invalidate all others.
+- **Maximum Message Size**: The message you generate a response for cannot exceed 1000 characters.
 
 ### How do I get my chatbot ID?
 You can infer the chatbot ID from the URL when browsing a bot by copying it from the URL
