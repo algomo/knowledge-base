@@ -1,5 +1,9 @@
 # Generating Responses To Messages
 
+## What is this?
+
+This feature enables you to directly interact with our AI engine, bypassing the traditional widget interface for a more headless approach. By offering this level of access, you can tackle complex use-cases, customizing their AI customer service strategies with greater flexibility and control.
+
 ## Prerequisites
 
 Before diving into the API, ensure the following:
@@ -18,6 +22,7 @@ Perform preliminary tests on your chatbot and adjust your data sources as needed
 - **Rate Limits**: A limit of 5 messages per minute is enforced.
 - **Token Rules**: Only one token can be active at a time.
 - **Payload Size Limit**: Messages must not exceed 1000 characters.
+- **Tools**: You may have seen some of the exciting work we're doing with tools. Currently this is not accessible via our APIs.
 
 ### Identifying Your Chatbot ID
 
@@ -36,6 +41,11 @@ Find the chatbot ID in the URL while browsing your bot's page.
 - **botId**: The identifier for the chatbot.
 - **conversationId (optional)**: A user-defined identifier for threading conversations.
 - **messageText**: The message that you wish to generate a response for.
+
+### The Importance of Providing a `conversationId`:
+
+Including a `conversationId` empowers the AI to contextualize conversations by referencing prior exchanges within the same conversational thread. To illustrate, suppose an initial message to the AI indicates the user is in London. A subsequent query about local time would then be contextualized by the bot, leveraging the `conversationId` to ascertain the user's location and provide a more accurate response.
+
 
 ### Example Request Payload
 
