@@ -39,12 +39,9 @@ Find the chatbot ID in the URL while browsing your bot's page.
 
 - **Authorization Header**: Use the Bearer token for authentication in the Authorization header.
 - **botId**: The identifier for the chatbot.
-- **conversationId (optional)**: A user-defined identifier for threading conversations.
 - **messageText**: The message that you wish to generate a response for.
-
-### The Importance of Providing a `conversationId`:
-
-Including a `conversationId` empowers the AI to contextualize conversations by referencing prior exchanges within the same conversational thread. To illustrate, suppose an initial message to the AI indicates the user is in London. A subsequent query about local time would then be contextualized by the bot, leveraging the `conversationId` to ascertain the user's location and provide a more accurate response.
+- **conversationId (optional)**: A user-defined identifier for threading conversations.
+  - This allows the bot to refer to previous messages when responding, providing more contextually relevant answers. If conversationId isn't provided, one will be generated for you
 
 
 ### Example Request Payload
