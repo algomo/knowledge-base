@@ -57,8 +57,7 @@ Find the chatbot ID in the URL while browsing your bot's page.
 ##### cURL Request
 
 ```
-curl 
---location 
+curl --location \ 
 --request POST 'https://app.algomo.com/api/v2/external/api-access/get-bot-response' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
