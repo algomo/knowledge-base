@@ -1,4 +1,4 @@
-# Generating Bot Responses with Algomo API
+# Generating Responses To Messages
 
 ## Prerequisites
 
