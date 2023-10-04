@@ -2,7 +2,7 @@
 
 ## What is this?
 
-This feature enables you to directly interact with our AI engine, bypassing the traditional widget interface for a more headless approach. By offering this level of access, you can tackle complex use-cases, customizing their AI customer service strategies with greater flexibility and control.
+This feature enables you to directly interact with our AI engine, bypassing the traditional widget interface for a more headless approach. By offering this level of access, you can tackle complex use-cases, customizing your AI customer service strategies with greater flexibility and control.
 
 ## Prerequisites
 
