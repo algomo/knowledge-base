@@ -22,7 +22,7 @@ Perform preliminary tests on your chatbot and adjust your data sources as needed
 - **Rate Limits**: A limit of 5 messages per minute is enforced.
 - **Token Rules**: Only one token can be active at a time.
 - **Payload Size Limit**: Messages must not exceed 1000 characters.
-- **Tools**: You may have seen some of the exciting work we're doing with tools. Currently this is not accessible via our APIs.
+- **Behaviour/Tools**: This endpoint will only generate responses to messages. Side effects (such as sending emails or escalating conversations) will not be triggered.
 
 ### Identifying Your Chatbot ID
 
