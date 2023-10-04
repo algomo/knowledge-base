@@ -1,74 +1,65 @@
-# Generating bot responses
+# Generating Bot Responses with Algomo API
 
-## Introduction
+## Prerequisites
 
-...
+Before diving into the API, ensure the following:
 
-## Preliminaries:
+1. **Create a Chatbot**: Navigate to [Algomo's chatbots dashboard](https://app.algomo.com/bots).
+2. **Add Data Sources**: Visit [the data sources dashboard](https://app.algomo.com/data-sources).
+3. **Assign Data Sources**: Link the data sources to your chatbot through [the chatbots dashboard](https://app.algomo.com/bots).
+4. **Generate an API Token**: Obtain your API token from [the organization settings page](https://app.algomo.com/settings/general).
 
-Before diving into API calls, please make sure the below is completed:
+Perform preliminary tests on your chatbot and adjust your data sources as needed. Use test mode after linking your chatbot to a widget.
 
-1. **You have created a chatbot**: Head to [the chatbots page](https://app.algomo.com/bots).
-2. **You have added datasources**: Head to [the datasources page](https://app.algomo.com/data-sources)
-3. **You have assigned the datasources to your bot**: Head to [the chatbots page](https://app.algomo.com/bots).
-3. **You have generated a token**: Head to [the organisation settings](https://app.algomo.com/settings/general).
+## API Endpoint Specifications
 
-It is recommended that you test your chatbot responses and add/tweak data sources as needed until your satisfied with the responses.
-This can be done by assigning your chatbot to a widget and entering test mode.
+### Considerations
 
+- **Rate Limits**: A limit of 5 messages per minute is enforced.
+- **Token Rules**: Only one token can be active at a time.
+- **Payload Size Limit**: Messages must not exceed 1000 characters.
 
-## API Endpoint Details
-### Things to be aware of
-- **Rate limits**: There are rate limits of 5 messages per minute
-- **Token validity**: Only one token can be valid at once, generating a new one will invalidate all others.
-- **Maximum Message Size**: The message you generate a response for cannot exceed 1000 characters.
+### Identifying Your Chatbot ID
 
-### How do I get my chatbot ID?
-You can infer the chatbot ID from the URL when browsing a bot by copying it from the URL
+Find the chatbot ID in the URL while browsing your bot's page.
 
 ![Chatbot ID](./images/ChatbotID.png)
 
+## API Call for Bot Response Generation
 
-### Generating Bot Responses: 
-`POST`
-`https://app.algomo.com/api/v2/external/api-access/get-bot-response`
+**HTTP Method**: `POST`  
+**Endpoint**: `https://app.algomo.com/api/v2/external/api-access/get-bot-response`
 
-#### Request Payload Structure
+### Request Payload Schema
 
-- **token (string)**: Your authentication token.
-- **botId (string)**: Identifier for the chatbot you're querying.
-- **customConversationId (string - optional)**: A custom identifier for the conversation, allows the bot to use previous messages for context.
-- **messageText (string)**: The text of the message you're seeking a response to.
+- **Authorization Header**: Use the Bearer token for authentication in the Authorization header.
+- **botId**: The identifier for the chatbot.
+- **conversationId (optional)**: A user-defined identifier for threading conversations.
+- **messageText**: The message that you wish to generate a response for.
 
-#### Example Request Payload
+### Example Request Payload
 
-##### Structure
 ```typescript
 {
-  // Token copied from organisation settings
-    "token": "{TOKEN}", 
-
-    // The chatbot you want to use to respond to your message
-    "botId": "{CHATBOT_ID}", 
-
-    // your own conversationId to allow responses to take conversational context into account
-    "customConversationId": "{MY_OWN_CONVERSATION_ID}", 
-
-    // The message you want the bot to respond to
-    "messageText": "{MY_MESSAGE}" 
+  "botId": "{CHATBOT_ID}", 
+  "conversationId": "{MY_OWN_CONVERSATION_ID}", 
+  "messageText": "{MY_MESSAGE}" 
 }
+
 ```
 ##### cURL Request
 
-```cURL
-  curl --location --request POST 'http://app.algomo/api/v2/external/api-access/get-bot-response' \
-  --header 'Content-Type: application/json' \
-  --header 'Accept: application/json' \
+```
+curl 
+--location 
+--request POST 'https://app.algomo.com/api/v2/external/api-access/get-bot-response' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json' \
+--header 'Authorization: Bearer {TOKEN}' \
   --data-raw '
   {
-        "token": "{TOKEN}",
         "botId": "{CHATBOT_ID}",
-        "customConversationId": "{MY_OWN_CONVERSATION_ID}",
+        "conversationId": "{MY_OWN_CONVERSATION_ID}",
         "messageText": "{MY_MESSAGE}"
   }
   '
@@ -77,9 +68,9 @@ You can infer the chatbot ID from the URL when browsing a bot by copying it from
 #### Response Types
 
 - **200 OK**: Successful request, with a bot-generated response returned.
+- **400 Validation Error**: Data validation failure.
 - **401 Unauthorized**: Access unauthorized due to invalid token.
 - **404 Not Found**: Specified bot ID not found.
-- **400 Validation Error**: Data validation failure.
 - **429 Too Many Requests Error**: Rate limiting.
 - **500 Internal Server Error**: Unspecified server error, contact support.
 
