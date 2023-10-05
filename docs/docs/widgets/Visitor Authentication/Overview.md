@@ -31,7 +31,7 @@ Navigate to [Settings → General → Visitor Authentication](https://app.algomo
 
 Whenever a user is authorised in your application, encrypt their data using your secret, and include the token in the response to the client.
 
-#### JavaScript
+#### JavaScript/TypeScript
 
 Using [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) package.
 
