@@ -8,12 +8,14 @@ Visitor Authentication lets you link Algomo visitors to your own users.
 - Prevents bad actors from impersonating your users
 - Visitor conversations are preserved between devices
 
-## How does it work
+## Notes
 
 ID is the primary key.
 
 Supported fields: id, name, email, companyId, companyNamy
 Custom fields are not supported yet.
+
+Keep expiration time short, regenerate token on each request. Token is used only for the initial handshake.
 
 ## Set-up
 
@@ -46,7 +48,7 @@ const user = {
 
 const visitorToken = jwt.sign(user, secret, {
   algorithm: "HS256",
-  expiresIn: "10h",
+  expiresIn: "30s",
 });
 ```
 
@@ -64,7 +66,7 @@ user = {
     "email": "john@example.com",
 }
 
-visitor_token = jwt.encode(user, secret, algorithm='HS256', expires_in=36000)
+visitor_token = jwt.encode(user, secret, algorithm='HS256', expires_in=30)
 ```
 
 #### Rust
@@ -90,7 +92,7 @@ fn main() {
 
     let expiration = SystemTime::now()
         .duration_since(SystemTime::UNIX_EPOCH).unwrap()
-        .as_secs() + 36000; // 10 hours from now
+        .as_secs() + 30; // 30 seconds from now
 
     let user = User {
         id: 1,
@@ -113,7 +115,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import java.util.Date;
 
 String secret = "<YOUR_ALGOMO_SECRET>";
-long expirationTime = 36000000; // 10 hours in milliseconds
+long expirationTime = 30000; // 30 seconds in milliseconds
 
 String visitorToken = Jwts.builder()
     .claim("id", 1)
@@ -170,10 +172,9 @@ user = {
   email: 'john@example.com'
 }
 
-expiration_time = Time.now.to_i + 36000 # 10 hours from now
+expiration_time = Time.now.to_i + 30 # 30 seconds from now
 
 visitor_token = JWT.encode(user.merge({exp: expiration_time}), secret, 'HS256')
-
 ```
 
 #### Forward visitor token to the Algomo widget
