@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-Widget analytics capabilites let you track how your visitors interact with the chat widget
+Widget analytics capabilites let you track how your visitors interact with the chat widget.
 
 ## Events
 
