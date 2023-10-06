@@ -34,6 +34,8 @@ To set up Visitor Authentication, you need to:
 
 Navigate to [Widgets](https://app.algomo.com/settings/general?highlight=visitor-authentication) in Algomo, pick a widget, and click on the "Installation" tab. You will find your encryption secret under "Visitor Authentication" section.
 
+In case your secret is compromised, you can generate a new one at any time. This will invalidate the old secret, and you will need to update your server code.
+
 ### 2. Encrypt your user data on the server
 
 Whenever a user is authorised in your application, encrypt their data using your secret, and include the token in the response to the client.
