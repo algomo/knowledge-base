@@ -8,12 +8,13 @@ Visitor Authentication lets you link Algomo visitors to your own users.
 - Prevents bad actors from impersonating your users
 - Visitor conversations are preserved between devices
 
-## Notes
+## How it works
 
-ID is the primary key.
+Data about your users is securely transmitted to the widget.
 
-Supported fields: id, name, email, companyId, companyNamy
-Custom fields are not supported yet.
+We link the visitor to your user based on the `id` field. If the visitor is not linked to a user, we create a new user.
+
+Anonymous visitors can be promoted to authenticated visitors by providing a visitor token. Once a visitor is linked to a user, their conversations cannot be accessed without authentication.
 
 ## Set-up
 
@@ -45,8 +46,38 @@ On client side, include the encrypted visitor token in each page you want to use
 
 You can place the snippet anywhere in your HTML page, but make sure it happens before the widget is initialised.
 
-### Best practices
+## Supported fields
 
-- Use a short expiration time for the token, e.g. 30 seconds. This token is used only during widget initialisation, and should not be reused.
+- id
+- name
+- email
+- companyId
+- companyName
 
-##
+ID is the only required field. It is used to link the visitor to your user -- different ID means a different user.
+
+Fields can be either strings or numbers.
+
+### Example
+
+```json
+{
+  "id": 1,
+  "name": "John Doe",
+  "email": "john@example.com",
+  "companyId": 1,
+  "companyName": "Acme Inc."
+}
+```
+
+### Custom fields
+
+Custom fields are not supported yet. Please contact us if you need this feature.
+
+## Best practices
+
+- Use a short expiration time for the token, e.g. 30 seconds. This token is used only during widget initialisation. A new token should be generated for each page load.
+
+## Troubleshooting
+
+(We should probably return some meaningful errors when visitor authentication fails)
