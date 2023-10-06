@@ -39,7 +39,7 @@ On client side, include the encrypted visitor token in each page you want to use
 ```html
 <script>
   window.algomoSettings = {
-    visitorToken: <GENERATED_VISITOR_TOKEN>
+    authToken: <GENERATED_VISITOR_TOKEN>
   }
 </script>
 ```
@@ -51,12 +51,13 @@ You can place the snippet anywhere in your HTML page, but make sure it happens b
 - id
 - name
 - email
+- avatar
 - companyId
 - companyName
 
 ID is the only required field. It is used to link the visitor to your user — different ID means a different user.
 
-Fields can be either strings or numbers.
+All fields must be strings.
 
 ### Example
 
@@ -65,6 +66,7 @@ Fields can be either strings or numbers.
   "id": 1,
   "name": "John Doe",
   "email": "john@example.com",
+  "avatar: "https://example.com/avatar.png",
   "companyId": 1,
   "companyName": "Acme Inc."
 }
@@ -81,3 +83,7 @@ Custom fields are not supported yet. Please contact us if you need this feature.
 ## Troubleshooting
 
 (We should probably return some meaningful errors when visitor authentication fails)
+
+- ID doesn't exist
+- Incorrect structure
+- Extra fields?

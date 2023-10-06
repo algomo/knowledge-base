@@ -13,7 +13,7 @@ const user = {
   email: "john@example.com",
 };
 
-const visitorToken = jwt.sign(user, secret, {
+const authToken = jwt.sign(user, secret, {
   algorithm: "HS256",
   expiresIn: "30s",
 });
@@ -84,7 +84,7 @@ import java.util.Date;
 String secret = "<YOUR_ALGOMO_SECRET>";
 long expirationTime = 30000; // 30 seconds in milliseconds
 
-String visitorToken = Jwts.builder()
+String authToken = Jwts.builder()
     .claim("id", 1)
     .claim("name", "John Doe")
     .claim("email", "john@example.com")
@@ -122,7 +122,7 @@ var token = new JwtSecurityToken(
     signingCredentials: credentials
 );
 
-string visitorToken = new JwtSecurityTokenHandler().WriteToken(token);
+string authToken = new JwtSecurityTokenHandler().WriteToken(token);
 ```
 
 ## Ruby
