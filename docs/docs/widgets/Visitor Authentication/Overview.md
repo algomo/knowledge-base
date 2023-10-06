@@ -40,7 +40,7 @@ Whenever a user is authorised in your application, encrypt their data using your
 
 See [Encrypting user data](./Encrypting%user%20data) for examples on how to do it in popular programming languages.
 
-Make sure a short expiration time for the token -- we recommend 30 seconds, and generated a new token for each page load. It is used only during widget initialisation.
+Make sure a short expiration time for the token — we recommend 30 seconds, and generated a new token for each page load. It is used only during widget initialisation.
 
 ### 3. Forward visitor token to the Algomo widget
 
