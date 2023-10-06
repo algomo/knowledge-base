@@ -33,7 +33,7 @@ secret = '<YOUR_WIDGET_AUTH_SECRET>'
 current_time = int(time.time())
 
 user = {
-    "id": 1,
+    "id": "1",
     "name": "John Doe",
     "email": "john@example.com",
     "exp": current_time + 30  # 30 seconds from now

@@ -77,11 +77,11 @@ All fields must be strings. If you need to pass a number, convert it to a string
 
 ```json
 {
-  "id": "42",
+  "id": "1",
   "name": "John Doe",
   "email": "john@example.com",
   "avatar": "https://example.com/avatar.png",
-  "companyId": "2037",
+  "companyId": "1",
   "companyName": "Acme Inc."
 }
 ```
