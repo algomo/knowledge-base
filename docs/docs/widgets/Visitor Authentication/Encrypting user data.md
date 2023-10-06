@@ -1,4 +1,6 @@
-Refer to the examples below on how to encrypt user data in popular programming languages. Feel free to contact us if you're having trouble or there is a language you would like to see added to the list.
+Refer to the examples below on how to encrypt user data in different programming languages.
+
+Feel free to contact us if you're having trouble or there is a language you would like to see added to the list.
 
 ## JavaScript/TypeScript
 
