@@ -12,7 +12,7 @@ Visitor Authentication lets you link Algomo visitors to your own users.
 
 ## How it works
 
-You can send us data about your users, and we'll use it to link Algomo visitors to your users. Once a visitor is authenticated, you will be able to access their authentication data in Algomo.
+You can send us data about your users, and we'll use it to link Algomo visitors to your users. Once a visitor is authenticated, you will be able to access their data in Algomo.
 
 ### Security
 
@@ -32,7 +32,7 @@ To set up Visitor Authentication, you need to:
 
 ### 1. Obtain your encryption secret
 
-Navigate to [Settings → General → Visitor Authentication](https://app.algomo.com/settings/general?highlight=visitor-authentication) in Algomo and copy your secret.
+Navigate to [Widgets](https://app.algomo.com/settings/general?highlight=visitor-authentication) in Algomo, pick a widget, and click on the "Installation" tab. You will find your encryption secret under "Visitor Authentication" section.
 
 ### 2. Encrypt your user data on the server
 
