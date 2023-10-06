@@ -49,8 +49,8 @@ On client side, include the encrypted visitor token in each page you want to use
 ```html
 <script>
   window.algomoSettings = {
-    authToken: <GENERATED_AUTH_TOKEN>
-  }
+    authToken: "<GENERATED_AUTH_TOKEN>",
+  };
 </script>
 ```
 
