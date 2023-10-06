@@ -54,7 +54,7 @@ You can place the snippet anywhere in your HTML page, but make sure it happens b
 - companyId
 - companyName
 
-ID is the only required field. It is used to link the visitor to your user -- different ID means a different user.
+ID is the only required field. It is used to link the visitor to your user — different ID means a different user.
 
 Fields can be either strings or numbers.
 
