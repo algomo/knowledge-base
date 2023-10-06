@@ -36,13 +36,13 @@ Navigate to [Widgets](https://app.algomo.com/settings/general?highlight=visitor-
 
 In case your secret is compromised, you can generate a new one at any time. This will invalidate the old secret, and you will need to update your server code.
 
-### 2. Encrypt your user data on the server
+### 2. Encode your user data on the server
 
-Whenever a user is authorised in your application, encrypt their data using your secret, and include the token in the response to the client.
+Whenever a user is authorised in your application, generate a JWT token with the user data, and include the token in the response to the client. Make sure the token is signed with your widget secret using HS256 algorithm
 
-See [Encrypting user data](./Encrypting%user%20data) for examples on how to do it in popular programming languages.
+See [Encrypting user data](./Encrypting%user%20data) for examples on how generate the JWT in different programming languages.
 
-Make sure a short expiration time for the token — we recommend 30 seconds, and generated a new token for each page load. It is used only during widget initialisation.
+Make sure to set a short expiration time for the token (we recommend 30 seconds), and generate a new token for each page load. Token is used only during widget initialisation.
 
 ### 3. Forward visitor token to the Algomo widget
 
