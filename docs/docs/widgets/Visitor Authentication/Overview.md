@@ -16,7 +16,7 @@ We link the visitor to your user based on the `id` field. If the visitor is not 
 
 Anonymous visitors can be promoted to authenticated visitors by providing a visitor token. Once a visitor is linked to a user, their conversations cannot be accessed without authentication.
 
-## Set-up
+## Setup
 
 Visitor Authentications requires access to server side code of your application. If you're not sure how to do this, please contact us.
 

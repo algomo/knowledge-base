@@ -1,4 +1,4 @@
-#### JavaScript/TypeScript
+## JavaScript/TypeScript
 
 Using [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) package.
 
@@ -19,7 +19,7 @@ const visitorToken = jwt.sign(user, secret, {
 });
 ```
 
-#### Python
+## Python
 
 Using [PyJWT](https://pypi.org/project/PyJWT/) package.
 
@@ -36,7 +36,7 @@ user = {
 visitor_token = jwt.encode(user, secret, algorithm='HS256', expires_in=30)
 ```
 
-#### Rust
+## Rust
 
 Using [jsonwebtoken](https://crates.io/crates/jsonwebtoken) crate.
 
@@ -72,7 +72,7 @@ fn main() {
 }
 ```
 
-#### Java
+## Java
 
 Using [jjwt](https://github.com/jwtk/jjwt).
 
@@ -93,7 +93,7 @@ String visitorToken = Jwts.builder()
     .compact();
 ```
 
-#### C#
+## C#
 
 Using [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/) package.
 
@@ -125,7 +125,7 @@ var token = new JwtSecurityToken(
 string visitorToken = new JwtSecurityTokenHandler().WriteToken(token);
 ```
 
-### Ruby
+## Ruby
 
 Using [jwt](https://rubygems.org/gems/jwt) gem.
 
