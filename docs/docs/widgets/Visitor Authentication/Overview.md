@@ -4,23 +4,31 @@ sidebar_position: 1
 
 Visitor Authentication lets you link Algomo visitors to your own users.
 
-- Visitor identity is known
-- Prevents bad actors from impersonating your users
-- Visitor conversations are preserved between devices
+### Benefits
+
+- Confirms the visitor's identity, making it more difficult for unauthorized users to impersonate legitimate ones.
+- Provides an additional measure to counteract malicious activities.
+- Allows conversation history to be consistent and accessible across multiple devices.
 
 ## How it works
 
-Data about your users is securely transmitted to the widget.
+You can send us data about your users, and we'll use it to link Algomo visitors to your users. Once a visitor is authenticated, you will be able to access their authentication data in Algomo.
 
-We link the visitor to your user based on the `id` field. If the visitor is not linked to a user, we create a new user.
+### Security
 
-Anonymous visitors can be promoted to authenticated visitors by providing a visitor token. Once a visitor is linked to a user, their conversations cannot be accessed without authentication.
+The data you receive from us is signed with a secret key to ensure its authenticity and prevent bad actors from impersonating users. While the data is encoded to prevent tampering, it's important to note that this encoding is not the same as encryption. The data is not hidden, so you should not send any sensitive information.
+
+### Upgrading Anonymous Visitors to Authenticated Users
+
+Anonymous visitors can be seamlessly upgraded to authenticated visitors. This is useful if you want to allow visitors to start a conversation without logging in, but require them to log in before they can access their conversation history.
+
+Once a visitor is authenticated, they will only be able to access their conversations after logging in. This is to prevent unauthorized users from accessing conversations of other users, simply by knowing their ID.
 
 ## Setup
 
-Visitor Authentications requires access to server side code of your application. If you're not sure how to do this, please contact us.
+> **Note:** Visitor Authentications requires access to server side code of your application. If you're not sure how to do this, please contact us.
 
-In order to stop bad actors from impersonating your visitors, we require the data sent to the widget to be sent as a signed JWT token.
+To set up Visitor Authentication, you need to:
 
 ### 1. Obtain your encryption secret
 
@@ -30,7 +38,9 @@ Navigate to [Settings → General → Visitor Authentication](https://app.algomo
 
 Whenever a user is authorised in your application, encrypt their data using your secret, and include the token in the response to the client.
 
-See [Encrypting user data](./Encrypting%user%20data) for examples in popular programming languages.
+See [Encrypting user data](./Encrypting%user%20data) for examples on how to do it in popular programming languages.
+
+Make sure a short expiration time for the token -- we recommend 30 seconds, and generated a new token for each page load. It is used only during widget initialisation.
 
 ### 3. Forward visitor token to the Algomo widget
 
@@ -39,7 +49,7 @@ On client side, include the encrypted visitor token in each page you want to use
 ```html
 <script>
   window.algomoSettings = {
-    authToken: <GENERATED_VISITOR_TOKEN>
+    authToken: <GENERATED_AUTH_TOKEN>
   }
 </script>
 ```
@@ -48,42 +58,28 @@ You can place the snippet anywhere in your HTML page, but make sure it happens b
 
 ## Supported fields
 
-- id
-- name
-- email
-- avatar
-- companyId
-- companyName
+We support the following user fields:
 
-ID is the only required field. It is used to link the visitor to your user — different ID means a different user.
+- `id`
+- `name`
+- `email`
+- `avatar`
+- `companyId`
+- `companyName`
 
-All fields must be strings.
+**ID field is required. It is used to link the visitor to your user.** Different ID means a different user.
 
-### Example
+All fields must be strings. If you need to pass a number, convert it to a string first.
+
+### Example user data
 
 ```json
 {
-  "id": 1,
+  "id": "42",
   "name": "John Doe",
   "email": "john@example.com",
-  "avatar: "https://example.com/avatar.png",
-  "companyId": 1,
+  "avatar": "https://example.com/avatar.png",
+  "companyId": "2037",
   "companyName": "Acme Inc."
 }
 ```
-
-### Custom fields
-
-Custom fields are not supported yet. Please contact us if you need this feature.
-
-## Best practices
-
-- Use a short expiration time for the token, e.g. 30 seconds. This token is used only during widget initialisation. A new token should be generated for each page load.
-
-## Troubleshooting
-
-(We should probably return some meaningful errors when visitor authentication fails)
-
-- ID doesn't exist
-- Incorrect structure
-- Extra fields?
