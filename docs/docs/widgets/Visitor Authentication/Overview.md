@@ -30,9 +30,9 @@ Once a visitor is authenticated, they will only be able to access their conversa
 
 To set up Visitor Authentication, you need to:
 
-### 1. Obtain your encryption secret
+### 1. Obtain your widget secret
 
-Navigate to [Widgets](https://app.algomo.com/settings/general?highlight=visitor-authentication) in Algomo, pick a widget, and click on the "Installation" tab. You will find your encryption secret under "Visitor Authentication" section.
+Navigate to [Widgets](https://app.algomo.com/widgets) in Algomo, pick a widget, and click on the "Installation" tab. You will find your widget secret under "Visitor Authentication" section.
 
 In case your secret is compromised, you can generate a new one at any time. This will invalidate the old secret, and you will need to update your server code.
 
