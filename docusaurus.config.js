@@ -185,7 +185,7 @@ const config = {
             items: [
               {
                 label: "E-Commerce",
-                href: "https://www.algomo.com/industries/ecommerce",
+                href: "https://www.algomo.com/industries/ecommerce-chatbot",
               },
               {
                 label: "SaaS",
