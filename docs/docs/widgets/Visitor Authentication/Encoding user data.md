@@ -43,3 +43,40 @@ user = {
 
 auth_token = jwt.encode(user, secret, algorithm='HS256')
 ```
+
+## Go
+
+Using [jwt-go](https://pkg.go.dev/github.com/golang-jwt/jwt/v4) package.
+
+```go
+package main
+
+import (
+	"time"
+
+	"github.com/golang-jwt/jwt/v4"
+)
+
+var secret = []byte("<YOUR_WIDGET_AUTH_SECRET>")
+
+type UserClaims struct {
+	ID    string `json:"id"`
+	Name  string `json:"name"`
+	Email string `json:"email"`
+	jwt.RegisteredClaims
+}
+
+func main() {
+	claims := UserClaims{
+		ID:    "1",
+		Name:  "John Doe",
+		Email: "john@example.com",
+		RegisteredClaims: jwt.RegisteredClaims{
+			ExpiresAt: jwt.NewNumericDate(time.Now().Add(30 * time.Second)),
+		},
+	}
+
+	unsignedToken := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
+	token, err := unsignedToken.SignedString(secret)
+}
+```
