@@ -11,9 +11,11 @@ function HomepageHeader() {
   return (
     <header className={styles.custom__bg}>
       <div className="">
-        <h1 className="hero__title">
-          Customer support, <br /> powered by generative AI
-        </h1>
+        <a href="https://www.algomo.com/" className={styles.h1__link}>
+          <h1 className="hero__title">
+            Customer support, <br /> powered by generative AI
+          </h1>
+        </a>
         <p className="hero__subtitle">
           Automate and optimize your customer and employee support in 100+
           languages, in less than 3 minutes.
@@ -39,10 +41,12 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Learning resources to help you get started on Algomo.">
+      description="Learning resources to help you get started on Algomo. There you can better understand how to use the eсommerce chatbot for customer service. And also how improve the user experience with ai chatbot."
+    >
       <HomepageHeader />
       <main className={styles.main}>
         <HomepageFeatures />

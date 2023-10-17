@@ -73,3 +73,7 @@
 [data-theme="dark"] .main {
   background-color: #0e1a2f !important;
 }
+
+.h1__link:hover {
+  text-decoration: none;
+}

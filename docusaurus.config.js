@@ -128,7 +128,6 @@ const config = {
 
       metadata: [
         { name: "keywords", content: "Algomo, Algomo documentation" },
-        { property: "og:url", content: "https://help.algomo.com/" },
       ],
 
       navbar: {
