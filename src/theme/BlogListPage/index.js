@@ -20,7 +20,7 @@ function BlogListPageMetadata(props) {
   const title = isBlogOnlyMode ? siteTitle : blogTitle;
   return (
     <>
-      <PageMetadata title={title} description={blogDescription} />
+      <PageMetadata title={title} description={blogDescription || "Learning resources to help you get started on Algomo. Here you will learn how to use Ecommerce chatbot and improve user experience with AI chatbot."} />
       <SearchMetadata tag="blog_posts_list" />
     </>
   );

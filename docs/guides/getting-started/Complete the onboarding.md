@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-1. In the onboarding, you’ll be asked to provide your company’s name (eg Algomo), your website (algomo.com), and the main language you’d like the automation to be based on:
+1. In the onboarding, you’ll be asked to provide your company’s name (eg Algomo), your website (algomo.com), and preferred automation language:
 
 ![Onboarding](../images/Untitled.png)
 
