@@ -76,13 +76,6 @@ export default function HomepageFeatures() {
       }}>
       <section className={styles.features}>
         <div className="container">
-          <h1
-            style={{
-              textAlign: "center",
-              marginBottom: "2rem",
-            }}>
-            {/* Quick Check! */}
-          </h1>
           <div className={styles.row}>
             {FeatureList.map((props, idx) => (
               <Feature key={idx} {...props} />
