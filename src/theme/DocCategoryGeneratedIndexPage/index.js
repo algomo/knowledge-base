@@ -15,7 +15,7 @@ function DocCategoryGeneratedIndexPageMetadata({categoryGeneratedIndex}) {
   return (
     <PageMetadata
       title={categoryGeneratedIndex.title}
-      description={categoryGeneratedIndex.description || "Learning resources to help you get started on Algomo. There you can better understand how to use the eсommerce chatbot for customer service. And also how improve the user experience with ai chatbot."}
+      description={categoryGeneratedIndex.description || "Learning resources to help you get started on Algomo. Here you will learn how to use Ecommerce chatbot and improve user experience with AI chatbot."}
       keywords={categoryGeneratedIndex.keywords}
       // TODO `require` this?
       image={useBaseUrl(categoryGeneratedIndex.image)}

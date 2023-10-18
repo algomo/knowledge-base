@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-Welcome to the Zapier Integration Documentation! This guide will walk you through the process of integrating Zapier with your application, allowing you to automate tasks and connect various web applications with Algomo.
+This guide will walk you through the process of integrating Zapier with application, allowing you to automate tasks and connect web application with Algomo.
 
 ## What is Zapier?
 
