@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: ""
 ---
 
 Visitor Authentication lets you link Algomo visitors to your own users.

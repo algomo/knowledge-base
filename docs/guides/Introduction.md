@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /
+description: ""
 ---
 
 Learning resources to help you get started on **Algomo**.

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: ""
 ---
 
 Widget analytics capabilites let you track how your visitors interact with the chat widget.

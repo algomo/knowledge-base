@@ -28,13 +28,6 @@ const FeatureList = [
     link: "/docs",
     description: <>A comprehensive documentation of Algomo</>,
   },
-  {
-    title: "Changelog",
-    link: "/changelog",
-    img: "img/changelog_white.svg",
-    imgBlack: "img/changelog_blue.svg",
-    description: <>Our product updates and journal.</>,
-  },
 ];
 
 function Feature({ img, imgBlack, title, description, link }) {
