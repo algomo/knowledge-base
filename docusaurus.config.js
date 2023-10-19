@@ -150,11 +150,6 @@ const config = {
             label: "Documentation",
           },
           {
-            to: "changelog/",
-            position: "left",
-            label: "Changelog",
-          },
-          {
             type: "search",
             position: "right",
           },
@@ -173,10 +168,6 @@ const config = {
               {
                 label: "Documentation",
                 to: "/docs",
-              },
-              {
-                label: "Changelog",
-                to: "/changelog",
               },
             ],
           },

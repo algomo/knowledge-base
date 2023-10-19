@@ -8,11 +8,6 @@
       "selectors_key": "guides"
     },
     {
-      "url": "https://help.algomo.com/changelog",
-      "tags": "changelog",
-      "selectors_key": "changelog"
-    },
-    {
       "url": "https://help.algomo.com/docs",
       "tags": "docs",
       "selectors_key": "docs"
