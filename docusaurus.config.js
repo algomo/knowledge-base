@@ -220,7 +220,7 @@ const config = {
             items: [
               {
                 label: "Our Website",
-                href: "https://algomo.com",
+                href: "https://www.algomo.com",
               },
               {
                 label: "Privacy Policy",
