@@ -124,6 +124,7 @@ const config = {
         indexName: "first_index",
         contextualSearch: true,
         searchParameters: {},
+        searchPagePath: false,
       },
 
       metadata: [
@@ -236,7 +237,7 @@ const config = {
           style: {
             width: "200px",
           },
-          href: "https://algomo.com",
+          href: "https://www.algomo.com",
         },
       },
       prism: {
