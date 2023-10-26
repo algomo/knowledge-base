@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Learning resources to help you get started on Algomo. Here you will learn how to use Algomo chatbot and improve user experience with it help."
+      description="Learning resources to help you get started on Algomo. Here you will learn how to use the Algomo chatbot and improve your users experience."
     >
       <HomepageHeader />
       <main className={styles.main}>

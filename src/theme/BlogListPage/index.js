@@ -22,7 +22,7 @@ const BlogListPageMetadata = (props) => {
 
   return (
     <>
-      <PageMetadata title={title} description={blogDescription || "Learning resources to help you get started on Algomo. Here you will learn how to use Algomo chatbot and improve user experience with it help."} />
+      <PageMetadata title={title} description={blogDescription || "Learning resources to help you get started on Algomo. Here you will learn how to use the Algomo chatbot and improve your users experience."} />
       <SearchMetadata tag="blog_posts_list" />
     </>
   );

@@ -129,7 +129,7 @@ const config = {
 
       metadata: [
         { name: "keywords", content: "Algomo, Algomo documentation" },
-        { name: "description", content: "Learning resources to help you get started on Algomo. Here you will learn how to use Algomo chatbot and improve user experience with it help."},
+        { name: "description", content: "Learning resources to help you get started on Algomo. Here you will learn how to use the Algomo chatbot and improve your users experience."},
         { property: 'og:type', content: "website" },
       ],
 
