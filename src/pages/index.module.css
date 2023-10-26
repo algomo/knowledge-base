@@ -15,7 +15,7 @@
     padding: 2rem;
   }
 }
-.custom__bg h1,
+.custom__bg h2,
 .custom__bg p {
   color: #0e1a2f !important;
 }
@@ -76,4 +76,13 @@
 
 .h1__link:hover {
   text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }

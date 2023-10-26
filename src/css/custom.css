@@ -92,3 +92,9 @@ article a,
 footer.row.docusaurus-mt-lg {
   margin-top: 0 !important;
 }
+
+@media (max-width: 996px) {
+  footer .col {
+    flex-basis: content;
+  }
+}

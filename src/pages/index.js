@@ -10,11 +10,14 @@ import styles from "./index.module.css";
 function HomepageHeader() {
   return (
     <header className={styles.custom__bg}>
+      <h1 className={styles.hidden}>
+        Algomo Documentation
+      </h1>
       <div className="">
         <a href="https://www.algomo.com/" className={styles.h1__link}>
-          <h1 className="hero__title">
-            Customer support, <br /> powered by generative AI
-          </h1>
+          <h2 className="hero__title">
+            Customer support, <br />powered by generative AI
+          </h2>
         </a>
         <p className="hero__subtitle">
           Automate and optimize your customer and employee support in 100+
@@ -45,7 +48,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Learning resources to help you get started on Algomo. Here you will learn how to use Ecommerce chatbot and improve user experience with AI chatbot."
+      description="Learning resources to help you get started on Algomo. Here you will learn how to use Algomo chatbot and improve user experience with it help."
     >
       <HomepageHeader />
       <main className={styles.main}>

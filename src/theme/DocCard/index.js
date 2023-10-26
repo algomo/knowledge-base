@@ -7,9 +7,10 @@ import {
 } from "@docusaurus/theme-common/internal";
 import isInternalUrl from "@docusaurus/isInternalUrl";
 import { translate } from "@docusaurus/Translate";
+
 import styles from "./styles.module.css";
 
-function CardLayout({ href, icon, title, description }) {
+const CardLayout = ({ href, icon, title, description }) => {
   return (
     <Link href={href} className={styles.card_custom}>
       <h2 title={title}>{title}</h2>
@@ -23,7 +24,7 @@ function CardLayout({ href, icon, title, description }) {
     </Link>
   );
 }
-function CardCategory({ item }) {
+const CardCategory = ({ item }) => {
   const href = findFirstCategoryLink(item);
   // Unexpected: categories that don't have a link have been filtered upfront
   if (!href) {
@@ -49,9 +50,10 @@ function CardCategory({ item }) {
     />
   );
 }
-function CardLink({ item }) {
+const CardLink = ({ item }) => {
   const icon = isInternalUrl(item.href) ? "📄️" : "🔗";
   const doc = useDocById(item.docId ?? undefined);
+  console.log(doc)
   return (
     <CardLayout
       href={item.href}
@@ -61,7 +63,7 @@ function CardLink({ item }) {
     />
   );
 }
-export default function DocCard({ item }) {
+const DocCard = ({ item }) => {
   switch (item.type) {
     case "link":
       return <CardLink item={item} />;
@@ -71,3 +73,5 @@ export default function DocCard({ item }) {
       throw new Error(`unknown item type ${JSON.stringify(item)}`);
   }
 }
+
+export default DocCard
