@@ -124,11 +124,12 @@ const config = {
         indexName: "first_index",
         contextualSearch: true,
         searchParameters: {},
+        searchPagePath: false,
       },
 
       metadata: [
         { name: "keywords", content: "Algomo, Algomo documentation" },
-        { name: "description", content: "Learning resources to help you get started on Algomo. Here you will learn how to use Ecommerce chatbot and improve user experience with AI chatbot."},
+        { name: "description", content: "Learning resources to help you get started on Algomo. Here you will learn how to use the Algomo chatbot and improve your users experience."},
         { property: 'og:type', content: "website" },
       ],
 
@@ -220,7 +221,7 @@ const config = {
             items: [
               {
                 label: "Our Website",
-                href: "https://algomo.com",
+                href: "https://www.algomo.com",
               },
               {
                 label: "Privacy Policy",
@@ -236,7 +237,7 @@ const config = {
           style: {
             width: "200px",
           },
-          href: "https://algomo.com",
+          href: "https://www.algomo.com",
         },
       },
       prism: {

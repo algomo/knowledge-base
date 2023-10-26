@@ -76,11 +76,17 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .row {
+    padding: 0;
+  }
+}
+
 .content {
   text-align: left;
   width: 90%;
 }
-.content h2 {
+.content h3 {
   padding: 0;
   margin: 0;
 }

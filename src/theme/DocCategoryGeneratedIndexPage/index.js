@@ -15,13 +15,14 @@ function DocCategoryGeneratedIndexPageMetadata({categoryGeneratedIndex}) {
   return (
     <PageMetadata
       title={categoryGeneratedIndex.title}
-      description={categoryGeneratedIndex.description || "Learning resources to help you get started on Algomo. Here you will learn how to use Ecommerce chatbot and improve user experience with AI chatbot."}
+      description={categoryGeneratedIndex.description || "Learning resources to help you get started on Algomo. Here you will learn how to use the Algomo chatbot and improve your users experience."}
       keywords={categoryGeneratedIndex.keywords}
       // TODO `require` this?
       image={useBaseUrl(categoryGeneratedIndex.image)}
     />
   );
 }
+
 function DocCategoryGeneratedIndexPageContent({categoryGeneratedIndex}) {
   const category = useCurrentSidebarCategory();
   return (
@@ -49,6 +50,7 @@ function DocCategoryGeneratedIndexPageContent({categoryGeneratedIndex}) {
     </div>
   );
 }
+
 export default function DocCategoryGeneratedIndexPage(props) {
   return (
     <>

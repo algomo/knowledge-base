@@ -2,6 +2,7 @@ import React from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
+
 import styles from "./styles.module.css";
 
 const FeatureList = [
@@ -50,7 +51,7 @@ function Feature({ img, imgBlack, title, description, link }) {
         />
       </div>
       <div className={styles.content}>
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <p>{description}</p>
       </div>
     </Link>

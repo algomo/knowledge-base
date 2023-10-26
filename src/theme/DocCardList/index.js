@@ -5,11 +5,13 @@ import {
   filterDocCardListItems,
 } from "@docusaurus/theme-common";
 import DocCard from "@theme/DocCard";
-function DocCardListForCurrentSidebarCategory({ className }) {
+
+const DocCardListForCurrentSidebarCategory = ({ className }) => {
   const category = useCurrentSidebarCategory();
   return <DocCardList items={category.items} className={className} />;
 }
-export default function DocCardList(props) {
+
+const DocCardList = (props) => {
   const { items, className } = props;
   if (!items) {
     return <DocCardListForCurrentSidebarCategory {...props} />;
@@ -35,3 +37,5 @@ export default function DocCardList(props) {
     </section>
   );
 }
+
+export default DocCardList

@@ -10,7 +10,8 @@ import BlogLayout from "@theme/BlogLayout";
 import BlogListPaginator from "@theme/BlogListPaginator";
 import SearchMetadata from "@theme/SearchMetadata";
 import BlogPostItems from "@theme/BlogPostItems";
-function BlogListPageMetadata(props) {
+
+const BlogListPageMetadata = (props) => {
   const { metadata } = props;
   const {
     siteConfig: { title: siteTitle },
@@ -18,14 +19,15 @@ function BlogListPageMetadata(props) {
   const { blogDescription, blogTitle, permalink } = metadata;
   const isBlogOnlyMode = permalink === "/";
   const title = isBlogOnlyMode ? siteTitle : blogTitle;
+
   return (
     <>
-      <PageMetadata title={title} description={blogDescription || "Learning resources to help you get started on Algomo. Here you will learn how to use Ecommerce chatbot and improve user experience with AI chatbot."} />
+      <PageMetadata title={title} description={blogDescription || "Learning resources to help you get started on Algomo. Here you will learn how to use the Algomo chatbot and improve your users experience."} />
       <SearchMetadata tag="blog_posts_list" />
     </>
   );
 }
-function BlogListPageContent(props) {
+const BlogListPageContent = (props) => {
   const { metadata, items, sidebar } = props;
   return (
     <BlogLayout sidebar={sidebar}>
@@ -34,7 +36,8 @@ function BlogListPageContent(props) {
     </BlogLayout>
   );
 }
-export default function BlogListPage(props) {
+
+const BlogListPage = (props) => {
   return (
     <HtmlClassNameProvider
       className={clsx(
@@ -46,3 +49,5 @@ export default function BlogListPage(props) {
     </HtmlClassNameProvider>
   );
 }
+
+export default BlogListPage

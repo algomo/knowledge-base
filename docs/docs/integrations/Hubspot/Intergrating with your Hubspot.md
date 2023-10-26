@@ -1,3 +1,7 @@
+---
+description: ""
+---
+
 ## Overview
 
 Algomo offers seamless integrations with various third-party applications to enhance your workflow and productivity. This documentation serves as a comprehensive guide to effortlessly integrate Algomo with Hubspot, ensuring you can set it up within a matter of minutes.
