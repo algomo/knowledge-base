@@ -1,0 +1,9 @@
+{
+  "label": "Tools",
+  "position": 4,
+  "collapsible": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Empower your AI agents to use external tools to solve complex customer queries."
+  }
+}

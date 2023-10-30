@@ -1,8 +1,8 @@
 {
-	"label": "API Access",
-	"position": 3,
-	"collapsible": true,
-	"link": {
-		"type": "generated-index"
-	}
+  "label": "API Access",
+  "position": 7,
+  "collapsible": true,
+  "link": {
+    "type": "generated-index"
+  }
 }
