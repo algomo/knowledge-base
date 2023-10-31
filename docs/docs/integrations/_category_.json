@@ -1,8 +1,8 @@
 {
-	"label": "Integrations",
-	"position": 4,
-	"collapsible": true,
-	"link": {
-		"type": "generated-index"
-	}
+  "label": "Integrations",
+  "position": 5,
+  "collapsible": true,
+  "link": {
+    "type": "generated-index"
+  }
 }
