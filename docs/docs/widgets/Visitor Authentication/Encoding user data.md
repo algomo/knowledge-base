@@ -19,6 +19,10 @@ const user = {
   id: "1",
   name: "John Doe",
   email: "john@example.com",
+  customData: {
+    key1: "value1",
+    key2: "value2",
+  },
 };
 
 const authToken = jwt.sign(user, secret, {
@@ -42,6 +46,10 @@ user = {
     "id": "1",
     "name": "John Doe",
     "email": "john@example.com",
+	 "customData": {
+        "key1": "value1",
+        "key2": "value2",
+    },
     "exp": current_time + 30  # 30 seconds from now
 }
 
@@ -67,6 +75,7 @@ type UserClaims struct {
 	ID    string `json:"id"`
 	Name  string `json:"name"`
 	Email string `json:"email"`
+	CustomData map[string]string `json:"customData"`
 	jwt.RegisteredClaims
 }
 
@@ -75,6 +84,10 @@ func main() {
 		ID:    "1",
 		Name:  "John Doe",
 		Email: "john@example.com",
+		CustomData: map[string]string{
+			"key1": "value1",
+			"key2": "value2",
+		},
 		RegisteredClaims: jwt.RegisteredClaims{
 			ExpiresAt: jwt.NewNumericDate(time.Now().Add(30 * time.Second)),
 		},
