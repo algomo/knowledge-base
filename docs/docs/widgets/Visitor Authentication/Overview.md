@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 description: ""
+
 ---
 
 Visitor Authentication lets you link Algomo visitors to your own users.
@@ -69,8 +70,9 @@ We support the following user fields:
 - `avatar`
 - `companyId`
 - `companyName`
+- `customData` - This field allows you to add any additional user-specific information in a format where each piece of information is identified by a unique key.
 
-**ID field is required. It is used to link the visitor to your user.** Different ID means a different user.
+**ID field is required.** It is used to link the visitor to your user. Different ID means a different user.
 
 All fields must be strings. If you need to pass a number, convert it to a string first.
 
@@ -83,6 +85,12 @@ All fields must be strings. If you need to pass a number, convert it to a string
   "email": "john@example.com",
   "avatar": "https://example.com/avatar.png",
   "companyId": "1",
-  "companyName": "Acme Inc."
+  "companyName": "Acme Inc.",
+  "customData": {
+    "key1": "value1",
+    "key2": "value2"
+  }
 }
 ```
+
+
