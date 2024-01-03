@@ -2,13 +2,9 @@
 sidebar_position: 5
 ---
 
-# TODO
-1. example with multiple intents
-2. add indication that this is feature flagged
-3. write proper summary
-4. limitations section?
+# Tagged Intents (Beta)
 
-Tags are an enhancement designed to provide context-aware responses by associating specific intents with particular tag values, within a variable called a tag name. This feature ensures that responses are tailored to the unique characteristics of the user's query, allowing for a more personalized and accurate interaction.
+Tags are an enhancement designed to provide context-aware responses by associating specific intents with particular tag values, within a variable called a tag name. This feature ensures that responses are tailored to the unique characteristics of the user's query, allowing for a more personalized and accurate interaction. This beta feature is being rolled out to a small number of users. If you believe tagged intents might be useful for your use case, and you would like to gain access, drop us a message via the chat widget on our app, or on the bottom right of the screen.
 
 ## Terminology
 **Tag Name**: Represents the overarching variable, category or characteristic that influences the chatbot's response.For example, tag names could be "Website Platform", "Mobile OS", "Origin Country", etc.  
@@ -172,6 +168,31 @@ Tags: Role - Student
 Response: If your teacher has enrolled you in the program, you can find it in the 'Programs' tab ...
 ```
 
+**Example Conversation**
+
+Using the intents in the combination section above, here is how a user conversation with the chatbot might look like.
+
+```
+User: How do I sign in?
+Chatbot: Before answering your question, can you tell me if you are a student, teacher or parent?
+User: parent
+Chatbot: To view your child's progress, you need an invite from your child's teacher. Once sent, you should recieve an email containing a class code, which should be entered at https://learningplatform.edu/classroom/parent
+User: Thanks. Where can I find the Math & Logic program?
+Chatbot: Which education level is your child in? Is it middle school, high school or college?
+User: middle school
+Chatbot: Unfortunately, the Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://learningplatform.edu/programs
+```
+
+Here is another example conversation, this time with the chatbot asking for both tags at once. Users can provide the answers in any order, and even provide the right contextual information without explicitly stating the tag value. This is in contrast with the strict step-by-step branching behaviour from rule-based chatbots.
+```
+User: Where can I find the Math & Logic program?
+Chatbot: To give you an accurate answer, I need to ask you a few questions. Are you a student, teacher or parent? Which education level is your child in (middle school, high school, college)
+User: middle school
+Chatbot: Thank you for providing the education level. Are you a student, teacher or parent?
+User: My daughter is enrolled in one of your programs.
+Chatbot: Unfortunately, the Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://learningplatform.edu/programs
+```
+
 This shows how you can capture more complicated branching structures using tags. For more guidance on how to model your use case using tagged intents beyond what was shown in the examples below, get in contact with us using the chat widget on the bottom right of this page.
 
 
@@ -182,6 +203,10 @@ This shows how you can capture more complicated branching structures using tags.
 3. Pet Adoption Agency - user_role: Adopter / Rehomer
 4. Fitness App (with different apps for coaches and clients) - role: Coach / Client
 
-## Summary
-Tags would be useful in any scenario where the answer to a question can be modelled in a branch structure, similar to the Kiehl's example above.
+### Limitations
+TODO
 
+## Summary
+The goal of tagged intents is to capture the branching structure of real-life interactive conversations, while stepping away from the strict behaviour of rule-based chatbots. Current state-of-the-art chatbots still tend to only excel at Question-Answering style conversations, where a single question is followed by a single answer. Our beta feature attempts to address this robotic conversation style, while giving you control of what information the chatbot should gather.
+
+Tags are most useful in scenarios where the answer to a question can be modelled in a branch structure, similar to the Kiehl's example above. If your customer service agents frequently need to ask specific questions with multiple choice styled responses before answering, this might be a feature that you could benefit from. To try out our beta feature, message us via the chat widget on our app, or on the bottom right of the screen.
