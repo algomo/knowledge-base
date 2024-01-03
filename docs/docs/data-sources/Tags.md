@@ -10,11 +10,12 @@ sidebar_position: 5
 
 Tags are an enhancement designed to provide context-aware responses by associating specific intents with particular tag values, within a variable called a tag name. This feature ensures that responses are tailored to the unique characteristics of the user's query, allowing for a more personalized and accurate interaction.
 
-### Terminology
+## Terminology
 **Tag Name**: Represents the overarching variable, category or characteristic that influences the chatbot's response.For example, tag names could be "Website Platform", "Mobile OS", "Origin Country", etc.  
-**Tag Value**: Denotes a specific value associated with a tag name. For instance, in the context of the examples above, tag values could be "WordPress," "Joomla," "Android" "iOS," "France," "Spain," etc.
+**Tag Value**: Denotes a specific value associated with a tag name. For instance, in the context of the examples above, tag values could be "WordPress," "Joomla," "Android" "iOS," "France," "Spain," etc.  
+**Tag Description (Optional)**: Provides additional explanation to the chatbot on what the tag name or tag values mean. For example, for `company_size: small / large` it might not be immediately clear how small or large is defined. Adding "Companies with less than 50 employees are considered small" would help the chatbot select the right values more consistently.
 
-### How it Works
+## How it Works
 1. **Intent Tagging:**
     Each intent in the chatbot's knowledge base is tagged with one or more tag names and their corresponding tag values. These tags indicate the specific context in which the intent should be triggered.
     ```
@@ -38,11 +39,11 @@ Tags are an enhancement designed to provide context-aware responses by associati
     ```
 
 
-### Examples
+## Examples
 
 Here are a few examples of when tagged intents would help.
 
-#### Freelance Platform
+### Freelance Platform
 Upwork is a leading online freelancing platform connecting clients with freelancers across various fields. Clients post projects, and freelancers bid on them, creating a dynamic marketplace. 
 
 Since Upwork has both clients and freelancers using their platform, they frequently have questions from both types of users. This means there are some questions that both freelancers and clients might ask, where the answer for freelancers would not be the same as the answer for clients.
@@ -82,29 +83,105 @@ Chatbot: To leave feedback for a freelancer, ...
 By asking the user for clarifying information, the chatbot narrows down the potential answer to just a single intent. This is a much more streamlined way to provide information to your users. On top of that, the conversation feels much more natural too!
 
 
-#### Travel Agency
-Another example where tags might be useful is when you have content segregated by countries. In this example, we have a tour agency which operates in 5 countries in South East Asia: Thailand, Vietnam, Cambodia, Laos and Indonesia. Here are a few questions where the answer would be different depending on the country the user wishes to visit.
-1. What are some tips for interacting with locals?
-2. What are some popular activities to do?
-3. What are the costs I should expect?
-4. Do I need a visa to visit?
-5. What tours do you have?
+### Skincare
+Kiehl's is an American cosmetics brand that specializes in skin, hair, and body care products. A common question that customers of Kiehl's might ask is "What kind of face products should I use?". When asking a real Kiehl's store assistant, they always respond by asking "What skin type do you have?". This is because the answer to this question highly depends on the customer's skin type, since different ingredients in facial products work best with different skin type. 
 
-#### Kiehl's
-Kiehl's is an American cosmetics brand that specializes in skin, hair, and body care products. A common question that customers of Kiehl's might ask is 'What kind of face products should I use?'. When asking a real Kiehl's store assistant, they always respond by asking 'What skin type do you have?'. This is because the answer to this question highly depends on the customer's skin type, since different ingredients in facial products work best with different skin type. 
-
-Here is an image that illustrates the branching structure for ideal answers towards the question 'What toner should I use?'. 
+Here is an image that illustrates the branching structure for ideal answers towards the question "What toner should I use?". 
 
 ![Kiehls-tagged-intent-branches](../images/Kiehls-tagged-intents-branches.png)
 
-By representing the answers as intents, and tagging them with the appropriate tags (eg. 'skin_type:oily'), the chatbot can traverse the branches during the conversation and pick out the right answer to provide. This represents a much nicer experience for the user. Instead of reading a huge block of text to get their information, users can interact with the chatbot conversationally, and recieve only useful information.
+By representing the answers as intents, and tagging them with the appropriate tags (eg. `skin_type:oily`), the chatbot can traverse the branches during the conversation and pick out the right answer to provide. This represents a much nicer experience for the user. Instead of reading a huge block of text to get their information, users can interact with the chatbot conversationally, and recieve only useful information.
 
 
-#### Other Brief Examples
+### Education Platform
+This example demonstrates when having multiple tags would be beneficial. In this example, we have a eLearning platform as assistance for teachers in augmenting their students' education. This platform needs to cater to teachers, students and parents, who use different apps to access different functionality within the platform. 
+
+**Tag 1: Role**  
+Here is an example question involving the first tag: `Role`. It can take the values `Student`, `Teacher` or `Parent`.
+```
+Intent: How do I sign in?
+Tags: Role - Student
+Response: To sign in into the student portal, start by installing ...
+```
+
+```
+Intent: How do I sign in?
+Tags: Role - Teacher
+Response: To sign in into your account, go to ...
+```
+
+```
+Intent: How do I sign in?
+Tags: Role - Parent
+Response: To view your child's progress, you need an invite from ...
+```
+
+**Tag 2: Education Stage**  
+The second tag used could be education stage (middle school, high school, college). This dictates the type of educational content and programs available for students.
+
+```
+Intent: What does the algebra program cover?
+Tags: Education Stage - High School
+Response: The algebra syllabus covers multiplication, division, ...
+```
+
+```
+Intent: What does the algebra program cover?
+Tags: Education Stage - College
+Response: The algebra syllabus includes solving systems of equations in matrices, ...
+```
+
+**Combination**  
+A subset of questions would use both tags at once, leading to a two tiered branching structure shown below. 
+
+![Math-and-logic-branches](../images/math-n-logic-branches.png)
+
+Here are some example intents demonstrating how the branching structure of the answers to the question 'Where can I find the Math & Logic Program' is captured in tagged intents. The first intent below shows the Teacher branch. Note that since this answer does not depend on the education stage (the teacher's list of programs is automatically adjusted), the intent shown below does not contain the Education Stage tag.
+
+```
+Intent: Where can I find the Math & Logic Program?
+Tags: Role - Teacher
+Response: To view the available programs on the app...
+```
+
+These next two intents represent the parent branches. The first intent applies to only parents with middle school children, so it has both the `Role:Parent` tag and the `Education Stage: Midde School` tag. The second intent applies to parents with children of education levels other than middle school, so it has the `Role:Parent` tag and no Education Stage tag. 
+
+```
+Intent: Where can I find the Math & Logic Program?
+Tags: Role - Parent, Education Level - Middle School
+Response: The Math & Logic program is unavailable for middle school students. You can find a list of ...
+```
+
+```
+Intent: Where can I find the Math & Logic Program?
+Tags: Role - Parent
+Response: You can find a list of programs...
+```
+
+Similarly, the student branches are shown below.
+
+```
+Intent: Where can I find the Math & Logic Program?
+Tags: Role - Student, Education Level - Middle School
+Response: The Math & Logic program is unavailable for middle school students. You should ask your teacher ...
+```
+
+```
+Intent: Where can I find the Math & Logic Program?
+Tags: Role - Student
+Response: If your teacher has enrolled you in the program, you can find it in the 'Programs' tab ...
+```
+
+This shows how you can capture more complicated branching structures using tags. For more guidance on how to model your use case using tagged intents beyond what was shown in the examples below, get in contact with us using the chat widget on the bottom right of this page.
+
+
+### Other Brief Examples
 1. Software - operating_system: Windows / MacOS / Linux
-2. Pet Adoption Agency - user_role: Adopter / Rehomer
-3. Education Platform - role: student / parent / teacher
+2. Travel Agency (operating in South East Asia) - country: Thailand / Vietnam /Cambodia / Laos / Indonesia
+3. Ecommerce platform - user_type: 
+3. Pet Adoption Agency - user_role: Adopter / Rehomer
+4. Fitness App (with different apps for coaches and clients) - role: Coach / Client
 
-#### Summary
+## Summary
 Tags would be useful in any scenario where the answer to a question can be modelled in a branch structure, similar to the Kiehl's example above.
 
