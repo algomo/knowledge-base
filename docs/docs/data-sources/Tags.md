@@ -23,12 +23,12 @@ Tags are an enhancement designed to provide context-aware responses by associati
     When a user submits a query, the chatbot analyzes the input to identify relevant tag values based on the user's characteristics or preferences. If the chatbot is unsure of the specific tag value that applies for the query, the chatbot will ask the user clarifying questions.
     ```
     User: How do I install a CMS?
-    Tags identified: Website Platform - (Multiple values)
-    Response: Do you use Wordpress or Joomla?
+    --- Tags identified: Website Platform - Unknown ---
+    Chatbot: Do you use Wordpress or Joomla?
     ```
 
 3. **Context-Dependent Responses:**
-    The chatbot selects the appropriate intent based on the identified tags, ensuring that the response is contextually relevant to the user's specific needs.
+    The chatbot selects the appropriate intent based on the identified tags, ensuring that the response is contextually relevant to the user's specific needs. The chatbot writes the response drawing from the information provided within matched tagged intents, so the intent may not be used verbatim.
     ```
     Selected Intent: How do I install WordPress?
     Response: To install WordPress, follow these steps...
@@ -203,8 +203,10 @@ This shows how you can capture more complicated branching structures using tags.
 3. Pet Adoption Agency - user_role: Adopter / Rehomer
 4. Fitness App (with different apps for coaches and clients) - role: Coach / Client
 
-### Limitations
-TODO
+## Limitations
+1. The tag values needs to be multiple choice, and limited to less than 20 options. This means having `email` or `phone number` as a tag would not work.
+    - one workaround for tags with many options (like `country`) is to group them together (eg. `Europe` or `France & Spain`) if answers within a group are similar.
+2. For tags to work well, the choice of tag and tag-values affect the quality of the chatbot's conversations. Some experimentation is required to get the most out of tagged intents.
 
 ## Summary
 The goal of tagged intents is to capture the branching structure of real-life interactive conversations, while stepping away from the strict behaviour of rule-based chatbots. Current state-of-the-art chatbots still tend to only excel at Question-Answering style conversations, where a single question is followed by a single answer. Our beta feature attempts to address this robotic conversation style, while giving you control of what information the chatbot should gather.
