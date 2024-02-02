@@ -8,9 +8,7 @@ Tools empower chatbots to use external tools to solve complex customer queries.
 
 ### Shopify Product Search, Recommendations and Comparison
 
-This tool allows chatbots to search for products in your Shopify store.
-
-Your customers can specify what products they are looking for and the chatbot will return the most relevant results. Additionally, a price range can be specified to narrow down the search results.
+To be updated...
 
 ### Shopify Order Status
 

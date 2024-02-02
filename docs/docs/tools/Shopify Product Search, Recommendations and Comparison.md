@@ -16,6 +16,8 @@ Once you know what kind of product you’re after, you can search for products f
 
 You can leverage filters to get exactly what you’re looking for and discover what types of products are available.
 
+To mention: price range, sorting, filters, two types of outputs -- summary and details.
+
 ### Details and comparison
 
 You can enquire about product details included in descriptions and metadata, including custom metafields.
