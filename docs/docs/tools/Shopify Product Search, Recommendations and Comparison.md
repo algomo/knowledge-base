@@ -29,7 +29,7 @@ Once you know what kind of product you’re after, you can search for products f
 
 Users can leverage filters in order to discover what types of products are available, narrow down the search and find exactly what they are looking for.
 
-#### Narrowing down the search
+#### Filters and sorting
 
 - Default filters available: price range, availability (if not changed in Search & Discovery)
 - Dynamic filters: based on your store’s data, see [Customisation](#customisation) section
@@ -79,12 +79,9 @@ Refer to the [Functionality](#functionality) section to see how to use the tool.
 
 ### Custom filters
 
-Chatbots using this tool have access to filters set up in your Shopify store. By default, they include price range and availability.
+Chatbots using this tool have access to filters set-up in your Shopify store. By default, they include price range and availability.
 
-You can customise which filters are available through the official Shopify [Search & Discovery app](https://apps.shopify.com/search-and-discovery).
-
-1. Install it
-2. Customise filters
+To provide better search experience, you can add custom filters through the official [Shopify Search & Discovery app](https://apps.shopify.com/search-and-discovery).
 
 All filters set-up in the app, will be immediately available in our product search tool.
 
