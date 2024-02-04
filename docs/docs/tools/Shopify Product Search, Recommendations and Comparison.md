@@ -83,17 +83,21 @@ Chatbots using this tool have access to filters set-up in your Shopify store. By
 
 To provide better search experience, you can add custom filters through the official [Shopify Search & Discovery app](https://apps.shopify.com/search-and-discovery).
 
-All filters set-up in the app, will be immediately available in our product search tool.
+#### Adding filters
 
-Hint: you can use Search & Discovery app to make your search in general.
+Once you have the app installed, you can add custom filters by following these steps:
 
-- Should mention synonyms and how they will affect the search on their website in general.
+1. Navigate to your [Shopify admin panel](https://admin.shopify.com/), click "Apps" in the left sidebar, and select "Search & Discovery" from the dropdown.
+2. Once in the app, navigate to "Filters" in the left sidebar.
+3. Click "Add filter", select filter source and set a label. You can select which filter values will be available, as well as combine them into groups. Once you're done, click "Save".
 
-Coming soon: product recommendations, complementary products
+Now, your chatbot will be able to use these filters and will display them in the search results.
 
-**Custom filters**
+[Screenshot]
 
-You can create custom filters by creating metafields and enabling them as filters via Search & Discovery app.
+#### Custom filters
+
+You might want to expose custom filters to your customers, for example dimensions or color. You can do this by creating metafields and enabling them as filters via Search & Discovery app. See [Custom metadata](#custom-metadata) section for more information.
 
 ### Custom metadata
 
