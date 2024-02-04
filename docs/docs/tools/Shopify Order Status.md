@@ -28,6 +28,8 @@ Your customers can specify their email and order number and the chatbot will ret
 2. Assign chatbot to a widget
 3. Test the widget
 
+![Create a new tool](./images/create-orders-tool.png)
+
 ### Test the tool
 
 ...

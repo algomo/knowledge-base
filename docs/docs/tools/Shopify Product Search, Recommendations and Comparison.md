@@ -62,7 +62,7 @@ In order to use this tool, you first need to install Algomo app in your Shopify 
 ### Create a tool
 
 1. Navigate to [Tools in Algomo](https://app.algomo.com/tools).
-2. Click "+ New Tool" and select "Shopify Product Search".
+2. Click "New Tool" and select "Shopify Product Search".
 
 ![Create a new tool](./images/create-product-tool.png)
 
