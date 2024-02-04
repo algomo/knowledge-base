@@ -77,9 +77,11 @@ Refer to the [Functionality](#functionality) section to see how to use the tool.
 
 ## Customisation
 
-### How do I customise what filters are available to the users?
+### Custom filters
 
-We get the filters directly from your Shopify store. You can customise them through the official Shopify [Search & Discovery app](https://apps.shopify.com/search-and-discovery).
+Chatbots using this tool have access to filters set up in your Shopify store. By default, they include price range and availability.
+
+You can customise which filters are available through the official Shopify [Search & Discovery app](https://apps.shopify.com/search-and-discovery).
 
 1. Install it
 2. Customise filters
@@ -96,9 +98,15 @@ Coming soon: product recommendations, complementary products
 
 You can create custom filters by creating metafields and enabling them as filters via Search & Discovery app.
 
-### How do I add custom metadata?
+### Custom metadata
 
-Simply attach metafields to the products. Make sure to tick the “storefronts” box.
+Chatbots using this tool have access to [product metafields](https://help.shopify.com/en/manual/custom-data/metafields) and can use them to provide detailed information about products, and to compare products side by side.
+
+Providing custom metadata for the chatbot to use is as simple as adding metafields to your products in Shopify.
+
+For example, you can add a "back in stock date" metafield to your products, and the chatbot will be able to provide this information to your customers.
+
+Refer to this guide on how to add metafields to your products: [Shopify Help Center: Metafields tutorial](https://help.shopify.com/en/manual/custom-data/metafields/using-metafields).
 
 ## FAQ
 
@@ -110,7 +118,9 @@ We access live data when requested by your users, which means that it is always 
 
 ### I’m asking for a product that exist but the chatbot says it didn’t find anything
 
-We use Shopify Search API under the hood. Check that the search works on the website. If not, consider adding synonyms via Search & Discovery. If it does, let us know.
+We use Shopify Search API under the hood. Often, the issue is with the search settings in your store. Try going to your store website and searching for the product. If it doesn’t show up, it’s likely that the search settings are not set up correctly.
+
+If that's the case, consider adding synonyms via the [Search & Discovery app](https://apps.shopify.com/search-and-discovery).
 
 ### Links in product cards are not working
 
