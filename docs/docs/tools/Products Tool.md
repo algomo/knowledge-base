@@ -17,9 +17,17 @@ It can help your customers make informed decisions faster by:
 
 Sometimes you're not sure which product you need. Our chatbot can recommend products based on user needs, using data available in your store.
 
+<video controls width="100%">
+  <source src="/media/recommendations.mp4" type="video/mp4" />
+</video>
+
 ### Search
 
 Once you know what kind of product you’re after, you can search for products from your store. Simply ask the chatbot about it. It will help you find the right product and provide you with detailed information about it.
+
+<video controls width="100%">
+  <source src="/media/search.mp4" type="video/mp4" />
+</video>
 
 #### Filters and sorting
 
@@ -33,10 +41,13 @@ Additionally, users can sort the results by price.
 
 You can enquire about product details included in descriptions and metadata, including custom metafields. This provides unique value to your customers, as they can arrive at a decision faster.
 
+<video controls width="100%">
+  <source src="/media/comparison.mp4" type="video/mp4" />
+</video>
+
 For 1-3 products, the chatbot can provide a side-by-side comparison of the main characteristics of the items using all the product data available, including description and metafields.
 
 For a large number of products, the chatbot can provide a summary of the main characteristics of all the returned items.
-
 
 ## Customisation
 

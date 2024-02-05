@@ -21,9 +21,9 @@ In order to use this tool, you first need to install Algomo app in your Shopify 
 ### Create a tool
 
 1. Navigate to [Tools in Algomo](https://app.algomo.com/tools).
-2. Click "New Tool" and select a tool 
+2. Click "New Tool" and select a tool
 
-![Create a new tool](./images/create-product-tool.png)
+![Create a new tool](./images/create-tool.png)
 
 3. Select your Shopify store from the dropdown and click "Create".
 
