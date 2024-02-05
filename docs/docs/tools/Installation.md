@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ### Install Algomo app in your Shopify Store
 
-In order to use this tool, you first need to install Algomo app in your Shopify store. If you already have it installed, you can skip this part.
+In order to use Shopify tools, you first need to install Algomo app in your Shopify store. If you already have it installed, you can skip this part.
 
 1. Navigate to [Algomo app in Shopify App Store](https://apps.shopify.com/algomo) and click "Install".
 
@@ -21,7 +21,7 @@ In order to use this tool, you first need to install Algomo app in your Shopify 
 ### Create a tool
 
 1. Navigate to [Tools in Algomo](https://app.algomo.com/tools).
-2. Click "New Tool" and select a tool
+2. Click "New Tool" and select a tool type.
 
 ![Create a new tool](./images/create-tool.png)
 
@@ -31,10 +31,10 @@ In order to use this tool, you first need to install Algomo app in your Shopify 
 
 In order to use the tool, you first need to create a chatbot and assign it to a widget. If you already have a chatbot and a widget, you can skip to step 4.
 
-1. Navigate to [Chatbots in Algomo](https://app.algomo.com/chatbots), click "+ New Chatbot", pick a name and a company name the chatbot will respresent, and click "Create Chatbot".
-2. Navigate to [Widgets in Algomo](https://app.algomo.com/widgets), click "+ New Widget", pick a name, and click "Create Widget".
+1. Navigate to [Chatbots in Algomo](https://app.algomo.com/chatbots), click "New Chatbot", pick a name and a company name the chatbot will respresent, and click "Create Chatbot".
+2. Navigate to [Widgets in Algomo](https://app.algomo.com/widgets), click "New Widget", pick a name, and click "Create Widget".
 3. In the widget settings, navigate to the "General" tab, select the chatbot you created in step 1, and click "Save".
-4. Navigate to [Tools in Algomo](https://app.algomo.com/tools), click on the tool you created earlier, click "+ Assign to a chatbot", and select the chatbot you created in step 1.
+4. Navigate to [Tools in Algomo](https://app.algomo.com/tools), click the tool you created earlier, click "Assign to a chatbot", and select a chatbot.
 
 ### Test the tool
 

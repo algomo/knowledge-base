@@ -13,14 +13,6 @@ This tool aids customers in making informed decisions quickly by:
 
 ## Overview
 
-### Recommendations
-
-Not sure which product suits your needs? Our chatbot can suggest products based on your requirements, utilizing the data from your store.
-
-<video controls width="100%">
-  <source src="/media/recommendations.mp4" type="video/mp4" />
-</video>
-
 ### Search
 
 Identify your desired product with ease. Just inquire with the chatbot, and it will assist in locating the right product, offering detailed insights.
@@ -44,6 +36,14 @@ You can enquire about product details included in descriptions and metadata, inc
 For 1-3 products, the chatbot can provide a side-by-side comparison of the main characteristics of the items using all the product data available, including description and metafields.
 
 For a large number of products, the chatbot can provide a summary of the main characteristics of all the returned items.
+
+### Recommendations
+
+Not sure which product suits your needs? Our chatbot can suggest products based on your requirements, utilizing the data from your store.
+
+<video controls width="100%">
+  <source src="/media/recommendations.mp4" type="video/mp4" />
+</video>
 
 ## Customisation
 
