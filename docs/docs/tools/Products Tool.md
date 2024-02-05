@@ -8,7 +8,7 @@ It can help your customers make informed decisions faster by:
 
 - providing product recommednations based on their needs,
 - helping them discover what products are available,
-- provididing detailed information about products,
+- providing detailed information about products,
 - and comparing products side by side.
 
 ## Overview
