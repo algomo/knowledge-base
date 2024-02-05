@@ -2,20 +2,20 @@
 sidebar_position: 2
 ---
 
-This tool combines search engine, recommendations engine and comparison engine into a cohesive experience of a smart shopping assistant.
+Enhance your Shopify store with our integrated tool that merges search, recommendations, and comparison engines for a seamless smart shopping assistant experience.
 
-It can help your customers make informed decisions faster by:
+This tool aids customers in making informed decisions quickly by:
 
-- providing product recommednations based on their needs,
-- helping them discover what products are available,
-- providing detailed information about products,
-- and comparing products side by side.
+- Recommending products based on their needs
+- Facilitating product discovery
+- Providing detailed product information
+- Offering side-by-side product comparisons
 
 ## Overview
 
 ### Recommendations
 
-Sometimes you're not sure which product you need. Our chatbot can recommend products based on user needs, using data available in your store.
+Not sure which product suits your needs? Our chatbot can suggest products based on your requirements, utilizing the data from your store.
 
 <video controls width="100%">
   <source src="/media/recommendations.mp4" type="video/mp4" />
@@ -23,19 +23,15 @@ Sometimes you're not sure which product you need. Our chatbot can recommend prod
 
 ### Search
 
-Once you know what kind of product you’re after, you can search for products from your store. Simply ask the chatbot about it. It will help you find the right product and provide you with detailed information about it.
+Identify your desired product with ease. Just inquire with the chatbot, and it will assist in locating the right product, offering detailed insights.
 
 <video controls width="100%">
   <source src="/media/search.mp4" type="video/mp4" />
 </video>
 
-#### Filters and sorting
+#### Filters and Sorting
 
-Users can leverage filters in order to discover what types of products are available, narrow down the search and find exactly what they are looking for.
-
-By default, two properties are available as filters: price range and availability. You can also add custom filters (see [Customisation](#customisation) section).
-
-Additionally, users can sort the results by price.
+Discover and narrow down product options using filters. Default filters include price range and availability, with the option to add custom filters for a refined search experience. Users can also sort results by price.
 
 ### Comparison
 
