@@ -11,19 +11,15 @@ It can help your customers make informed decisions faster by:
 - provididing detailed information about products,
 - and comparing products side by side.
 
-## Functionality
+## Overview
 
 ### Recommendations
 
 Sometimes you're not sure which product you need. Our chatbot can recommend products based on user needs, using data available in your store.
 
-[Video of recommendations in action, showing looking for a gift for a friend]
-
 ### Search
 
 Once you know what kind of product you’re after, you can search for products from your store. Simply ask the chatbot about it. It will help you find the right product and provide you with detailed information about it.
-
-[Video of search in action, showing finding 20+ products, filtering by price and facets, in order to find the right product]
 
 #### Filters and sorting
 
@@ -40,8 +36,6 @@ You can enquire about product details included in descriptions and metadata, inc
 For 1-3 products, the chatbot can provide a side-by-side comparison of the main characteristics of the items using all the product data available, including description and metafields.
 
 For a large number of products, the chatbot can provide a summary of the main characteristics of all the returned items.
-
-[Video of comparison in action, showing detailed and broad comparison]
 
 ## Setup
 
@@ -86,7 +80,7 @@ You can test the tool by talking to your chatbot.
 
 ![Algomo widget settings](./images/widget-settings.png)
 
-Refer to the [Functionality](#functionality) section to see how to use the tool.
+Refer to the [Overview](#overview) section to see how to use the tool.
 
 ## Customisation
 

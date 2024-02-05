@@ -2,40 +2,67 @@
 sidebar_position: 3
 ---
 
-This tool allows chatbots to check the status of orders in your Shopify store.
+This tool allows chatbots to check order order in your Shopify store.
 
 Your customers can specify their email and order number and the chatbot will return the status of the order.
 
-## Functionality
+## Overview
 
-- Check order status
-- Escalate the conversation if order cannot be found or there is an issue with the order
+### Order details
+
+You can chcek the status of an order by providing the email and order number.
+
+### Human handover for order-related issues
+
+If the order cannot be found or there is an issue with the order, the chatbot can escalate the conversation to a human agent.
 
 ## Setup
 
 ### Install Algomo app in your Shopify Store
 
-1. [https://apps.shopify.com/algomo](https://apps.shopify.com/algomo)
-2. …
+In order to use this tool, you first need to install Algomo app in your Shopify store. If you already have it installed, you can skip this part.
+
+1. Navigate to [Algomo app in Shopify App Store](https://apps.shopify.com/algomo) and click "Install".
+
+![Algomo app in Shopify App Store](./images/install-algomo-app-1.png)
+
+2. You will be redirected to the Shopify admin panel. Click "Install".
+
+![Install Algomo app in Shopify](./images/install-algomo-app-2.png)
+
+3. Once installed, you will be redirected to the [Shopify integration settings in Algomo](https://app.algomo.com/integrations/shopify).
 
 ### Create a tool
 
-1. Create a tool
-
-### Activate the tool
-
-1. Assign tool to a chatbot
-2. Assign chatbot to a widget
-3. Test the widget
+1. Navigate to [Tools in Algomo](https://app.algomo.com/tools).
+2. Click "New Tool" and select "Shopify Orders".
 
 ![Create a new tool](./images/create-orders-tool.png)
 
+3. Select your Shopify store from the dropdown and click "Create".
+
+### Activate the tool
+
+In order to use the tool, you first need to create a chatbot and assign it to a widget. If you already have a chatbot and a widget, you can skip to step 4.
+
+1. Navigate to [Chatbots in Algomo](https://app.algomo.com/chatbots), click "+ New Chatbot", pick a name and a company name the chatbot will respresent, and click "Create Chatbot".
+2. Navigate to [Widgets in Algomo](https://app.algomo.com/widgets), click "+ New Widget", pick a name, and click "Create Widget".
+3. In the widget settings, navigate to the "General" tab, select the chatbot you created in step 1, and click "Save".
+4. Navigate to [Tools in Algomo](https://app.algomo.com/tools), click on the tool you created earlier, click "+ Assign to a chatbot", and select the chatbot you created in step 1.
+
 ### Test the tool
 
-...
+You can test the tool by talking to your chatbot.
+
+1. Navigate to [Widgets in Algomo](https://app.algomo.com/widgets) and open the widget assigned to the chatbot which has the tool assigned.
+2. Enter the test mode by clicking the "Test" button in the top right corner.
+
+![Algomo widget settings](./images/widget-settings.png)
+
+Refer to the [Overview](#overview) section to see how to use the tool.
 
 ## Troubleshoting
 
 ### Order not found
 
-May be older than 60 days. If it's not, contact us.
+We can access orders that are not older than 60 days. If the order is older than 60 days, the chatbot will not be able to find it.
