@@ -39,11 +39,11 @@ Additionally, users can sort the results by price.
 
 ### Comparison
 
+You can enquire about product details included in descriptions and metadata, including custom metafields. This provides unique value to your customers, as they can arrive at a decision faster.
+
 <video controls width="100%">
   <source src="/media/comparison.mp4" type="video/mp4" />
 </video>
-
-You can enquire about product details included in descriptions and metadata, including custom metafields. This provides unique value to your customers, as they can arrive at a decision faster.
 
 For 1-3 products, the chatbot can provide a side-by-side comparison of the main characteristics of the items using all the product data available, including description and metafields.
 
