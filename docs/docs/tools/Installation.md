@@ -1,20 +1,6 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
-
-This tool allows chatbots to check order order in your Shopify store.
-
-Your customers can specify their email and order number and the chatbot will return the status of the order.
-
-## Overview
-
-### Order details
-
-You can chcek the status of an order by providing the email and order number.
-
-### Human handover for order-related issues
-
-If the order cannot be found or there is an issue with the order, the chatbot can escalate the conversation to a human agent.
 
 ## Setup
 
@@ -35,9 +21,9 @@ In order to use this tool, you first need to install Algomo app in your Shopify 
 ### Create a tool
 
 1. Navigate to [Tools in Algomo](https://app.algomo.com/tools).
-2. Click "New Tool" and select "Shopify Orders".
+2. Click "New Tool" and select a tool 
 
-![Create a new tool](./images/create-orders-tool.png)
+![Create a new tool](./images/create-product-tool.png)
 
 3. Select your Shopify store from the dropdown and click "Create".
 
@@ -58,11 +44,3 @@ You can test the tool by talking to your chatbot.
 2. Enter the test mode by clicking the "Test" button in the top right corner.
 
 ![Algomo widget settings](./images/widget-settings.png)
-
-Refer to the [Overview](#overview) section to see how to use the tool.
-
-## Troubleshoting
-
-### Order not found
-
-We can access orders that are not older than 60 days. If the order is older than 60 days, the chatbot will not be able to find it.
