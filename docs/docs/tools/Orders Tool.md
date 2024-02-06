@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+slug: shopify/orders-tool
 ---
 
 This tool allows your chatbot to get information about customer orders to help answer any questions they may have.

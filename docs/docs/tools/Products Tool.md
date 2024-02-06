@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+slug: shopify/products-tool
 ---
 
 Enhance your Shopify store with our integrated tool that merges search, recommendations, and comparison engines for a seamless smart shopping assistant experience.
