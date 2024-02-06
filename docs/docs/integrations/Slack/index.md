@@ -1,3 +1,7 @@
+---
+title: Slack
+---
+
 ## Overview
 
 Algomo offers seamless integrations with various third-party applications to enhance your workflow and productivity. These integrations empower you to automate tasks and seamlessly connect Algomo with other essential tools. This documentation serves as a comprehensive guide to effortlessly integrate Algomo with Slack, ensuring you can set it up within a matter of minutes.

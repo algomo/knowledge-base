@@ -1,5 +1,5 @@
 ---
-description: ""
+title: API Access
 ---
 
 # Generating Responses To Messages
@@ -47,21 +47,21 @@ Find the chatbot ID in the URL while browsing your bot's page.
 - **conversationId (optional)**: A user-defined identifier for threading conversations.
   - This allows the bot to refer to previous messages when responding, providing more contextually relevant answers. If conversationId isn't provided, one will be generated for you
 
-
 ### Example Request Payload
 
 ```typescript
 {
-  "botId": "{CHATBOT_ID}", 
-  "conversationId": "{MY_OWN_CONVERSATION_ID}", 
-  "messageText": "{MY_MESSAGE}" 
+  "botId": "{CHATBOT_ID}",
+  "conversationId": "{MY_OWN_CONVERSATION_ID}",
+  "messageText": "{MY_MESSAGE}"
 }
 
 ```
+
 ##### cURL Request
 
 ```
-curl --location \ 
+curl --location \
 --request POST 'https://app.algomo.com/api/v2/external/api-access/get-bot-response' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
@@ -84,7 +84,6 @@ curl --location \
 - **429 Too Many Requests Error**: Rate limiting.
 - **500 Internal Server Error**: Unspecified server error, contact support.
 
-
 #### Example Successful Response
 
 ```typescript
@@ -100,7 +99,7 @@ curl --location \
     generatedQueries: [
       "What is Algomo?",
       "What services does Algomo offer?",
-      "What does Algomo do?"
+      "What does Algomo do?",
     ];
 
     // The infromation chunks that were used to inform the bot response
@@ -108,8 +107,8 @@ curl --location \
       {
         id: "algomo.com/about",
         type: "website",
-        text: "We're unlocking access to digital knowledge. Our mission is to democratise access to digital information across every channel, language and geography. Our simple yet powerful platform empowers customers and employees instantly resolve any query, with the least amount of human effort."
-      }
+        text: "We're unlocking access to digital knowledge. Our mission is to democratise access to digital information across every channel, language and geography. Our simple yet powerful platform empowers customers and employees instantly resolve any query, with the least amount of human effort.",
+      },
     ];
   }
 }
@@ -119,7 +118,6 @@ curl --location \
 
 ```typescript
 {
-  message: "Token is invalid."
+  message: "Token is invalid.";
 }
 ```
-

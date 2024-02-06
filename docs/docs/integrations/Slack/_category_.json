@@ -1,8 +1,5 @@
 {
-	"label": "Slack",
-	"position": 2,
-	"collapsible": true,
-	"link": {
-		"type": "generated-index"
-	}
+  "label": "Slack",
+  "position": 2,
+  "collapsible": true
 }

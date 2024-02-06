@@ -1,8 +1,5 @@
 {
   "label": "API Access",
   "position": 7,
-  "collapsible": true,
-  "link": {
-    "type": "generated-index"
-  }
+  "collapsible": false
 }

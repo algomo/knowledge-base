@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-description: "What is a widget"
+title: "Widgets"
 ---
 
 A widget (a.k.a ‘chatbox’, ‘webchat’, ‘messenger’) is the UI element where your visitors will interact with algomo if you install it on a website.

@@ -1,7 +1,6 @@
 ---
+title: Visitor Authentication
 sidebar_position: 1
-description: ""
-
 ---
 
 Visitor Authentication lets you link Algomo visitors to your own users.
@@ -92,5 +91,3 @@ All fields must be strings. If you need to pass a number, convert it to a string
   }
 }
 ```
-
-

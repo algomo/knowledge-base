@@ -14,13 +14,13 @@ const FeatureList = [
     description: <>New to Algomo? Click here to get started!</>,
   },
 
-  {
-    title: "Guides",
-    img: "img/guide_white.svg",
-    imgBlack: "img/guide_blue.svg",
-    link: "/guides",
-    description: <>Learn how to make the most of Algomo.</>,
-  },
+  // {
+  //   title: "Guides",
+  //   img: "img/guide_white.svg",
+  //   imgBlack: "img/guide_blue.svg",
+  //   link: "/guides",
+  //   description: <>Learn how to make the most of Algomo.</>,
+  // },
 
   {
     title: "Documentation",
@@ -39,7 +39,8 @@ function Feature({ img, imgBlack, title, description, link }) {
         textDecoration: "none",
         color: "inherit",
       }}
-      className={clsx(styles.card__link)}>
+      className={clsx(styles.card__link)}
+    >
       <div className="text--center">
         <ThemedImage
           className={styles.featureSvg}
@@ -67,7 +68,8 @@ export default function HomepageFeatures() {
         alignItems: "center",
         justifyContent: "center",
         width: "100%",
-      }}>
+      }}
+    >
       <section className={styles.features}>
         <div className="container">
           <div className={styles.row}>

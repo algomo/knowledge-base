@@ -8,24 +8,19 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const docs = [
   {
     id: "docs",
-    path: "docs/docs",
-    routeBasePath: "/docs",
-  },
-  {
-    id: "quick_start",
-    path: "docs/quick_start",
-    routeBasePath: "/quick_start",
+    path: "docs",
+    routeBasePath: "/",
   },
   // {
-  //   id: "changelog",
-  //   path: "docs/changelog",
-  //   routeBasePath: "/changelog",
+  //   id: "quick_start",
+  //   path: "docs/quick_start",
+  //   routeBasePath: "/quick_start",
   // },
 ];
 
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
 const defaultSettings = {
-  // breadcrumbs: false,
+  breadcrumbs: true,
   showLastUpdateTime: true,
   // remarkPlugins: [
   //   [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
@@ -84,7 +79,7 @@ const config = {
   ...meta,
   plugins,
 
-  // trailingSlash: false,
+  trailingSlash: false,
   themes: ["@docusaurus/theme-live-codeblock"],
   onBrokenLinks: "ignore",
 
@@ -98,11 +93,6 @@ const config = {
           id: "guides",
           routeBasePath: "/guides",
           ...defaultSettings,
-        },
-        blog: {
-          showReadingTime: true,
-          path: "docs/changelog",
-          routeBasePath: "/changelog",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -155,11 +145,11 @@ const config = {
           srcDark: "img/logo-white.svg",
         },
         items: [
-          {
-            to: "guides/",
-            position: "left",
-            label: "Guides",
-          },
+          // {
+          //   to: "guides/",
+          //   position: "left",
+          //   label: "Guides",
+          // },
           {
             to: "docs/",
             position: "left",
@@ -174,19 +164,6 @@ const config = {
       footer: {
         style: "dark",
         links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Guides",
-                to: "/guides",
-              },
-              {
-                label: "Documentation",
-                to: "/docs",
-              },
-            ],
-          },
           {
             title: "Industries",
             items: [
