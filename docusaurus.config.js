@@ -1,11 +1,10 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
-const meta = {
+const config = {
   title: "Algomo documentation",
   tagline: "",
   favicon: "img/favicon-32x32.png",
@@ -15,11 +14,6 @@ const meta = {
     defaultLocale: "en",
     locales: ["en"],
   },
-};
-
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  ...meta,
   plugins: [
     [
       "posthog-docusaurus",
@@ -51,7 +45,6 @@ const config = {
         sitemap: {
           ignorePatterns: ["/tags/**"],
         },
-        // TODO: Add your google analytics key
         googleTagManager: {
           containerId: "GTM-5FDFFSS",
         },
