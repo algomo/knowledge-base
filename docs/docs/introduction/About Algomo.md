@@ -3,11 +3,20 @@ sidebar_position: 1
 slug: /about
 ---
 
+## Why Algomo?
+
+- **Multilingual**: Algomo is a powerful multilingual platform, capable of delivering personalized customer experiences in over 100 languages. Its unique technology fully automates customer service in 109 languages, making multilingual AI accessible on a global scale.
+- **Data Integrations**: Algomo integrates data from a wide variety of sources into personalized customer responses. These sources include support articles, past conversations, PDFs, URLs, Notion pages, Word documents, and more.
+- **Omnichannel Self-Service platform**: Algomo offers a comprehensive omnichannel self-service experience on various communication platforms. These include WhatsApp, Facebook Messenger, and Algomo’s own chat widget, providing customers with the flexibility to choose their preferred mode of communication.
+- **AI Assistance and Screen Sharing**: Algomo enhances agent productivity by providing AI suggestions and enabling live screen sharing. This feature not only helps to speed up response times but also improves the quality of support provided.
+- **Smart Assignment**: Algomo can seamlessly assign conversations to the appropriate specialist when human intervention is needed. This ensures that customers always get the help they need from the most suitable team member.
+- **Multiple Reply Options with Live Translation**: Algomo allows agents to reply from various channels including Slack, Email, or the inbuilt Algomo inbox, which supports live translation. This feature enables real-time multilingual communication, making it easier for support teams to assist customers in their native languages.
+
 Algomo is a platform in which you can setup, design, automate and optimize your customer and employee support in 100+ languages, using generative AI.
 
 Our technology can use your existing knowledge base, and APIs to engage in meaningful conversations, schedule appointments, make sales, build your database and many more.
 
-### Architecture
+## Architecture
 
 The end-to-end flow of Algomo is the following:
 
@@ -18,12 +27,3 @@ The end-to-end flow of Algomo is the following:
 5. **A tool** is a programmatic way for the chatbot to interact with a company’s or external systems, for example, ordering a pizza.
 
 ![Architecture](./images/algomo-architecture.png)
-
-### Why Algomo?
-
-- **Multilingual** : Algomo is a powerful multilingual platform, capable of delivering personalized customer experiences in over 100 languages. Its unique technology fully automates customer service in 109 languages, making multilingual AI accessible on a global scale.
-- **Data Integrations**: Algomo integrates data from a wide variety of sources into personalized customer responses. These sources include support articles, past conversations, PDFs, URLs, Notion pages, Word documents, and more.
-- **Omnichannel Self-Service platform**: Algomo offers a comprehensive omnichannel self-service experience on various communication platforms. These include WhatsApp, Facebook Messenger, and Algomo’s own chat widget, providing customers with the flexibility to choose their preferred mode of communication.
-- **AI Assistance and Screen Sharing**: Algomo enhances agent productivity by providing AI suggestions and enabling live screen sharing. This feature not only helps to speed up response times but also improves the quality of support provided.
-- **Smart Assignment**: Algomo can seamlessly assign conversations to the appropriate specialist when human intervention is needed. This ensures that customers always get the help they need from the most suitable team member.
-- **Multiple Reply Options with Live Translation**: Algomo allows agents to reply from various channels including Slack, Email, or the inbuilt Algomo inbox, which supports live translation. This feature enables real-time multilingual communication, making it easier for support teams to assist customers in their native languages.

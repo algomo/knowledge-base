@@ -46,6 +46,10 @@ Not sure which product suits your needs? Our chatbot can suggest products based 
   <source src="/media/recommendations.mp4" type="video/mp4" />
 </video>
 
+## Installation
+
+See [Installation page](/tools/shopify/installation).
+
 ## Configuration
 
 ### Custom filters
