@@ -99,8 +99,6 @@ footer.row.docusaurus-mt-lg {
   }
 }
 
-
-
 main>.container>.row>.col:first-child {
   max-width: 780px !important;
 }
@@ -111,4 +109,18 @@ nav {
 
 nav .menu__list {
   margin-top: 0.15em;
+}
+
+ul .menu__list {
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+  padding-left: 0px !important;
+  margin-left: 12px !important;
+}
+
+[data-theme="dark"] ul .menu__list {
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
