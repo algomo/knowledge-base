@@ -5,13 +5,6 @@ slug: shopify/products-tool
 
 Enhance your Shopify store with our integrated tool that merges search, recommendations, and comparison engines for a seamless smart shopping assistant experience.
 
-This tool aids customers in making informed decisions quickly by:
-
-- Recommending products based on their needs
-- Facilitating product discovery
-- Providing detailed product information
-- Offering side-by-side product comparisons
-
 ## Overview
 
 ### Search
@@ -48,7 +41,7 @@ Not sure which product suits your needs? Our chatbot can suggest products based 
 
 ## Installation
 
-See [Installation page](/docs/tools/shopify/installation).
+See [Installation.](/docs/tools/shopify/installation)
 
 ## Configuration
 
