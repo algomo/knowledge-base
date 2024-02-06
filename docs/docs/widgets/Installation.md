@@ -31,7 +31,7 @@ For installation on the most popular website builders please refer to the below 
 }}>
 <img src={require('./images/webflow/icon.png').default} alt="Webflow"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
-[Webflow](/docs/widgets/websites-builder/Webflow)
+[Webflow](/docs/widgets/websites-builder/webflow)
 
 </li>
 
@@ -46,7 +46,7 @@ For installation on the most popular website builders please refer to the below 
 }}>
 <img src={require('./images/wordpress/icon.png').default} alt="WordPress"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
-[WordPress](/docs/widgets/websites-builder/WordPress)
+[WordPress](/docs/widgets/websites-builder/wordpress)
 
 </li>
 
@@ -61,22 +61,7 @@ For installation on the most popular website builders please refer to the below 
 }}>
 <img src={require('./images/wix/icon.png').default} alt="Wix" style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
-[Wix](/docs/widgets/websites-builder/Wix)
-
-</li>
-
-<li style={{
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "flex-start",
-    padding: "0.5rem",
-    border: "1px solid #ccc",
-    borderRadius: "5px",
-    marginBottom: "1rem"
-}}>
-<img src={require('./images/shopify/icon.png').default} alt="Shopify"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
-
-[Shopify](/docs/widgets/websites-builder/Shopify)
+[Wix](/docs/widgets/websites-builder/wix)
 
 </li>
 
@@ -91,7 +76,7 @@ For installation on the most popular website builders please refer to the below 
 }}>
 <img src={require('./images/drupal/icon.png').default} alt="Drupal"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
-[Drupal](/docs/widgets/websites-builder/Drupal)
+[Drupal](/docs/widgets/websites-builder/drupal)
 
 </li>
 
@@ -106,7 +91,7 @@ For installation on the most popular website builders please refer to the below 
 }}>
 <img src={require('./images/weebly/icon.png').default} alt="Weebly"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
-[Weebly](/docs/widgets/websites-builder/Weebly)
+[Weebly](/docs/widgets/websites-builder/weebly)
 
 </li>
 
@@ -121,7 +106,7 @@ For installation on the most popular website builders please refer to the below 
 }}>
 <img src={require('./images/magento/icon.png').default} alt="Magento"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
-[Magento](/docs/widgets/websites-builder/Magento)
+[Magento](/docs/widgets/websites-builder/magento)
 
 </li>
 
@@ -136,7 +121,7 @@ For installation on the most popular website builders please refer to the below 
 }}>
 <img src={require('./images/squarespace/icon.png').default} alt="Squarespace"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
-[Squarespace](/docs/widgets/websites-builder/Squarespace)
+[Squarespace](/docs/widgets/websites-builder/squarespace)
 
 </li>
 
@@ -151,7 +136,7 @@ For installation on the most popular website builders please refer to the below 
 }}>
 <img src={require('./images/godaddy/icon.png').default} alt="GoDaddy"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
-[GoDaddy](/docs/widgets/websites-builder/GoDaddy)
+[GoDaddy](/docs/widgets/websites-builder/godaddy)
 
 </li>
 </ul>

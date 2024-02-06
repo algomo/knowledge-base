@@ -41,7 +41,7 @@ In case your secret is compromised, you can generate a new one at any time. This
 
 Whenever a user is authenticated in your application, generate a JWT token with the user data, and include the token in the response to the client. Make sure the token is signed with your widget secret using HS256 algorithm
 
-See [Encoding user data](./Encoding%20user%20data) for examples on how generate the JWT in different programming languages.
+See [Encoding user data](./Encoding%20user%20data.md) for examples on how generate the JWT in different programming languages.
 
 Make sure to set a short expiration time for the token (we recommend 30 seconds), and generate a new token for each page load. Token is used only during widget initialisation.
 

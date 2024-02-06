@@ -24,4 +24,4 @@ Allow the chatbot to access data from Notion documentation using Notion data sou
 
 ---
 
-Your Notion data source is now ready to be used by your chatbot. See [Usage](./Overview#usage.md) for more information on how to use your data sources.
+Your Notion data source is now ready to be used by your chatbot. See [Usage](./#usage) for more information on how to use your data sources.

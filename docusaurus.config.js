@@ -4,46 +4,6 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
-/** @type {import('@docusaurus/plugin-content-docs').Options} */
-const defaultSettings = {
-  breadcrumbs: false,
-  showLastUpdateTime: true,
-  // remarkPlugins: [
-  //   [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
-  // ],
-  sidebarPath: require.resolve("./sidebars-default.js"),
-};
-
-/**
- * Create a section
- * @param {import('@docusaurus/plugin-content-docs').Options} options
- */
-function create_doc_plugin({
-  sidebarPath = require.resolve("./sidebars-default.js"),
-  ...options
-}) {
-  return [
-    "@docusaurus/plugin-content-docs",
-    /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    ({
-      ...defaultSettings,
-      sidebarPath,
-      ...options,
-    }),
-  ];
-}
-
-const plugins = [
-  [
-    "posthog-docusaurus",
-    {
-      apiKey: "phc_4R2lYaOKLfigdGBp2pFjeec6PSriHHEr1tIkidUsDsk",
-      appUrl: "https://eu.posthog.com",
-      enableInDevelopment: false,
-    },
-  ],
-];
-
 /** @type {import('@docusaurus/types').Config} */
 const meta = {
   title: "Algomo documentation",
@@ -60,12 +20,18 @@ const meta = {
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   ...meta,
-  plugins,
-
-  // trailingSlash: false,
+  plugins: [
+    [
+      "posthog-docusaurus",
+      {
+        apiKey: "phc_4R2lYaOKLfigdGBp2pFjeec6PSriHHEr1tIkidUsDsk",
+        appUrl: "https://eu.posthog.com",
+        enableInDevelopment: false,
+      },
+    ],
+  ],
   themes: ["@docusaurus/theme-live-codeblock"],
   onBrokenLinks: "ignore",
-
   presets: [
     [
       "classic",
@@ -75,7 +41,9 @@ const config = {
           path: "docs",
           id: "docs",
           routeBasePath: "/",
-          ...defaultSettings,
+          breadcrumbs: false,
+          showLastUpdateTime: true,
+          sidebarPath: require.resolve("./sidebars-default.js"),
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -90,11 +58,9 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     {
-      // Replace with your project's social card
       image: "img/favicon.png",
       algolia: {
         appId: "E70L5PUFYT",
@@ -131,19 +97,6 @@ const config = {
       footer: {
         style: "dark",
         links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Guides",
-                to: "/guides",
-              },
-              {
-                label: "Documentation",
-                to: "/docs",
-              },
-            ],
-          },
           {
             title: "Industries",
             items: [

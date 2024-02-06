@@ -7,7 +7,7 @@ slug: google-tag-manager
 
 In order to use Google Tag Manager tracking, **you need to fist have Google Tag Manager installed on your website.** If you don't have Google Tag Manager installed, you can refer to [this guide](https://support.google.com/tagmanager/answer/6103696?hl=en) to get started.
 
-Make sure to also install the Algomo widget on your website. Refer to [this guide](../Install%20a%20widget%20to%20your%20website.md) to learn how to do it.
+Make sure to also install the Algomo widget on your website. Refer to [this guide](../../widgets/Installation.md) to learn how to do it.
 
 ## Installation
 
@@ -23,7 +23,7 @@ To enable Google Tag Manager tracking:
 
 ### Triggers
 
-You can use [our events](./Overview) as triggers in Google Tag Manager:
+You can use [our events](./) as triggers in Google Tag Manager:
 
 1. Create a new trigger.
 2. Select "Custom Event" as the trigger type.
@@ -34,7 +34,7 @@ See the [Variables](#variables) section below to learn how to use event paramete
 
 ### Variables
 
-You can use [event parameters](./Overview) as variables in Google Tag Manager:
+You can use [event parameters](./) as variables in Google Tag Manager:
 
 1. Create a new variable.
 2. Select "Data Layer Variable" as the variable type.
@@ -45,11 +45,11 @@ You can now use the variable in your tags (e.g. to send the widget ID to Google 
 
 ## Testing
 
-In order to test Google Tag Manager tracking, you first need to install the widget on your website. Refer to [this guide](../Install%20a%20widget%20to%20your%20website.md) to learn how to do it.
+In order to test Google Tag Manager tracking, you first need to install the widget on your website. Refer to [this guide](../../widgets/Installation.md) to learn how to do it.
 
 1. Enable the Google Tag Manager tracking option in the widget settings.
 2. Enter [Preview mode](https://support.google.com/tagmanager/answer/6103696?hl=en) in Google Tag Manager and put a link to a page with your widget installed.
-3. Once the page and widget have loaded, trigger an event from the widget, e.g. by sending a message. Refer to the events table in the [Overview](./Overview.md) page to see how to trigger each event.
+3. Once the page and widget have loaded, trigger an event from the widget, e.g. by sending a message. Refer to the events table in the [Overview](./) page to see how to trigger each event.
 4. In Google Tag Manager, you should see a new event ending with "(Algomo Widget)" in the "Summary" tab.
 
 ## Troubleshooting

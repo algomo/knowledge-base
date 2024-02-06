@@ -11,10 +11,10 @@ Data sources play a crucial role in providing information for bots to answer que
 
 There are four primary types of data sources within the system:
 
-- [**Intents**](./Intents.md)
-- [**Documents**](./Documents.md)
-- [**Websites**](./Website.md)
-- [**Notion**](./Notion.md)
+- [**Intents**](./intents)
+- [**Documents**](./documents)
+- [**Websites**](./websites)
+- [**Notion**](./notion)
 
 ## Usage
 

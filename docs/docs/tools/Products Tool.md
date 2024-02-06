@@ -48,7 +48,7 @@ Not sure which product suits your needs? Our chatbot can suggest products based 
 
 ## Installation
 
-See [Installation page](/tools/shopify/installation).
+See [Installation page](/docs/tools/shopify/installation).
 
 ## Configuration
 
