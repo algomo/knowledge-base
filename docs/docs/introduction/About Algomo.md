@@ -7,7 +7,7 @@ Algomo is a platform in which you can setup, design, automate and optimize your 
 
 Our technology can use your existing knowledge base, and APIs to engage in meaningful conversations, schedule appointments, make sales, build your database and many more.
 
-## Architecture
+### Architecture
 
 The end-to-end flow of Algomo is the following:
 
@@ -19,7 +19,7 @@ The end-to-end flow of Algomo is the following:
 
 ![Architecture](./images/algomo-architecture.png)
 
-## Why Algomo?
+### Why Algomo?
 
 - **Multilingual** : Algomo is a powerful multilingual platform, capable of delivering personalized customer experiences in over 100 languages. Its unique technology fully automates customer service in 109 languages, making multilingual AI accessible on a global scale.
 - **Data Integrations**: Algomo integrates data from a wide variety of sources into personalized customer responses. These sources include support articles, past conversations, PDFs, URLs, Notion pages, Word documents, and more.
