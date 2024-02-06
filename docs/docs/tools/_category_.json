@@ -1,9 +1,5 @@
 {
   "label": "Shopify Tools",
   "position": 4,
-  "collapsible": false,
-  "link": {
-    "type": "generated-index",
-    "description": "Empower your chatbots to use external tools to solve complex customer queries."
-  }
+  "collapsible": false
 }

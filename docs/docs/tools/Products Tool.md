@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+slug: shopify/products-tool
 ---
 
 Enhance your Shopify store with our integrated tool that merges search, recommendations, and comparison engines for a seamless smart shopping assistant experience.
@@ -45,7 +46,11 @@ Not sure which product suits your needs? Our chatbot can suggest products based 
   <source src="/media/recommendations.mp4" type="video/mp4" />
 </video>
 
-## Customisation
+## Installation
+
+See [Installation page](/docs/tools/shopify/installation).
+
+## Configuration
 
 ### Custom filters
 

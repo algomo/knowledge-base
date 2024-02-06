@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-description: ""
+slug: wix
 ---
 
 ## Adding custom code to your site
@@ -16,15 +16,15 @@ Before you begin, make sure that your site is [published](https://support.wix.c
 ![Wix](../images/wix/Untitled.png)
 
 3. Click **Add Custom Code** at the top right.
-4. Paste the code snippet in the text box. 
+4. Paste the code snippet in the text box.
 5. Enter a name for your code. `(Algomo chatbot)`
 
 ![Wix](../images/wix/Untitled%201.png)
 
 6. Select an option under **Add Code to Pages**:
-    ◦ **All pages:** 
+   ◦ **All pages:**
 7. Choose where to place your code under **Place Code in:**
-    ◦ **Head**
+   ◦ **Head**
 8. Click **Apply**.
 
 **Notes:**

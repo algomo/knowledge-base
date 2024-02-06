@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+slug: intents
 ---
 
 Intents are question and answer pairs that are used to train your chatbot. They are a simple and effective way to teach your chatbot how to answer questions.
@@ -61,4 +62,4 @@ Intents are created within intent groups. An intent group is a collection of int
 
 ---
 
-Your data source is now ready to be used by your chatbot. See [Usage](./Overview#usage.md) for more information on how to use your data sources.
+Your data source is now ready to be used by your chatbot. See [Usage](./#usage) for more information on how to use your data sources.

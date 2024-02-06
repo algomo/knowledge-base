@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+slug: documents
 ---
 
 Algomo currently supports the following document types:

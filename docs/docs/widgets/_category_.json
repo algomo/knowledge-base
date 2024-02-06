@@ -1,9 +1,5 @@
 {
   "label": "Widgets",
   "position": 2,
-  "collapsible": true,
-  "link": {
-    "type": "generated-index",
-    "description": "Enhance your website with our easily integrated, interactive chatboxes for improved engagement and real-time support"
-  }
+  "collapsible": false
 }
