@@ -54,7 +54,17 @@ function create_doc_plugin({
 
 const docs_plugins = docs.map((doc) => create_doc_plugin(doc));
 
-const plugins = [...docs_plugins];
+const plugins = [
+  ...docs_plugins,
+  [
+    "posthog-docusaurus",
+    {
+      apiKey: "phc_4R2lYaOKLfigdGBp2pFjeec6PSriHHEr1tIkidUsDsk",
+      appUrl: "https://eu.posthog.com",
+      enableInDevelopment: false,
+    },
+  ],
+];
 
 /** @type {import('@docusaurus/types').Config} */
 const meta = {
@@ -129,8 +139,12 @@ const config = {
 
       metadata: [
         { name: "keywords", content: "Algomo, Algomo documentation" },
-        { name: "description", content: "Learning resources to help you get started on Algomo. Here you will learn how to use the Algomo chatbot and improve your users experience."},
-        { property: 'og:type', content: "website" },
+        {
+          name: "description",
+          content:
+            "Learning resources to help you get started on Algomo. Here you will learn how to use the Algomo chatbot and improve your users experience.",
+        },
+        { property: "og:type", content: "website" },
       ],
 
       navbar: {
