@@ -1,8 +1,6 @@
 ---
-title: API Access
+title: "API Access"
 ---
-
-# Generating Responses To Messages
 
 ## What is this?
 
