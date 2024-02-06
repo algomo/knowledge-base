@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+slug: getting-started
 ---
 
 ### Step 1: Familiarise Yourself with Zapier Terminology

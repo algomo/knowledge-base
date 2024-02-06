@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
 const defaultSettings = {
-  // breadcrumbs: false,
+  breadcrumbs: false,
   showLastUpdateTime: true,
   // remarkPlugins: [
   //   [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
@@ -72,7 +72,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          path: "docs/docs",
+          path: "docs",
           id: "docs",
           routeBasePath: "/",
           ...defaultSettings,
@@ -96,11 +96,6 @@ const config = {
     {
       // Replace with your project's social card
       image: "img/favicon.png",
-      // docs: {
-      //   sidebar: {
-      //     hideable: true,
-      //   },
-      // },
       algolia: {
         appId: "E70L5PUFYT",
         apiKey: "f27eb312aa7906e875559a1c1b2126cd",

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+slug: connecting-your-algomo-account
 ---
 
 Now that you have a Zapier account, you can connect your Algomo account to Zapier and start building Zaps.

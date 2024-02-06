@@ -1,3 +1,7 @@
+---
+slug: creating-your-first-zap
+---
+
 Now that Zapier connected to Algomo, you can start building Zaps to automate tasks and connect Algomo with other applications.
 
 ### Step 1: Test Your Trigger

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-description: "How to configure a widget"
+slug: configuration
 ---
 
 In the settings page please keep the `edit` mode on the widget so that you can see live any stylistic or behavioural changes

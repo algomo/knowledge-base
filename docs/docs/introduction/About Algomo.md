@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /about
+slug: /about-algomo
 ---
 
 ## Why Algomo?

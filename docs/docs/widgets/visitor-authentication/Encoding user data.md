@@ -1,5 +1,5 @@
 ---
-description: ""
+slug: encoding-user-data
 ---
 
 Refer to the examples below on how to encode user data in different programming languages.

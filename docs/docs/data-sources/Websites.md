@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+slug: websites
 ---
 
 Website data sources enrich your chatbot's responses by connecting to available online information. You can do the same with data from your website.

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-description: ""
+slug: google-tag-manager
 ---
 
 ## Prerequisites
