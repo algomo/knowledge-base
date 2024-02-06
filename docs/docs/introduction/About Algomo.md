@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /
+slug: /about
 ---
 
 Algomo is a platform in which you can setup, design, automate and optimize your customer and employee support in 100+ languages, using generative AI.

@@ -4,23 +4,9 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
-/** @type {import('@docusaurus/plugin-content-docs').Options[]} */
-const docs = [
-  {
-    id: "docs",
-    path: "docs",
-    routeBasePath: "/",
-  },
-  // {
-  //   id: "quick_start",
-  //   path: "docs/quick_start",
-  //   routeBasePath: "/quick_start",
-  // },
-];
-
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
 const defaultSettings = {
-  breadcrumbs: true,
+  // breadcrumbs: false,
   showLastUpdateTime: true,
   // remarkPlugins: [
   //   [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
@@ -47,10 +33,7 @@ function create_doc_plugin({
   ];
 }
 
-const docs_plugins = docs.map((doc) => create_doc_plugin(doc));
-
 const plugins = [
-  ...docs_plugins,
   [
     "posthog-docusaurus",
     {
@@ -79,7 +62,7 @@ const config = {
   ...meta,
   plugins,
 
-  trailingSlash: false,
+  // trailingSlash: false,
   themes: ["@docusaurus/theme-live-codeblock"],
   onBrokenLinks: "ignore",
 
@@ -89,9 +72,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          path: "docs/guides",
-          id: "guides",
-          routeBasePath: "/guides",
+          path: "docs/docs",
+          id: "docs",
+          routeBasePath: "/",
           ...defaultSettings,
         },
         theme: {
@@ -138,23 +121,12 @@ const config = {
       ],
 
       navbar: {
-        title: "",
         logo: {
           alt: "Algomo Logo",
           src: "img/logo-black.svg",
           srcDark: "img/logo-white.svg",
         },
         items: [
-          // {
-          //   to: "guides/",
-          //   position: "left",
-          //   label: "Guides",
-          // },
-          {
-            to: "docs/",
-            position: "left",
-            label: "Documentation",
-          },
           {
             type: "search",
             position: "right",
@@ -164,6 +136,19 @@ const config = {
       footer: {
         style: "dark",
         links: [
+          {
+            title: "Docs",
+            items: [
+              {
+                label: "Guides",
+                to: "/guides",
+              },
+              {
+                label: "Documentation",
+                to: "/docs",
+              },
+            ],
+          },
           {
             title: "Industries",
             items: [
