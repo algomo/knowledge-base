@@ -5,7 +5,7 @@ slug: /
 sidebar_label: Introduction
 ---
 
-Here you can learn about to help you get started on **Algomo**, its features, and how to use them.
+Here you can learn how to get started with **Algomo**, what features it offers, and how to use them.
 
 If you have any questions or feedback for us, do not hesitate to reach out by
 
