@@ -1,17 +1,17 @@
 ---
 sidebar_position: 2
-slug: installation
+title: "Installation"
 ---
 
 ## Step 1: Get your widget Embed Script code
 
 Firstly click on widgets and then select the widget you want to install
 
-![Widget](./images/Untitled1.png)
+![Widget](../images/Untitled1.png)
 
 Once you get to your widget get to the installation tab and from there, copy the installation script
 
-![Widget](./images/Untitled2.png)
+![Widget](../images/Untitled2.png)
 
 ## Step 2: Install the javascript snippet in your website
 
@@ -29,7 +29,7 @@ For installation on the most popular website builders please refer to the below 
     borderRadius: "5px",
     marginBottom: "1rem"
 }}>
-<img src={require('./images/webflow/icon.png').default} alt="Webflow"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
+<img src={require('../images/webflow/icon.png').default} alt="Webflow"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
 [Webflow](/docs/widgets/websites-builder/webflow)
 
@@ -44,7 +44,7 @@ For installation on the most popular website builders please refer to the below 
     borderRadius: "5px",
     marginBottom: "1rem"
 }}>
-<img src={require('./images/wordpress/icon.png').default} alt="WordPress"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
+<img src={require('../images/wordpress/icon.png').default} alt="WordPress"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
 [WordPress](/docs/widgets/websites-builder/wordpress)
 
@@ -59,7 +59,7 @@ For installation on the most popular website builders please refer to the below 
     borderRadius: "5px",
     marginBottom: "1rem"
 }}>
-<img src={require('./images/wix/icon.png').default} alt="Wix" style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
+<img src={require('../images/wix/icon.png').default} alt="Wix" style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
 [Wix](/docs/widgets/websites-builder/wix)
 
@@ -74,7 +74,7 @@ For installation on the most popular website builders please refer to the below 
     borderRadius: "5px",
     marginBottom: "1rem"
 }}>
-<img src={require('./images/drupal/icon.png').default} alt="Drupal"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
+<img src={require('../images/drupal/icon.png').default} alt="Drupal"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
 [Drupal](/docs/widgets/websites-builder/drupal)
 
@@ -89,7 +89,7 @@ For installation on the most popular website builders please refer to the below 
     borderRadius: "5px",
     marginBottom: "1rem"
 }}>
-<img src={require('./images/weebly/icon.png').default} alt="Weebly"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
+<img src={require('../images/weebly/icon.png').default} alt="Weebly"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
 [Weebly](/docs/widgets/websites-builder/weebly)
 
@@ -104,7 +104,7 @@ For installation on the most popular website builders please refer to the below 
     borderRadius: "5px",
     marginBottom: "1rem"
 }}>
-<img src={require('./images/magento/icon.png').default} alt="Magento"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
+<img src={require('../images/magento/icon.png').default} alt="Magento"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
 [Magento](/docs/widgets/websites-builder/magento)
 
@@ -119,7 +119,7 @@ For installation on the most popular website builders please refer to the below 
     borderRadius: "5px",
     marginBottom: "1rem"
 }}>
-<img src={require('./images/squarespace/icon.png').default} alt="Squarespace"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
+<img src={require('../images/squarespace/icon.png').default} alt="Squarespace"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
 [Squarespace](/docs/widgets/websites-builder/squarespace)
 
@@ -134,7 +134,7 @@ For installation on the most popular website builders please refer to the below 
     borderRadius: "5px",
     marginBottom: "1rem"
 }}>
-<img src={require('./images/godaddy/icon.png').default} alt="GoDaddy"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
+<img src={require('../images/godaddy/icon.png').default} alt="GoDaddy"style={{objectFit: "cover", width: 50, height: 50, marginRight: 20, borderRadius: 30}} />
 
 [GoDaddy](/docs/widgets/websites-builder/godaddy)
 

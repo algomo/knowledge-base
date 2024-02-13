@@ -1,9 +1,7 @@
 ---
-title: Data Sources
 sidebar_position: 1
+slug: ./
 ---
-
-## Introduction to Data Sources
 
 Data sources play a crucial role in providing information for bots to answer questions. Think of them as the building blocks of knowledge that make up your chatbot. Understanding how data sources work is fundamental to configuring your chatbot effectively.
 
