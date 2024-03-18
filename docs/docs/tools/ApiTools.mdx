@@ -1,0 +1,108 @@
+import SummaryScreenshot from  "./media/summary-sc.png"
+import CollectInformation from "./media/collect-information-sc.png"
+import FieldScreenShot from "./media/field-sc.png"
+import PerformAction from "./media/trigger-action-sc.png"
+import EndpointConfig from "./media/endpoint-configuration-sc.png"
+import ActionWeatherDemo from "./media/weather-action-demo.png"
+
+## TL;DR - API Tool Overview
+
+### How do tools work?
+
+The bot selects an appropriate tool based on the visitor's message, gathers the required information, uses the tool, and then responds conversationally to the visitor with the tool's output.
+
+### What is an API Tool?
+
+A tool that can call any API of your choosing via an API Action: An action which defines how to make a request
+
+### How do I use API Actions?
+
+To make a request, the AI needs you to do the following:
+
+- Provide endpoint
+- Pick request type
+- Define which data the api needs
+
+### What are Form Fields?
+
+Form fields define what information should be collected from your visitors in order to be used within an API action.
+
+# API Configuration
+
+### Summary
+
+<img src={SummaryScreenshot} width="80%"/>
+
+### Teaching the AI what your tool does and when to use it
+
+The ***name*** and ***description*** play a pivotal role in the AI's decision-making process regarding tool selection and application. They should be detailed and descriptive, offering a clear understanding of the tool's functions and usage context.
+
+### Fine tuning the tool selection
+
+Experimentation with different names and descriptions is recommended to fine-tune the AI's ability to reliably and accurately select and use the tool in various scenarios. This helps in ensuring a consistent and effective user experience. The quality of the name and description of a tool will affect its likelihood of being selected by the bot.
+
+### Collect Information
+
+<img src={CollectInformation} width="80%"/>
+
+*The information required to use a tool can be thought of as a form - you must specify fields to instruct the AI what information to collect, in order to use a given tool.* 
+
+*For example, for a “GetCurrentWeather” tool, you may require a “location” field to find the weather for a particular location.*
+
+*The name and description you choose for a field is crucial - they should accurately describe what information a field represents. Furthermore, the description should also indicate to the bot if a particular format is expected. For example, “An order ID in the format of XXXX-ID”.* 
+
+*You must also specify the field type:*
+
+**Text**, **Number**, **Choice** or **Date**, these tell the AI the format the information should be in. ****
+
+<img src={FieldScreenShot} width="80%"/>
+
+### Perform Action
+
+<img src={PerformAction} width="80%"/>
+
+### Configure API
+
+When using a Api Action, you must specify the **Method** used (like GET, POST, DELETE, PUT, PATCH). This indicates the type of operation you're asking the API to perform.
+
+Next, you provide the **Endpoint**, which is the URL where your request will be sent (e.g., **`https://example.api.com/posts/{{postId}}`**). This is the address of the API that will process your request.
+
+### Supported parameter types
+
+Then, there are **Parameters**, which are key-value pairs that provide additional details required for the request. These can be of different types:
+
+- **Query:** These are appended to the URL as **`?key=value`**
+- **Body:** These form part of the request's body, structured as **`{key: value}`**. They are typically used in POST or PUT requests to send data to the server.
+- **Header:** These are included in the request headers as **`{key: value}`** and often contain metadata like authentication tokens.
+- **Path:** These replace variables in the Endpoint URL. For example, if the endpoint is **`../posts/{{postId}}`**, and the key is **`postId`** with a value of **`post-1`**, the final URL becomes **`../posts/post-1`**.
+
+### Inject form field data into API request
+
+Additionally, values can be injected from form fields into these parameter values using the format **`{{Field Name}}`** in the value. For example, **`key: city`**  **`value: {{location}}`** where **`location`** is the name of a field created to collect information.
+
+<img src={EndpointConfig} width="80%"/>
+
+### What happens after my action is called?
+
+After the request is made, the response received will enable the AI to provide an informative and conversational reply. For example, if the request retrieves weather data, the response might contain **`{ currentWeather: "sunny", temp: "27 degrees Celsius" }`**. The AI can then use this information to inform the user, like saying, “The weather outside is good. It is sunny at 27°C”.
+
+### Example Scenario
+
+<video controls width="80%" src="/weather-tool-demo.mov" />
+
+Lets run through an example scenario, where a user wants to know the weather at a specific location.
+
+1. Before the conversation starts: the `GetCurrentWeather` API Endpoint Tool is defined, and attached to the chatbot. This includes the tool summary, information to collect, and the endpoint specification (method, endpoint, parameters)
+    1. The `GetCurrentWeather` tool only takes in one form field: city. This is a choice type field, with some major cities being the possible values (eg. London, Paris, New York, …)
+    2. The endpoint specification is shown here:
+        
+    <img src={ActionWeatherDemo} width="80%"/>
+        
+2. User: Hi, I want to know the weather
+3. The chatbot selects the `GetCurrentWeather` tool as the most appropriate, but realises that the location parameter is still unknown. Therefore, the chatbot needs to ask the user for it.
+4. Chatbot: Which city are you interested in? I can tell you the weather of London, Paris, New York, Berlin, or Athens.
+5. User: London
+6. The chatbot fills in the city for the `GetCurrentWeather` tool, and the endpoint is called following the specification given before the conversation started.
+7. A response is received from the endpoint: `{temperature:3, unit:”Celsius”, windSpeed:”26 km/h”, description:"light snow"}`
+8. Based on the endpoint response, the chatbot formulates a human-friendly conversational response to the visitor
+9. Chatbot: It is currently slightly snowy and windy in London, with a temperature of 3°C and wind speed of 28 km per hour.
