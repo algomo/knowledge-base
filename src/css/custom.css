@@ -142,8 +142,9 @@ button.link-button {
   background-color: transparent;
   font-size: medium;
   font-weight: bold;
-  text-decoration-line: underline;
-  text-decoration-thickness: 6px;
+}
+
+button.link-button:hover {
   text-decoration: underline;
 }
 
