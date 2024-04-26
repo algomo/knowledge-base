@@ -1,43 +1,59 @@
 ---
 sidebar_position: 5
 ---
+# Tagged Intents (Beta): Context-Aware Responses
 
-# Tagged Intents (Beta)
+## Skincare Example
+Kiehl's, an American cosmetics brand, offers various skincare products catering to different skin types. When customers inquire about face products, their needs depend heavily on their skin type. For instance, individuals with oily skin require different products compared to those with dry or sensitive skin.
 
-Tags are an enhancement designed to provide context-aware responses by associating specific intents with particular tag values, within a variable called a tag name. This feature ensures that responses are tailored to the unique characteristics of the user's query, allowing for a more personalized and accurate interaction. This beta feature is being rolled out to a small number of users. If you believe tagged intents might be useful for your use case, and you would like to gain access, drop us a message via the chat widget on our app, or on the bottom right of the screen.
+![Kiehls-tagged-intent-branches](./images/Kiehls-tagged-intents-example.png)
 
-## Terminology
-**Tag Name**: Represents the overarching variable, category or characteristic that influences the chatbot's response.For example, tag names could be "Website Platform", "Mobile OS", "Origin Country", etc.  
-**Tag Value**: Denotes a specific value associated with a tag name. For instance, in the context of the examples above, tag values could be "WordPress," "Joomla," "Android" "iOS," "France," "Spain," etc.  
-**Tag Description (Optional)**: Provides additional explanation to the chatbot on what the tag name or tag values mean. For example, for `company_size: small / large` it might not be immediately clear how small or large is defined. Adding "Companies with less than 50 employees are considered small" would help the chatbot select the right values more consistently.
+### Tagged Intents for Skincare
+You will need to create one intent per tagged response. Here are the intents corresponding to the Kiehls example:
 
-## How it Works
+- **Intent:** What toner should I use?
+    - **Tags:** Skin Type - Oily
+    - **Response:** Try our oil-control toner formulated to minimize excess oil.
+- **Intent:** What toner should I use?
+    - **Tags:** Skin Type - Dry
+    - **Response:** Opt for our hydrating toner designed to replenish moisture.
+- **Intent:** What toner should I use?
+    - **Tags:** Skin Type - Sensitive
+    - **Response:** Our gentle, alcohol-free toner soothes and balances sensitive skin.
+
+## Tagged Intents Overview
+Tags enhance the chatbot's ability to provide context-aware responses, ensuring tailored interactions. Here's how it works:
+
 1. **Intent Tagging:**
-    Each intent in the chatbot's knowledge base is tagged with one or more tag names and their corresponding tag values. These tags indicate the specific context in which the intent should be triggered.
-    ```
-    Intent: How do I install WordPress?
-    Tags: Website Platform - WordPress
-    Response: To install WordPress, follow these steps...
-    ```
+   - Each intent in the chatbot's knowledge base is tagged with relevant characteristics such as skin type for skincare inquiries.
+     ```
+     Intent: What toner should I use?
+     Tags: Skin Type - Oily
+     Response: Try our oil-control toner formulated to minimize excess oil.
+     ```
+
 2. **User Query Analysis:**
-    When a user submits a query, the chatbot analyzes the input to identify relevant tag values based on the user's characteristics or preferences. If the chatbot is unsure of the specific tag value that applies for the query, the chatbot will ask the user clarifying questions.
-    ```
-    User: How do I install a CMS?
-    --- Tags identified: Website Platform - Unknown ---
-    Chatbot: Do you use Wordpress or Joomla?
-    ```
+   - The chatbot analyzes user queries to identify relevant tag values, like skin type, to provide personalized responses. If the chatbot is unsure of the specific tag value that applies for the query, the chatbot will ask the user clarifying questions.
+     ```
+     User: What toner should I use?
+     --- Tags identified: Skin Type - ??? ---
+     Chatbot: What skin type do you have?
+     ```
 
 3. **Context-Dependent Responses:**
-    The chatbot selects the appropriate intent based on the identified tags, ensuring that the response is contextually relevant to the user's specific needs. The chatbot writes the response drawing from the information provided within matched tagged intents, so the intent may not be used verbatim.
-    ```
-    Selected Intent: How do I install WordPress?
-    Response: To install WordPress, follow these steps...
-    ```
+   - Based on the identified tags, the chatbot selects the appropriate intent, ensuring contextually relevant responses.
+     ```
+     User: What toner should I use for oily skin?
+     --- Tags identified: Skin Type - Oily ---
+     --- Matched Intent: "What toner should I use?" ---
+     Response: For oily skin, we recommend...
+     ```
 
+This feature is currently in beta and is gradually rolling out. If you're interested in gaining access, please reach out to us via the chat widget on our app or at the bottom right of the screen.
 
-## Examples
+## Other Examples
 
-Here are a few examples of when tagged intents would help.
+Here are a few other examples of when tagged intents would help.
 
 ### Freelance Platform
 Upwork is a leading online freelancing platform connecting clients with freelancers across various fields. Clients post projects, and freelancers bid on them, creating a dynamic marketplace. 
@@ -77,16 +93,6 @@ User: I am a client.
 Chatbot: To leave feedback for a freelancer, ...
 ```
 By asking the user for clarifying information, the chatbot narrows down the potential answer to just a single intent. This is a much more streamlined way to provide information to your users. On top of that, the conversation feels much more natural too!
-
-
-### Skincare
-Kiehl's is an American cosmetics brand that specializes in skin, hair, and body care products. A common question that customers of Kiehl's might ask is "What kind of face products should I use?". When asking a real Kiehl's store assistant, they always respond by asking "What skin type do you have?". This is because the answer to this question highly depends on the customer's skin type, since different ingredients in facial products work best with different skin type. 
-
-Here is an image that illustrates the branching structure for ideal answers towards the question "What toner should I use?". 
-
-![Kiehls-tagged-intent-branches](../images/Kiehls-tagged-intents-branches.png)
-
-By representing the answers as intents, and tagging them with the appropriate tags (eg. `skin_type:oily`), the chatbot can traverse the branches during the conversation and pick out the right answer to provide. This represents a much nicer experience for the user. Instead of reading a huge block of text to get their information, users can interact with the chatbot conversationally, and recieve only useful information.
 
 
 ### Education Platform
@@ -130,7 +136,7 @@ Response: The algebra syllabus includes solving systems of equations in matrices
 **Combination**  
 A subset of questions would use both tags at once, leading to a two tiered branching structure shown below. 
 
-![Math-and-logic-branches](../images/math-n-logic-branches.png)
+![Math-and-logic-branches](./images/math-n-logic-branches.png)
 
 Here are some example intents demonstrating how the branching structure of the answers to the question 'Where can I find the Math & Logic Program' is captured in tagged intents. The first intent below shows the Teacher branch. Note that since this answer does not depend on the education stage (the teacher's list of programs is automatically adjusted), the intent shown below does not contain the Education Stage tag.
 
