@@ -53,31 +53,23 @@ This feature is currently in beta and is gradually rolling out. If you're intere
 
 ## Other Examples
 
-Here are a few other examples of when tagged intents would help.
+Here are two other examples of tagged intents in action.
 
 ### Freelance Platform
-Upwork is a leading online freelancing platform connecting clients with freelancers across various fields. Clients post projects, and freelancers bid on them, creating a dynamic marketplace. 
+Upwork, an online freelancing platform, serves both clients and freelancers. Tagged intents differentiate responses based on the user's role.
 
-Since Upwork has both clients and freelancers using their platform, they frequently have questions from both types of users. This means there are some questions that both freelancers and clients might ask, where the answer for freelancers would not be the same as the answer for clients.
+#### Intents
+- Intent 1:
+    - Question: "How do I leave feedback?"
+    - Tags: Role - Client
+    - Response: To levae feedback for a freelancer...
+- Intent 2:
+    - Intent: How do I leave feedback for a client?
+    - Tags: Role - Freelancer
+    - Response: To leave feedback for a client...
 
-**Example Intents**  
-```
-Intent: How do I leave feedback for a freelancer?
-Tags: Role - Client
-Response: To leave feedback for a freelancer on Upwork as a client, follow these steps:
-1. Go to Jobs > All contracts.
-...
-```
-
-```
-Intent: How do I leave feedback for a client?
-Tags: Role - Freelancer
-Response: To leave feedback for a client on Upwork, go to My Jobs. Go to the Ended Contracts section and find the contract you wish to leave feedback on...
-```
-
-Both trigger on similar questions, and both answers are a valid response to the question 'How do I leave feedback'.
-
-**Example Conversations**  
+#### Example Conversations
+**Without tagged intents**  
 This is what a conversation with the chatbot might look like if the intents are not tagged.
 ```
 User: How do I leave feedback?
@@ -85,6 +77,7 @@ Chatbot: To leave feedback for a freelancer, ... To leave feedback for a client,
 ```
 Since it is ambiguous whether the user wants to leave feedback for a freelancer or a client, the chatbot might attempt to provide the answer for both. This results in a very lengthy response, where half of the answer is useless to the user.
 
+**With tagged intents**  
 With tags, the conversation might go more like this.
 ```
 User: How do I leave feedback?
@@ -95,10 +88,10 @@ Chatbot: To leave feedback for a freelancer, ...
 By asking the user for clarifying information, the chatbot narrows down the potential answer to just a single intent. This is a much more streamlined way to provide information to your users. On top of that, the conversation feels much more natural too!
 
 
-### Education Platform
-This example demonstrates when having multiple tags would be beneficial. In this example, we have a eLearning platform as assistance for teachers in augmenting their students' education. This platform needs to cater to teachers, students and parents, who use different apps to access different functionality within the platform. 
+### Education Platform (Multiple tags)
+An eLearning platform caters to teachers, students, and parents, with varying access and functionalities. Tagged intents consider both roles and education stages.
 
-**Tag 1: Role**  
+#### Tag 1: Role
 Here is an example question involving the first tag: `Role`. It can take the values `Student`, `Teacher` or `Parent`.
 ```
 Intent: How do I sign in?
@@ -118,8 +111,8 @@ Tags: Role - Parent
 Response: To view your child's progress, you need an invite from ...
 ```
 
-**Tag 2: Education Stage**  
-The second tag used could be education stage (middle school, high school, college). This dictates the type of educational content and programs available for students.
+#### Tag 1: Education Stage
+The second tag used is education stage (`middle school`, `high school` or `college`). This dictates the type of educational content and programs available for students.
 
 ```
 Intent: What does the algebra program cover?
@@ -133,20 +126,23 @@ Tags: Education Stage - College
 Response: The algebra syllabus includes solving systems of equations in matrices, ...
 ```
 
-**Combination**  
-A subset of questions would use both tags at once, leading to a two tiered branching structure shown below. 
+#### Combination of Tags
+A subset of questions would use both tags at once, leading to a two tiered branching structure. Let us consider the example question: "Where can I find the Math & Logic Program?"
 
 ![Math-and-logic-branches](./images/math-n-logic-branches.png)
 
-Here are some example intents demonstrating how the branching structure of the answers to the question 'Where can I find the Math & Logic Program' is captured in tagged intents. The first intent below shows the Teacher branch. Note that since this answer does not depend on the education stage (the teacher's list of programs is automatically adjusted), the intent shown below does not contain the Education Stage tag.
+Let us go look at the branches one at a time.
 
+##### Tag: Role - Teacher
+For this example, we assume that the answer does not depend on the education stage. Therefore, the intent for the teacher branch does not have the `Education Stage` tag.
 ```
 Intent: Where can I find the Math & Logic Program?
 Tags: Role - Teacher
 Response: To view the available programs on the app...
 ```
 
-These next two intents represent the parent branches. The first intent applies to only parents with middle school children, so it has both the `Role:Parent` tag and the `Education Stage: Midde School` tag. The second intent applies to parents with children of education levels other than middle school, so it has the `Role:Parent` tag and no Education Stage tag. 
+##### Tag: Role - Parent
+These next two intents represent the parent branches. The first intent applies to only parents with middle school children, so it has both the `Role:Parent` tag and the `Education Stage: Midde School` tag. 
 
 ```
 Intent: Where can I find the Math & Logic Program?
@@ -154,12 +150,15 @@ Tags: Role - Parent, Education Level - Middle School
 Response: The Math & Logic program is unavailable for middle school students. You can find a list of ...
 ```
 
+The second intent applies to parents with children of education levels other than middle school, so it has the `Role:Parent` tag and no Education Stage tag. 
+
 ```
 Intent: Where can I find the Math & Logic Program?
 Tags: Role - Parent
 Response: You can find a list of programs...
 ```
 
+##### Tag: Role - Student
 Similarly, the student branches are shown below.
 
 ```
@@ -174,8 +173,9 @@ Tags: Role - Student
 Response: If your teacher has enrolled you in the program, you can find it in the 'Programs' tab ...
 ```
 
-**Example Conversation**
+#### Example Conversations
 
+**Example 1**  
 Using the intents in the combination section above, here is how a user conversation with the chatbot might look like.
 
 ```
@@ -189,6 +189,7 @@ User: middle school
 Chatbot: Unfortunately, the Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://learningplatform.edu/programs
 ```
 
+**Example 2**  
 Here is another example conversation, this time with the chatbot asking for both tags at once. Users can provide the answers in any order, and even provide the right contextual information without explicitly stating the tag value. This is in contrast with the strict step-by-step branching behaviour from rule-based chatbots.
 ```
 User: Where can I find the Math & Logic program?
@@ -199,7 +200,7 @@ User: My daughter is enrolled in one of your programs.
 Chatbot: Unfortunately, the Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://learningplatform.edu/programs
 ```
 
-This shows how you can capture more complicated branching structures using tags. For more guidance on how to model your use case using tagged intents beyond what was shown in the examples below, get in contact with us using the chat widget on the bottom right of this page.
+This shows how you can capture more complicated branching structures using tags. For more guidance on how to model your use case using tagged intents beyond what was shown in the examples, get in contact with us using the chat widget on the bottom right of this page.
 
 
 ### Other Brief Examples
@@ -217,4 +218,4 @@ This shows how you can capture more complicated branching structures using tags.
 ## Summary
 The goal of tagged intents is to capture the branching structure of real-life interactive conversations, while stepping away from the strict behaviour of rule-based chatbots. Current state-of-the-art chatbots still tend to only excel at Question-Answering style conversations, where a single question is followed by a single answer. Our beta feature attempts to address this robotic conversation style, while giving you control of what information the chatbot should gather.
 
-Tags are most useful in scenarios where the answer to a question can be modelled in a branch structure, similar to the Kiehl's example above. If your customer service agents frequently need to ask specific questions with multiple choice styled responses before answering, this might be a feature that you could benefit from. To try out our beta feature, message us via the chat widget on our app, or on the bottom right of the screen.
+Tags are most useful in scenarios where the answer to a question can be modelled in a branch structure, similar to the Kiehl's example above. If your customer service agents frequently need to ask specific questions with multiple choice styled responses before answering, this might be a feature that you could benefit from. To try out our beta feature, message us via the chat widget on our app, or on the bottom right of this page screen.
