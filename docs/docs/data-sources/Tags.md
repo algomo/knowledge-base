@@ -62,18 +62,18 @@ Upwork, an online freelancing platform, serves both clients and freelancers. Tag
 - Intent 1:
     - Question: "How do I leave feedback?"
     - Tags: Role - Client
-    - Response: To levae feedback for a freelancer...
+    - Response: To leave feedback for a freelancer, navigate to the job the freelancer was hired for, and click on 'Give Feedback'.
 - Intent 2:
     - Intent: How do I leave feedback for a client?
     - Tags: Role - Freelancer
-    - Response: To leave feedback for a client...
+    - Response: To leave feedback for a client, fill out the feedback form on their profile.
 
 #### Example Conversations
 **Without tagged intents**  
 This is what a conversation with the chatbot might look like if the intents are not tagged.
 ```
 User: How do I leave feedback?
-Chatbot: To leave feedback for a freelancer, ... To leave feedback for a client, ...
+Chatbot: To leave feedback for a client, navigate to the job the freelancer was hired for, and click on 'Give Feedback'. To leave feedback for a freelancer, fill out the feedback form on their profile.
 ```
 Since it is ambiguous whether the user wants to leave feedback for a freelancer or a client, the chatbot might attempt to provide the answer for both. This results in a very lengthy response, where half of the answer is useless to the user.
 
@@ -83,7 +83,7 @@ With tags, the conversation might go more like this.
 User: How do I leave feedback?
 Chatbot: In order to provide an accurate answer, could you tell me if you are a freelancer, or a client?
 User: I am a client.
-Chatbot: To leave feedback for a freelancer, ...
+Chatbot: To leave feedback for a freelancer, navigate to the job the freelancer was hired for, and click on 'Give Feedback'.
 ```
 By asking the user for clarifying information, the chatbot narrows down the potential answer to just a single intent. This is a much more streamlined way to provide information to your users. On top of that, the conversation feels much more natural too!
 
@@ -96,19 +96,19 @@ Here is an example question involving the first tag: `Role`. It can take the val
 ```
 Intent: How do I sign in?
 Tags: Role - Student
-Response: To sign in into the student portal, start by installing ...
+Response: To sign in, visit the student portal at https://portal.learn.edu/sign-in and enter your classroom ID, email, and password.
 ```
 
 ```
 Intent: How do I sign in?
 Tags: Role - Teacher
-Response: To sign in into your account, go to ...
+Response: To sign in into your account, go to https://app.learn.edu/sign-in and enter your email and password.
 ```
 
 ```
 Intent: How do I sign in?
 Tags: Role - Parent
-Response: To view your child's progress, you need an invite from ...
+Response: To view your child's progress, you need an invite from the classroom teacher. The link to visit the student progress page will be included within the invitation email.
 ```
 
 #### Tag 1: Education Stage
@@ -117,13 +117,13 @@ The second tag used is education stage (`middle school`, `high school` or `colle
 ```
 Intent: What does the algebra program cover?
 Tags: Education Stage - High School
-Response: The algebra syllabus covers multiplication, division, ...
+Response: The algebra syllabus covers linear equations, quadratic equations, and inequalities.
 ```
 
 ```
 Intent: What does the algebra program cover?
 Tags: Education Stage - College
-Response: The algebra syllabus includes solving systems of equations in matrices, ...
+Response: The algebra syllabus includes solving systems of equations in matrices, vector spaces, and complex numbers.
 ```
 
 #### Combination of Tags
@@ -138,7 +138,7 @@ For this example, we assume that the answer does not depend on the education sta
 ```
 Intent: Where can I find the Math & Logic Program?
 Tags: Role - Teacher
-Response: To view the available programs on the app...
+Response: To view the available programs on the app, go to https://app.learn.edu/programs. Programs across all education levels will be listed there. You can search and filter by education level or topic to find the best programs for your students.
 ```
 
 ##### Tag: Role - Parent
@@ -147,7 +147,7 @@ These next two intents represent the parent branches. The first intent applies t
 ```
 Intent: Where can I find the Math & Logic Program?
 Tags: Role - Parent, Education Level - Middle School
-Response: The Math & Logic program is unavailable for middle school students. You can find a list of ...
+Response: The Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://learn.edu/programs
 ```
 
 The second intent applies to parents with children of education levels other than middle school, so it has the `Role:Parent` tag and no Education Stage tag. 
@@ -155,7 +155,7 @@ The second intent applies to parents with children of education levels other tha
 ```
 Intent: Where can I find the Math & Logic Program?
 Tags: Role - Parent
-Response: You can find a list of programs...
+Response: You can find the list of mathematics programs at https://www.learn.edu/programs/?topic=math.
 ```
 
 ##### Tag: Role - Student
@@ -164,13 +164,13 @@ Similarly, the student branches are shown below.
 ```
 Intent: Where can I find the Math & Logic Program?
 Tags: Role - Student, Education Level - Middle School
-Response: The Math & Logic program is unavailable for middle school students. You should ask your teacher ...
+Response: The Math & Logic program is unavailable for middle school students.
 ```
 
 ```
 Intent: Where can I find the Math & Logic Program?
 Tags: Role - Student
-Response: If your teacher has enrolled you in the program, you can find it in the 'Programs' tab ...
+Response: If your teacher has enrolled you in the program, you can find it in the 'Programs' tab on your eLearning portal at https://portal.learn.edu/account/programs
 ```
 
 #### Example Conversations
@@ -182,11 +182,11 @@ Using the intents in the combination section above, here is how a user conversat
 User: How do I sign in?
 Chatbot: Before answering your question, can you tell me if you are a student, teacher or parent?
 User: parent
-Chatbot: To view your child's progress, you need an invite from your child's teacher. Once sent, you should recieve an email containing a class code, which should be entered at https://learningplatform.edu/classroom/parent
+Chatbot: To view your child's progress, you need an invite from your child's teacher. The link to visit the student progress page will be included within the invitation email.
 User: Thanks. Where can I find the Math & Logic program?
 Chatbot: Which education level is your child in? Is it middle school, high school or college?
 User: middle school
-Chatbot: Unfortunately, the Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://learningplatform.edu/programs
+Chatbot: Unfortunately, the Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://www.learn.edu/programs
 ```
 
 **Example 2**  
@@ -197,7 +197,7 @@ Chatbot: To give you an accurate answer, I need to ask you a few questions. Are 
 User: middle school
 Chatbot: Thank you for providing the education level. Are you a student, teacher or parent?
 User: My daughter is enrolled in one of your programs.
-Chatbot: Unfortunately, the Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://learningplatform.edu/programs
+Chatbot: Unfortunately, the Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://learn.edu/programs
 ```
 
 This shows how you can capture more complicated branching structures using tags. For more guidance on how to model your use case using tagged intents beyond what was shown in the examples, get in contact with us using the chat widget on the bottom right of this page.
@@ -211,8 +211,9 @@ This shows how you can capture more complicated branching structures using tags.
 4. Fitness App (with different apps for coaches and clients) - role: Coach / Client
 
 ## Limitations
-1. The tag values needs to be multiple choice, and limited to less than 20 options. This means having `email` or `phone number` as a tag would not work.
-    - one workaround for tags with many options (like `country`) is to group them together (eg. `Europe` or `France & Spain`) if answers within a group are similar.
+1. The tag values needs to be multiple choice, and limited to less than 20 options.
+    - This means collecting `email` or `phone number` as a tag would not work. This is because valid input emails or phone numbers cannot be defined up front for a multiple choice format.
+    - However, one workaround for tags with many options (like `country`) is to group them together (eg. `Europe` or `France & Spain`) if answers within a group are similar.
 2. For tags to work well, the choice of tag and tag-values affect the quality of the chatbot's conversations. Some experimentation is required to get the most out of tagged intents.
 
 ## Summary
