@@ -4,7 +4,7 @@ sidebar_position: 5
 # Tagged Intents (Beta): Context-Aware Responses
 
 ## Skincare Example
-Kiehl's, an American cosmetics brand, offers various skincare products catering to different skin types. When customers inquire about face products, their needs depend heavily on their skin type. For instance, individuals with oily skin require different products compared to those with dry or sensitive skin.
+Kiehl's, an American cosmetics brand, offers various skincare products catering to different skin types. When customers inquire about face products, their needs depend heavily on their skin type. For instance, individuals with oily skin require different products than those with dry or sensitive skin.
 
 ![Kiehls-tagged-intent-branches](./images/Kiehls-tagged-intents-example.png)
 
@@ -22,7 +22,7 @@ You will need to create one intent per tagged response. Here are the intents cor
     - **Response:** Our gentle, alcohol-free toner soothes and balances sensitive skin.
 
 ## Tagged Intents Overview
-Tags enhance the chatbot's ability to provide context-aware responses, ensuring tailored interactions. Here's how it works:
+Tags enhance the chatbot's ability to provide context-aware responses, ensuring interactions tailored to the user's needs. Here's how it works.
 
 1. **Intent Tagging:**
    - Each intent in the chatbot's knowledge base is tagged with relevant characteristics such as skin type for skincare inquiries.
@@ -33,7 +33,7 @@ Tags enhance the chatbot's ability to provide context-aware responses, ensuring 
      ```
 
 2. **User Query Analysis:**
-   - The chatbot analyzes user queries to identify relevant tag values, like skin type, to provide personalized responses. If the chatbot is unsure of the specific tag value that applies for the query, the chatbot will ask the user clarifying questions.
+   - The chatbot analyzes queries from users to identify relevant tag values, like skin type, to provide personalized responses. If the chatbot is unsure of the specific tag value that applies for the query, the chatbot will ask the user clarifying questions.
      ```
      User: What toner should I use?
      --- Tags identified: Skin Type - ??? ---
@@ -49,7 +49,7 @@ Tags enhance the chatbot's ability to provide context-aware responses, ensuring 
      Response: For oily skin, we recommend...
      ```
 
-This feature is currently in beta and is gradually rolling out. If you're interested in gaining access, please reach out to us via the chat widget on our app or at the bottom right of the screen.
+This feature is currently in beta and rolling out gradually. If you're interested in gaining access, please reach out to us via the chat widget on our app or at the bottom right of the screen.
 
 ## Other Examples
 
@@ -192,6 +192,6 @@ This shows how you can capture more complicated branching structures using tags.
 2. For tags to work well, the choice of tag and tag-values affect the quality of the chatbot's conversations. Some experimentation is required to get the most out of tagged intents.
 
 ## Summary
-The goal of tagged intents is to capture the branching structure of real-life interactive conversations, while stepping away from the strict behaviour of rule-based chatbots. Current state-of-the-art chatbots still tend to only excel at Question-Answering style conversations, where a single question is followed by a single answer. Our beta feature attempts to address this robotic conversation style, while giving you control of what information the chatbot should gather.
+Tagged intents aim to capture the branching structure of real-life interactive conversations, while stepping away from the strict behaviour of rule-based chatbots. Current state-of-the-art chatbots still tend to only excel at Question-Answering style conversations, where a single question is followed by a single answer. Our beta feature attempts to address this robotic conversation style, while giving you control of what information the chatbot should gather.
 
 Tags are most useful in scenarios where the answer to a question can be modelled in a branch structure, similar to the Kiehl's example above. If your customer service agents frequently need to ask specific questions with multiple choice styled responses before answering, this might be a feature that you could benefit from. To try out our beta feature, message us via the chat widget on our app, or on the bottom right of this page screen.
