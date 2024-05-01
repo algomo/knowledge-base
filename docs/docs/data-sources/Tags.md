@@ -3,6 +3,8 @@ sidebar_position: 5
 ---
 # Tagged Intents (Beta): Context-Aware Responses
 
+Tags enhance the chatbot's ability to provide context-aware responses, ensuring interactions tailored to the user's needs. Lets run through an example.
+
 ## Skincare Example
 Kiehl's, an American cosmetics brand, offers various skincare products catering to different skin types. When customers inquire about face products, their needs depend heavily on their skin type. For instance, individuals with oily skin require different products than those with dry or sensitive skin.
 
@@ -22,7 +24,6 @@ You will need to create one intent per tagged response. Here are the intents cor
     - **Response:** Our gentle, alcohol-free toner soothes and balances sensitive skin.
 
 ## Tagged Intents Overview
-Tags enhance the chatbot's ability to provide context-aware responses, ensuring interactions tailored to the user's needs. Here's how it works.
 
 1. **Intent Tagging:**
    - Each intent in the chatbot's knowledge base is tagged with relevant characteristics such as skin type for skincare inquiries.
