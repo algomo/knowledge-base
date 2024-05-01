@@ -59,14 +59,12 @@ Here are two other examples of tagged intents in action.
 Upwork, an online freelancing platform, serves both clients and freelancers. Tagged intents differentiate responses based on the user's role.
 
 #### Intents
-- Intent 1:
-    - Question: "How do I leave feedback?"
-    - Tags: Role - Client
-    - Response: To leave feedback for a freelancer, navigate to the job the freelancer was hired for, and click on 'Give Feedback'.
-- Intent 2:
-    - Intent: How do I leave feedback for a client?
-    - Tags: Role - Freelancer
-    - Response: To leave feedback for a client, fill out the feedback form on their profile.
+- **Intent:** How do I leave feedback?
+    - **Tags:** Role - Client
+    - **Response:** To leave feedback for a freelancer, navigate to the job the freelancer was hired for, and click on 'Give Feedback'.
+- **Intent:** How do I leave feedback for a client?
+    - **Tags:** Role - Freelancer
+    - **Response:** To leave feedback for a client, fill out the feedback form on their profile.
 
 #### Example Conversations
 **Without tagged intents**  
@@ -93,38 +91,26 @@ An eLearning platform caters to teachers, students, and parents, with varying ac
 
 #### Tag 1: Role
 Here is an example question involving the first tag: `Role`. It can take the values `Student`, `Teacher` or `Parent`.
-```
-Intent: How do I sign in?
-Tags: Role - Student
-Response: To sign in, visit the student portal at https://portal.learn.edu/sign-in and enter your classroom ID, email, and password.
-```
+- **Intent:** How do I sign in?
+    - **Tags:** Role - Student
+    - **Response:** To sign in, visit the student portal at https://portal.learn.edu/sign-in and enter your classroom ID, email, and password.
+- **Intent:** How do I sign in?
+    - **Tags:** Role - Teacher
+    - **Response:** To sign in to your account, go to https://app.learn.edu/sign-in and enter your email and password.
+- **Intent:** How do I sign in?
+    - **Tags:** Role - Parent
+    - **Response:** To view your child's progress, you need an invite from the classroom teacher. The link to visit the student progress page will be included within the invitation email.
 
-```
-Intent: How do I sign in?
-Tags: Role - Teacher
-Response: To sign in into your account, go to https://app.learn.edu/sign-in and enter your email and password.
-```
-
-```
-Intent: How do I sign in?
-Tags: Role - Parent
-Response: To view your child's progress, you need an invite from the classroom teacher. The link to visit the student progress page will be included within the invitation email.
-```
-
-#### Tag 1: Education Stage
+#### Tag 2: Education Stage
 The second tag used is education stage (`middle school`, `high school` or `college`). This dictates the type of educational content and programs available for students.
 
-```
-Intent: What does the algebra program cover?
-Tags: Education Stage - High School
-Response: The algebra syllabus covers linear equations, quadratic equations, and inequalities.
-```
+- **Intent:** What does the algebra program cover?
+  - **Tags:** Education Stage - High School
+  - **Response:** The algebra syllabus covers linear equations, quadratic equations, and inequalities.
 
-```
-Intent: What does the algebra program cover?
-Tags: Education Stage - College
-Response: The algebra syllabus includes solving systems of equations in matrices, vector spaces, and complex numbers.
-```
+- **Intent:** What does the algebra program cover?
+  - **Tags:** Education Stage - College
+  - **Response:** The algebra syllabus includes solving systems of equations in matrices, vector spaces, and complex numbers.
 
 #### Combination of Tags
 A subset of questions would use both tags at once, leading to a two tiered branching structure. Let us consider the example question: "Where can I find the Math & Logic Program?"
@@ -135,43 +121,32 @@ Let us go look at the branches one at a time.
 
 ##### Tag: Role - Teacher
 For this example, we assume that the answer does not depend on the education stage. Therefore, the intent for the teacher branch does not have the `Education Stage` tag.
-```
-Intent: Where can I find the Math & Logic Program?
-Tags: Role - Teacher
-Response: To view the available programs on the app, go to https://app.learn.edu/programs. Programs across all education levels will be listed there. You can search and filter by education level or topic to find the best programs for your students.
-```
+- **Intent:** Where can I find the Math & Logic Program?
+    - **Tags:** Role - Teacher
+    - **Response:** To view the available programs on the app, go to https://app.learn.edu/programs. Programs across all education levels will be listed here. You can search and filter by education level or topic to find the best programs for your students.
 
 ##### Tag: Role - Parent
 These next two intents represent the parent branches. The first intent applies to only parents with middle school children, so it has both the `Role:Parent` tag and the `Education Stage: Midde School` tag. 
 
-```
-Intent: Where can I find the Math & Logic Program?
-Tags: Role - Parent, Education Level - Middle School
-Response: The Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://learn.edu/programs
-```
+- **Intent:** Where can I find the Math & Logic Program?
+    - **Tags:** Role - Parent, Education Level - Middle School
+    - **Response:** The Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://learn.edu/programs
 
 The second intent applies to parents with children of education levels other than middle school, so it has the `Role:Parent` tag and no Education Stage tag. 
 
-```
-Intent: Where can I find the Math & Logic Program?
-Tags: Role - Parent
-Response: You can find the list of mathematics programs at https://www.learn.edu/programs/?topic=math.
-```
+- **Intent:** Where can I find the Math & Logic Program?
+    - **Tags:** Role - Parent
+    - **Response:** You can find the list of mathematics programs at https://www.learn.edu/programs/?topic=math.
 
 ##### Tag: Role - Student
 Similarly, the student branches are shown below.
 
-```
-Intent: Where can I find the Math & Logic Program?
-Tags: Role - Student, Education Level - Middle School
-Response: The Math & Logic program is unavailable for middle school students.
-```
-
-```
-Intent: Where can I find the Math & Logic Program?
-Tags: Role - Student
-Response: If your teacher has enrolled you in the program, you can find it in the 'Programs' tab on your eLearning portal at https://portal.learn.edu/account/programs
-```
+- **Intent:** Where can I find the Math & Logic Program?
+    - **Tags:** Role - Student, Education Level - Middle School
+    - **Response:** The Math & Logic program is unavailable for middle school students.
+- **Intent:** Where can I find the Math & Logic Program?
+    - **Tags:** Role - Student
+    - **Response:** If your teacher has enrolled you in the program, you can find it in the 'Programs' tab on your eLearning portal at https://portal.learn.edu/account/programs
 
 #### Example Conversations
 
