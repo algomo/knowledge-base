@@ -115,7 +115,7 @@ The second tag used is education stage (`middle school`, `high school` or `colle
 #### Combination of Tags
 A subset of questions would use both tags at once, leading to a two tiered branching structure. Let us consider the example question: "Where can I find the Math & Logic Program?"
 
-![Math-and-logic-branches](./images/math-n-logic-branches.png)
+![Math-and-logic-intent-example](./images/math-n-logic-intent-example.png)
 
 Let us go look at the branches one at a time.
 
@@ -130,7 +130,7 @@ These next two intents represent the parent branches. The first intent applies t
 
 - **Intent:** Where can I find the Math & Logic Program?
     - **Tags:** Role - Parent, Education Level - Middle School
-    - **Response:** The Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://learn.edu/programs
+    - **Response:** The Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://learn.edu/programs.
 
 The second intent applies to parents with children of education levels other than middle school, so it has the `Role:Parent` tag and no Education Stage tag. 
 
@@ -161,7 +161,7 @@ Chatbot: To view your child's progress, you need an invite from your child's tea
 User: Thanks. Where can I find the Math & Logic program?
 Chatbot: Which education level is your child in? Is it middle school, high school or college?
 User: middle school
-Chatbot: Unfortunately, the Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://www.learn.edu/programs
+Chatbot: Unfortunately, the Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://www.learn.edu/programs.
 ```
 
 **Example 2**  
@@ -172,7 +172,7 @@ Chatbot: To give you an accurate answer, I need to ask you a few questions. Are 
 User: middle school
 Chatbot: Thank you for providing the education level. Are you a student, teacher or parent?
 User: My daughter is enrolled in one of your programs.
-Chatbot: Unfortunately, the Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://learn.edu/programs
+Chatbot: Unfortunately, the Math & Logic program is unavailable for middle school students. You can find a list of available programs for every education level on our website, at https://learn.edu/programs.
 ```
 
 This shows how you can capture more complicated branching structures using tags. For more guidance on how to model your use case using tagged intents beyond what was shown in the examples, get in contact with us using the chat widget on the bottom right of this page.
