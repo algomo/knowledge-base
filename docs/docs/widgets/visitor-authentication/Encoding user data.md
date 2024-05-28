@@ -31,6 +31,31 @@ const authToken = jwt.sign(user, secret, {
 });
 ```
 
+## PHP
+
+Using [PHP-JWT](https://github.com/firebase/php-jwt) package.
+
+```php
+<?php
+
+use Firebase\JWT\JWT;
+
+$secret = '<YOUR_WIDGET_AUTH_SECRET>';
+
+$payload = [
+    'id' => '444',
+    'name' => 'John Doe',
+    'email' => 'john@example.com',
+    'customData' => [
+        'key1' => 'value1',
+        'key2' => 'value2',
+    ],
+    'exp' => time() + 30, // 30 seconds from now
+];
+
+$authToken = JWT::encode($payload, $secret, 'HS256');
+```
+
 ## Python
 
 Using [PyJWT](https://pypi.org/project/PyJWT/) package.
