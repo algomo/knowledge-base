@@ -43,7 +43,7 @@ use Firebase\JWT\JWT;
 $secret = '<YOUR_WIDGET_AUTH_SECRET>';
 
 $payload = [
-    'id' => '444',
+    'id' => '1',
     'name' => 'John Doe',
     'email' => 'john@example.com',
     'customData' => [
