@@ -58,7 +58,7 @@ const config = {
       algolia: {
         appId: "E70L5PUFYT",
         apiKey: "f27eb312aa7906e875559a1c1b2126cd",
-        indexName: "first_index",
+        indexName: "docs",
         contextualSearch: true,
         searchParameters: {},
         searchPagePath: false,
