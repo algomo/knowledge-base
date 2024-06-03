@@ -151,3 +151,7 @@ button.link-button:hover {
 .alert button.link-button {
   text-decoration-color: var(--ifm-alert-border-color);
 }
+
+.DocSearch {
+  display: none !important;
+}
