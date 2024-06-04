@@ -59,9 +59,7 @@ const config = {
         appId: "207T4HIFCD",
         apiKey: "4172fd20938cede2f5d1009156123e37",
         indexName: "help-algomo",
-        contextualSearch: true,
-        searchParameters: {},
-        searchPagePath: false,
+        contextualSearch: false,
       },
 
       metadata: [
