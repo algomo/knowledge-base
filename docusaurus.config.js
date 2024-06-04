@@ -56,9 +56,9 @@ const config = {
     {
       image: "img/favicon.png",
       algolia: {
-        appId: "E70L5PUFYT",
-        apiKey: "f27eb312aa7906e875559a1c1b2126cd",
-        indexName: "docs",
+        appId: "207T4HIFCD",
+        apiKey: "4172fd20938cede2f5d1009156123e37",
+        indexName: "help-algomo",
         contextualSearch: true,
         searchParameters: {},
         searchPagePath: false,
